@@ -1,0 +1,1336 @@
+{
+    "translation": {
+        "main_menu": {
+            "home": "Ana Sayfa",
+            "gb_investment": "$t(routes.gb_investment_gb_chooser.hero.title)",
+            "secure_position": "$t(routes.secure_position.hero.title)",
+            "cf_calculator": "$t(routes.cf_calculator.hero.title)",
+            "gb_statistics": "$t(routes.gb_statistics.hero.title)",
+            "gb_forecast_cost": "$t(routes.gb_forecast_cost.hero.title)",
+            "trade": "$t(routes.trade.hero.title)",
+            "help_to_translate_the_site": "$t(routes.help_to_translate_the_site.hero.title)",
+            "campaign_cost": "$t(routes.campaign_cost.hero.title)"
+        },
+        "footer_menu": {
+            "about": "Hakkımızda",
+            "contributors": "Katkıda Bulunanlar",
+            "changelog": "Değişiklikler",
+            "contact": "İletişim"
+        },
+        "components": {
+            "campaign_cost": {
+                "title": "$t(routes.campaign_cost.hero.title)",
+                "choose_province": "Bölge seçin",
+                "message": {
+                    "haveUnknownCosts": "Bu bölgede değerleri eksik olan bir veya daha fazla sektör var."
+                }
+            },
+            "cf_calculator": {
+                "block_cfc": {
+                    "title": "$t(routes.cf_calculator.hero.title)",
+                    "your_age": "Çağınız",
+                    "your_cf_boost": "$t(foe_data.gb.Chateau_Frontenac) Bonusunuz",
+                    "coins_to_use": "Sıradan Gün Partisi'nin istediği para",
+                    "coins_supplies_info": "Bu değer {{min}} değerinden büyük veya ona eşit olmalıdır, çünkü bunun altındaki değer kazançı (istatistiksel olarak) garanti etmez",
+                    "supplies_to_use": "Sıradan Gün Partisi'nin istediği erzak",
+                    "gb_plunder_goods": "DB ve Yağma Malları",
+                    "fp_by_24h": "24 Saat FP üretimi",
+                    "other_rq": "Diğer Günlük Yinelenen Görevler",
+                    "second_rq": "2. Yinelenen Görev ?",
+                    "supplies_gathered": "Toplanan Malzemeler",
+                    "table_reward": {
+                        "title": "$t(utils.Rewards)",
+                        "thead": {
+                            "th1": "Ozalitler",
+                            "th2": "Madalyalar",
+                            "th3": "Ürünler",
+                            "th4": "FP'ler"
+                        }
+                    },
+                    "reward_message": {
+                        "daily_ubq": "Günlük Sıradan Gün Partisi Sayısı: {{count, number}}",
+                        "bonus_ubq": "Sıradan Günü Partisi Bonusu: {{count, number}}",
+                        "second_rq_completed": "Tamamlanan 2. Yinelenen Görev: {{count, number}}",
+                        "total_goods": "Toplam Ürünler: {{count, number}}",
+                        "total_fp": "Toplam FP: {{count, number}}",
+                        "total_rq_completed": "Toplam Tamamlanan Yinelenen Görev Sayısı: {{count, number}}"
+                    },
+                    "table_return": {
+                        "thead": {
+                            "th_level": "Seviye",
+                            "th_coin": "Gelen Para",
+                            "th_supply": "Gelen Erzak"
+                        }
+                    },
+                    "infinity_generator": {
+                        "message": "Şu anki görevleri tamamlamak için $t(foe_data.gb.Chateau_Frontenac) bonusu ile,  kullanacağından daha fazla para ve malzeme kazanacaksın. Lütfen yapmak istediğiniz \"$t(components.cf_calculator.block_cfc.infinity_generator.label)\" sayısını seçin.",
+                        "label": "Birikimli görev"
+                    }
+                }
+            },
+            "gb_investment": {
+                "gb_list_select": {
+                    "label": "Devasa Binayı Değiştir",
+                    "info": "Genel ayarlarda seçicinin stilini (eski seçici veya otomatik tamamlama) değiştirebilirsiniz"
+                },
+                "gb_investment": {
+                    "title": "$t(routes.gb_investment_gb_chooser.hero.title)",
+                    "description": {
+                        "p1": "Seviye ve Ark bonus yüzdesi girin (80 Seviye Ark için %90 oran). Tablodaki değerler otomatik olarak güncellenir.",
+                        "p2_html": "<strong>Not </strong>: Güncelleme otomatik olarak yapılmazsa, önce GB seviyesini ve genel yatırım değerini ayarlayın ve \"$t(components.gb_investment.gb_investment.form.submit_global)\" üzerine tıklayın. Her bir yerin değerlerini ayarlamak istiyorsanız, uygunluğunuzu ayarlayın ve \"$t(components.gb_investment.gb_investment.form.submit_custom)\" üzerine tıklayın."
+                    },
+                    "form": {
+                        "level": "Seviye {{fromLevel, number}} → {{level, number}} ($t(utils.between_range, { 'min': '{{min}}', 'max': '{{max}}' }))",
+                        "investor_percentage": "FP atacak kişilerin Ark bonusu",
+                        "submit_global": "Global hesaplama",
+                        "submit_custom": "Özel hesaplama",
+                        "owner_investment": "Bina sahibinin atmış olduğu FP miktarı (Maksimum {{max}})",
+                        "add_investors": "Yatırımcı ekle (\n$t(utils.between_range, { 'min': '{{min}}', 'max': '{{max}}' }) FP değeri girin, )",
+                        "tooltip_add_investors": "FP atan kişi girmek için $t(utils.Add)'e basın veya Enter tuşuna basın",
+                        "investors_list": "FP atanların olduğu liste",
+                        "show_snipe": "Bina kilitlemeyi göster",
+                        "show_only_secured_places": "Yalnızca garantili yerleri göster",
+                        "display_card": "Kart görünümde gösterilsin mi?(küçük ekranda)"
+                    },
+                    "table": {
+                        "title": "$t({{gb_key}}) seviye {{fromLevel, number}}→ {{level, number}}",
+                        "thead": {
+                            "th1": "Sıralar",
+                            "th2": "Varsayılan ödüller",
+                            "th3": "Sırayı garantilemek için bina sahibinin atması gereken FP",
+                            "th4": "Bonusla birlikte ödül",
+                            "th5": "FP atacak kişilerin Ark bonusu",
+                            "th6": "Tanıtım mesajına dahil et",
+                            "fp_already_putin": "Şu an atılmış FP sayısı",
+                            "spot_snipe": "Bina kilitleme",
+                            "expected_participation": "FP sahibinin % bonus ile kazancı",
+                            "real_participation": "Ark'ınızın % bonus'uyla elde edilen FP",
+                            "is_sniper": "Potansiyel bir keskin nişancı mı?"
+                        },
+                        "tbody": {
+                            "button_show_extra_investor": "Ekstra yatırımcı göster",
+                            "button_show_extra_investor_plural": "Ekstra yatırımcıları göster",
+                            "button_hide_extra_investor": "Ekstra yatırımcıyı gizle",
+                            "button_hide_extra_investor_plural": "Ekstra yatırımcıları gizle",
+                            "loss": "Bu oyuncu FP kaybedece",
+                            "loss_plural": "Bu oyuncu FP kaybedecek",
+                            "tooltip_owner_investment": "Sıranın garantilenmesi için bina sahibinin atması gereken kalan FP miktarı",
+                            "tooltip_expected_investment": "Beklenen yatırım",
+                            "profit": "Bu oyuncu kar edecek",
+                            "neutral": "Bu oyuncu ne kar eder ne de zarar"
+                        },
+                        "tfoot": {
+                            "total_preparation": "Bina sahibinin atması gereken toplam FP",
+                            "tooltip_owner_investment": "Seviyeyi tamamlamak için sahibinin atması gereken FP'ler",
+                            "level_cost": "Seviyenin maliyeti"
+                        }
+                    },
+                    "display_gb_name": "DB'nın ismi gösterilsin mi?",
+                    "use_short_name": "Kısa isim kullan?",
+                    "show_level": "Seviyeyi göster?"
+                },
+                "promotion": {
+                    "title": "Tanıtım mesajı",
+                    "prefix_placeholder": "Tanıtım mesajından önceki metin",
+                    "suffix_placeholder": "Tanıtım mesajından sonraki metin",
+                    "promo": [
+                        "P1 ({{investment}})",
+                        "P2 ({{investment}})",
+                        "P3 ({{investment}})",
+                        "P4 ({{investment}})",
+                        "P5 ({{investment}})"
+                    ]
+                }
+            },
+            "gb_investment_investors": {
+                "description": {
+                    "p1": "Bu görüş, başka yerlerdeki yatırımları hesaba katarak veya hesaba katmadan bir yer alarak elde edilebilecek kazancı görmeyi sağlar.Diğer yerler için  {{count}}türleri var:"
+                },
+                "takingPlaceInConsideration": {
+                    "label": "Diğer yerler içinde dikkate alınsın mı?",
+                    "form": {
+                        "show_place": "Sırayı göster",
+                        "no": "$t(utils.No)",
+                        "normal": "Normal",
+                        "optimal": "Uygun"
+                    },
+                    "description": {
+                        "no": "diğer yerleri dikkate almayın",
+                        "normal": "diğer sıraları, yatırımcılardan minimum yatırımla ve bina sahibi tarafından garantileme olmadan hesaba kat",
+                        "optimal": "diğer sıraları, kâr olmadan yatırımlar ve bina sahibi tarafından garantileme ile hesaba kat"
+                    }
+                },
+                "table": {
+                    "thead": {
+                        "th_place": "Sıra {{count}}",
+                        "th_profit_loss": "Kazanç / Kayıp"
+                    }
+                }
+            },
+            "gb_forecast_cost": {
+                "title": "Tahmin",
+                "p1": "Ark bonusuyla veya Ark bonusu olmadan, bir seviyeden diğer bir seviyeye geçiş için gereken FP sayısını hesapla",
+                "custom_percentage": "Farklı bir Ark bonus oranı (her sıra için)",
+                "estimated_time": "Seviyeye ulaşmak için tahmini zaman",
+                "message": {
+                    "diff": "Atılan bonuslu FP'lerle, {{count}} FP kazanç sağlayacaksınız.",
+                    "diff_plural": "Bonuslarla birlikte, {{count, number}} FP tasarruf edeceksiniz",
+                    "single": "$t({{gb}}) binasının {{level}} seviyesini tamamlamak için bina sahibi {{preparation, number}} FP atmalıdır. Bu seviyenin toplam maliyeti: {{cost, number}} FP.",
+                    "multi": "$t({{gb}}) Devasal Binasının, Seviye {{from}}'den {{to}}'e geçmesi için; bina sahibinin {{preparation, number}} FP yatırması gerekiyor. Tüm seviyeler için gereken toplam FP: {{cost, number}}",
+                    "estimated_time": "Bu seviyeye ulaşmak için gereken zaman: {{time}}"
+                },
+                "prop_already_invested": "Bina sahibinin şu anki seviyede atmış olduğu FP",
+                "graph": {
+                    "title": "$t({{gb}}) Devasal Binası için bina sahibinin tahmini FP miktarı",
+                    "x_axes_label": "$t(utils.graph.gb_level)",
+                    "y_axes_label": "$t(utils.graph.gb_level_cost)",
+                    "label": {
+                        "default": "Bu seviyenin brüt maliyeti",
+                        "default_preparation": "Bonussuz olarak gereken FP miktarı",
+                        "custom_preparation": "Bonuslu olarak gereken FP miktarı"
+                    }
+                }
+            },
+            "gb_statistics": {
+                "title": "$t(routes.gb_statistics.hero.title)",
+                "p1": "Grafikler çağlara göre ayarlanır; aynı çağın devasal binalarının seviye yükseltme bedeli / ödülleri aynıdır. ($t(foe_data.gb.Oracle_of_Delphi) İstisnadır)",
+                "represent": "Kılavuz:",
+                "graph": {
+                    "title_1": "Seviye maliyetinin seviyelere göre değişimi",
+                    "title_2": "Birinci sıra ödülünün seviyelere göre değişimi",
+                    "title_3": "Seviye maliyetlerinin ilk sıra ödülüne göre değişimi",
+                    "title_4": "İlk sıra ödülünün seviye maliyetlerine göre değişimi"
+                }
+            },
+            "secure_position": {
+                "block_place": {
+                    "fp_to_complete_level": "Bu seviyeyi tamamlamak için gereken FP sayısı:",
+                    "fp_to_complete_level_plural": "Bu seviyeyi tamamlamak için gereken FP sayısı:",
+                    "place": "{{place}} ({{count, number}} FP)",
+                    "place_plural": "{{place}} ({{count, number}} FP)",
+                    "title": "Birinin sırasını kilitle",
+                    "level_cost": "Seviyenin toplam maliyeti",
+                    "current_deposits": "Yatırımların toplamı",
+                    "your_participation": "Güncel yatırımınız",
+                    "other_participation": "Geçilecek oyuncunun yatırımı",
+                    "your_arc_bonus": "Ark bonusunuz",
+                    "fp_target_reward": "Hedeflenen sıra için gereken FP",
+                    "target_reward": "Hedeflenen sıra",
+                    "various_rate": "Değişik oranlar",
+                    "rate": "Oran",
+                    "fp_according_rate": "Orana göre atılacak FP",
+                    "fp_to_lock": "Sıranızı kilitlemek için atılacak FP",
+                    "result": {
+                        "default": "Sırayı kilitlemek için {{count}} FP'ye sahip olmalısınız.",
+                        "default_plural": "Sırayı kilitlemek için {{count, number}} FP'ye sahip olmalısınız.",
+                        "fp_need_to_lock": "Sırayı kilitlemek için için sahip olmanız gereken FP:",
+                        "fp_need_to_lock_plural": "Yerinizi garantilemeniz için yatırmanız gereken FP sayısı",
+                        "fp_to_secure_html": "Hala {{count}} FP atmanız gerekli.",
+                        "fp_to_secure_html_plural": "Hala  {{count, number}} FP atmanız gerekli.",
+                        "error": "Bir veya daha fazla değer geçersiz.",
+                        "roi": {
+                            "profit": "{{count}} FP kazanacaksınız",
+                            "profit_plural": "{{count, number}} FP kazancaksınız",
+                            "loss": "{{count}} FP kaybedeceksiniz",
+                            "loss_plural": "{{count, number}} FP kaybedeceksiniz",
+                            "neutral": "Bu yatırımdan kazancınız olmayacak"
+                        },
+                        "already_blocked": "Sıranız kilitlendi",
+                        "still_to_put": "Hala yatırmanız gereken FP sayısı",
+                        "cant_block": "Bu sırayı kilitleyemezsin."
+                    },
+                    "unknown": "bilinmeyen"
+                }
+            },
+            "simple_trade": {
+                "title": "Tablo versiyonu",
+                "table": {
+                    "thead": {
+                        "th1": "Çağ",
+                        "th2": "Ürünler",
+                        "th3": "$t(components.trade.label.i_want)",
+                        "th4": "Sonuç",
+                        "split": "Ayrılmış şekli:",
+                        "ratio": "Oran"
+                    }
+                },
+                "slpit": "Teklifleri ayır ?",
+                "show_ratio": "Oranı göster"
+            },
+            "site_layout": {
+                "update": "Son ziyaretinizden bu yana bir güncelleme var.",
+                "update_plural": "Son ziyaretinizden bu yana {{count}} güncelleme var.",
+                "hero": {
+                    "title": "$t(common:site_title)",
+                    "slogan_html": "$t(common:links.foe) tecrübenizi kolaylaştırmaya yaran birkaç araç."
+                },
+                "cookie": {
+                    "message": "$t(common:site_title) sitesini kullanmaya devam ederek, kullanımınızı kolaylaştırmak için çerezlerin kullanılmasını kabul etmiş olursunuz.",
+                    "link": "Daha fazla bilgi"
+                },
+                "new_year": {
+                    "message": "$t(common:site_title), {{count, number}}. yılını kutluyor",
+                    "message_plural": "$t(common:site_title), {{count, number}}. yılını kutluyor"
+                },
+                "survey": {
+                    "message": "Bu anketi tamamlayarak $t(common:site_title) sitemizi geliştirmemize yardım edin"
+                },
+                "whats_new": "Yeni ne var ?",
+                "permalink_info": "Kalıcı bir bağlantı ziyaret ediyorsunuz. Yapılan değişiklikler çerezlere kaydedilmeyecektir.",
+                "footer": {
+                    "license_html": "Kaynak kodu $t(common:links.mit) lisansı altındadır",
+                    "version": "Sürüm {{version}}"
+                },
+                "day_night": {
+                    "Day": "Gün",
+                    "start_day": "Gündüz versiyonunu başlat",
+                    "Night": "Gece",
+                    "start_night": "Gece versiyonunu başlat",
+                    "Auto": "Otomatik $t(components.site_layout.day_night.Day)/$t(components.site_layout.day_night.Night)"
+                },
+                "global_config": "Genel ayarlar",
+                "global_config_dialog": {
+                    "fixed_main_menu": "Ana menü her zaman görünür",
+                    "select_gb_style": "Devasa Bina Seçim Stili",
+                    "select_gb_style_mode": {
+                        "datalist": "Otomatik Tamamla",
+                        "select": "Çağa göre seç"
+                    },
+                    "day_night": "Tema",
+                    "day_night_mode": {
+                        "Day": "Gün",
+                        "Night": "Gece",
+                        "Auto": "Otomatik"
+                    }
+                },
+                "switch_locale": "Sizin diliniz artık $t(common:site_title)'da mevcut"
+            },
+            "trade": {
+                "title": "Form versiyonu",
+                "label": {
+                    "i_have": "Sahip olduğum ürünün çağı",
+                    "i_want": "İstediğim ürünün çağı",
+                    "amount": "Miktar"
+                },
+                "split_value": "Teklifin boyutu (max {{count}})",
+                "split_message": {
+                    "msg": "{{valueTo}}{{ageTo}} için {{valueFrom}}{{ageFrom}}",
+                    "common": "{{count}} x ($t(components.trade.split_message.msg, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' }))",
+                    "multi": "$t(components.trade.split_message.common, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' }) ve $t(components.trade.split_message.common, { 'count': 1, 'valueFrom': '{{valueFromSingle}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueToSingle}}', 'ageTo': '{{ageTo}}' })"
+                },
+                "message": {
+                    "result": "{{to}} {{ageTo}} ürünü için, {{count}} ürüne kadar {{from}} {{ageFrom}} ürününe ihtiyacınız olacak.",
+                    "total": "(toplamda: {{amount}}{{key}})"
+                }
+            },
+            "promotion_message_builder": {
+                "title": "Tanıtım mesajı yaratıcı",
+                "info": "Bu metin paylaşılmak üzere kopyalanabilir; örneğin lonca arkadaşlarınız ile.",
+                "note": "Mesaj yaratıcı, önizleme için $t(foe_data.gb.Observatory) binasının seviye 9 → 10 arasını, 1.9 oranla gösterir.",
+                "action": "Eylem",
+                "actions": {
+                    "create": "Yeni bir şablon oluştur",
+                    "update": "Mevcut şablonu güncelle",
+                    "delete": "Mevcut şablonu sil"
+                },
+                "start_from_template": "Şablon kullan ?",
+                "edit_template": "Düzenlenecek şablonu seçin",
+                "delete_template": "Silinecek şablonu seçin",
+                "templates": {
+                    "default": "Varsayılan şablonlar",
+                    "custom": "Özel şablonlar"
+                },
+                "config": "Yapılandırma",
+                "add_field_title": "Özel alanlar ekle",
+                "add_field": {
+                    "name": "Alan adı",
+                    "value": "Alan değeri"
+                },
+                "custom_field_title": "Özel alanlarınız",
+                "use_short_name": "$t(components.gb_investment.gb_investment.use_short_name)",
+                "reverse_place_order": "Ters sıra ile göster?",
+                "place_separator": "Ayırıcı yerleştirin",
+                "place_builder": "Sıra yaratıcı",
+                "place_preview": "Yer önizlemesi (1. Sıra)",
+                "message_builder": "Mesaj yaratıcı",
+                "message_preview": "Mesaj önizlemesi",
+                "place_builder_title": "Sıra yaratıcı",
+                "message_builder_title": "Mesaj yaratıcı",
+                "available_variables": "Mevcut değişkenler:",
+                "variables": {
+                    "place": {
+                        "PI": "Sıra dizini",
+                        "PV": "Sıra değeri (FP cinsinden)",
+                        "PP": "$t(components.gb_investment.gb_investment.table.thead.th3)"
+                    },
+                    "message": {
+                        "FLVL": "Şu seviyeden",
+                        "TLVL": "Şu seviyeye",
+                        "GBN": "Devasal Bina ismi",
+                        "P": "Sıralar",
+                        "OP": "$t(components.gb_investment.gb_investment.table.tfoot.total_preparation)",
+                        "PPx": "Sahibin \"x\" sırası için atacağı FP sayısı (\"x\" ile 1'den 5'e kadar)",
+                        "LF": "Satır akışı, yeni satır ekle"
+                    }
+                },
+                "template_name": "Şablon adı",
+                "errors": {
+                    "template_cannot_have_this_name": "Şablon bu isimde olamaz. Lütfen başka bir isim kullanın.",
+                    "custom_name_empty": "Alanın adı boş olamaz.",
+                    "custom_name_already_exists": "Bu alan adı zaten var."
+                },
+                "template_saved": "Şablon kaydedildi",
+                "template_updated": "Şablon güncellendi",
+                "template_deleted": "Şablon silindi"
+            },
+            "import_promotion_message": {
+                "title": "Tanıtım mesajını dışarıdan al",
+                "config_placeholder": "Yapılandırmanızı buraya yapıştırın",
+                "errors": {
+                    "invalid_data": "Geçersiz veri"
+                },
+                "template_imported": "Şablon dışarıdan alındı"
+            }
+        },
+        "routes": {
+            "home": {
+                "title": "$t(common:site_title)"
+            },
+            "about": {
+                "title": " $t(common:site_title) Hakkında",
+                "general_info": {
+                    "title": "Genel bilgi",
+                    "p1_html": "Forge of Empires, FOE ve tüm ilişkili markalar ve içerik InnoGames GmbH'ye aittir. <br/> $t(common:site_title) ise resmi olmayan, üçüncü kişilere ait ve InnoGame ile bağlantılı değildir.",
+                    "p2_html": "$t(common:site_title) Fransız oyuncu <strong class=\"has-text-weight-semibold\">Yoratheon</strong> tarafından yaratıldı.",
+                    "p3_html": "Bu site açık kaynak kodlu bir site olmakla birlikte $t(common:links.github) üzerinden bedava olarak kullanılabilir.<br/> Bu sayede gerekli becerilere sahip herkes bu sitenin geliştirilmesinde katkıda bulunabilir."
+                },
+                "cookie": {
+                    "title": "Çerezler",
+                    "p1": "Bu site kullanımınızı rahatlatmak için çerezleri kullanır.",
+                    "table_message": "Aşağıdaki tabloda bu sitede kullanılan tüm çerezler gösterilmektedir.",
+                    "info": {
+                        "cookieDisclaimerDisplayed": "Çerezlerin kullanılması ile ilgili bilgilendirme mesajını okuduğunuzu gösterir",
+                        "gbi_tab": "Varsayılan olarak hangi sekmenin yükleneceğini belirten \"$t(routes.gb_investment_gb_chooser.hero.title)\" için genel parametre ($t(routes.gb_investment.tab.owner_view.title), vb.)",
+                        "gbPrefix": "Tanıtım mesajı ön ekini içeren \"$t(routes.gb_investment_gb_chooser.hero.title)\" için genel parametre",
+                        "gbSuffix": "Tanıtım mesajı son ekini içeren \"$t(routes.gb_investment_gb_chooser.hero.title)\" için genel parametre",
+                        "locale": "Görüntüleme dili",
+                        "shortName": "Tanıtım mesajında devasa bina isminin kısaltılmasını isteyip istemediğinizi gösteren genel parametre: \"$t(routes.gb_investment_gb_chooser.hero.title)\"",
+                        "showLevel": "Tanıtım mesajında devasa binanın seviyesini gösteren genel parametre: \"$t(routes.gb_investment_gb_chooser.hero.title)\"",
+                        "yourArcBonus": "Global ayarlar Arc bonusunu kapsar",
+                        "yourCfBoost": "Frontenac Şatosu bonusunu içeren global ayar",
+                        "haveReadTipAboutAddInvestor": "Katkıda bulunan kullanıcı eklemek için ipucunu okuyup okumadığınızı gösterir.",
+                        "dayNightMode": "Gündüz/Gece modlarından hangisini kullandığınızı gösterir",
+                        "dayStart": "Günün başlangıç saati (Gündüz modu \"$t(components.site_layout.day_night.Auto)\" için)",
+                        "nightStart": "Gecenin başlangıç saati (Gece modu \"$t(components.site_layout.day_night.Auto)\" için)",
+                        "showSnipe": "Sıra kilitlemeyi göster/gizle ($t(routes.gb_investment_gb_chooser.hero.title) için)",
+                        "coins": "$t(components.cf_calculator.block_cfc.coins_to_use)",
+                        "fpBy24h": "$t(components.cf_calculator.block_cfc.fp_by_24h)",
+                        "goods": "$t(components.cf_calculator.block_cfc.gb_plunder_goods)",
+                        "otherRq": "$t(components.cf_calculator.block_cfc.other_rq)",
+                        "cumulativeQuest": "Biriken görev sayısı",
+                        "secondRq": "$t(components.cf_calculator.block_cfc.second_rq)",
+                        "supplies": "$t(components.cf_calculator.block_cfc.supplies_to_use)",
+                        "suppliesGathered": "$t(components.cf_calculator.block_cfc.supplies_gathered)",
+                        "yourAge": "$t(components.cf_calculator.block_cfc.your_age)",
+                        "investorPercentageCustom_x": "$t(components.gb_investment.gb_investment.table.thead.th5)",
+                        "investorPercentageGlobal": "$t(components.gb_investment.gb_investment.form.investor_percentage)",
+                        "investorParticipation_x": "Sıra FP vermediğinde katılımcıların atması beklenen miktar",
+                        "level": "DB seviyesi",
+                        "ownerInvestment": "$t(components.gb_investment.gb_investment.table.thead.th3)",
+                        "showPx": "Tanıtım mesajında sıranın gösterilip göstermeyeceğini belirtir",
+                        "takingPlaceInConsideration": "\"$t(routes.gb_investment_gb_chooser.hero.title)\"ın \"$t(routes.gb_investment.tab.investors_view.title)\" sekmesi, hesaplamada diğer yerlerin dikkate alınması gerekip gerekmediğini belirtir",
+                        "targetLevel": "\"$t(routes.gb_investment_gb_chooser.hero.title)\"ın \"$t(routes.gb_investment.tab.investors_view.title)\" sekmesi, tabloda hangi seviyeden görüntüleneceğini belirtir.",
+                        "displayGbName": "Devasal bina ismi tanıtım mesajında gösterilsin mi ?",
+                        "investorParticipation": "Tüm eklenen yatırımcıların bir listesini içerir",
+                        "displayTableCard": "Basit görünümde \"$t(routes.gb_investment_gb_chooser.hero.title)\"daki tablonun küçük ekranda veya kart görünümünde görüntüleneceğini belirtir.",
+                        "from": "Dizinin başlayacağı seviye (\"$t(routes.gb_investment_gb_chooser.hero.title)\"ın \"$t(routes.gb_investment.tab.investors_view.title)\" sekmesinde kullanılır)",
+                        "to": "Dizinin biteceği seviye \"$t(routes.gb_investment_gb_chooser.hero.title)\"ın \"$t(routes.gb_investment.tab.investors_view.title)\" sekmesinde kullanılır)",
+                        "showPlace": "Bir sıranın gösterilip gösterilmeyeceğini belirten dizi (\"$t(routes.gb_investment_gb_chooser.hero.title)\"ın \"$t(routes.gb_investment.tab.investors_view.title)\" sekmesinde kullanılır)",
+                        "survey": "Tamamladığınız tüm anketleri içeren bir sıra",
+                        "fixedMainMenu": "Ana menünün her zaman görünür olsun mu ?",
+                        "gbSelectMode": "Hangi DB Seçme modunu kullandığınızı gösterir.",
+                        "haveReadLocaleInfoAvailable": "Sitenin kendi dilinizde mevcut olduğu bilgisini okuyup okumadığınızı gösterir.",
+                        "promotionMessageList": "Görüntülenmesini istediğiniz tanıtım mesajları listesini içerir.",
+                        "customPromotionMessagesTemplates": "Tüm özel tanıtım mesajlarınızı içerir",
+                        "gbShowPrefix": "Tanıtım mesajlarında ön ek göstermek isteyip istemediğinizi belirtir",
+                        "gbShowSuffix": "Tanıtım mesajlarında son ek göstermek isteyip istemediğinizi belirtir",
+                        "lastVisitVersion": "Sitenin son ziyaretinizdeki sürümünü içerir."
+                    }
+                },
+                "dev_info": {
+                    "title": "Geliştirme bilgisi",
+                    "p1": "Bu site, sunucusu GitHub olan basit, statik bir sitedir.",
+                    "p2_html": "Geliştirme, $t(common:links.framework) kullanılarak Node.js ile yapılmıştır. Stiller $t(common:links.style) kullanılarak yapılmıştır.",
+                    "p3_html": "İşlevsellik ile ilgili bir fikriniz mi var ? Veya bir sorun ? $t(common:links.github)'da bir başlık açın veya bana $t(common:links.contact_foe_tools) üzerinden email gönderin (İngilizce veya Fransızca)",
+                    "message_info_github_issue": "<b>Not:</b> GitHub ile ilgili sorunlarda anlamayı en üst düzeye çıkarabilmek için lütfen İngilizce yazınız."
+                }
+            },
+            "campaign_cost": {
+                "title": "$t(routes.campaign_cost.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Fetih Maliyeti",
+                    "subtitle": "Bu araç, kıta haritasında bir sektörü veya bölgeyi müzakere ederek fethetmenin maliyetini hesaplar. "
+                }
+            },
+            "cf_calculator": {
+                "title": "$t(routes.cf_calculator.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Frontenac Şatosu Hesaplama Aracı",
+                    "subtitle": "Hikaye görevleri ve günlük görevlerini tamamlayarak kazanılacak FP ve ürünleri hesaplayan bir araç"
+                }
+            },
+            "changelog": {
+                "title": "Değişiklikler | $t(common:site_title)"
+            },
+            "contributors": {
+                "title": "$t(routes.contributors.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Katkıda bulunanlar",
+                    "subtitle": "Bu sayfa tüm katılımcıları listelemeye çalışıyor"
+                }
+            },
+            "gb_investment": {
+                "title": "$t(routes.gb_investment.hero.title, { 'gb_key': '{{gb_key}}' })  | $t(common:site_title)",
+                "hero": {
+                    "title": "$t(routes.gb_investment_gb_chooser.hero.title) - $t({{gb_key}})"
+                },
+                "tab": {
+                    "owner_view": {
+                        "title": "Bina sahibinin gözünden"
+                    },
+                    "investors_view": {
+                        "title": "Yatırımcının gözünden"
+                    }
+                }
+            },
+            "gb_investment_gb_chooser": {
+                "title": "$t(routes.gb_investment_gb_chooser.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Devasa Binalara FP Yatırımı",
+                    "subtitle": "Bu araç, bir oyuncunun Devasa Binasının ilk 5 sırasını garantilemek için atması gereken FP oranını (Ark bonusuyla birlikte) hesaplar."
+                },
+                "choose_gb": {
+                    "title": "Bir Devasa Bina Seç"
+                }
+            },
+            "gb_forecast_cost": {
+                "title": "$t(routes.gb_forecast_cost.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "DB maliyet tahmini",
+                    "subtitle": "Bu araç Ark bonusuyla veya Ark bonusu olmadan, herhangi bir Devasa Bina'nın belirleyeceğiniz iki seviye arasındaki maliyetini hesaplar."
+                }
+            },
+            "gb_statistics": {
+                "title": "$t(routes.gb_statistics.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Devasa Bina İstatistikleri",
+                    "subtitle": "Bu araç, çağlara göre Devasa Binaların her seviyedeki maliyetini grafikler yardımıyla göstermeye yarar."
+                }
+            },
+            "secure_position": {
+                "title": "$t(routes.secure_position.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Sıra garantileme",
+                    "subtitle": "Bu araç, bir oyuncunun herhangi bir Devasa Binada kilitleyeceği sıra için atması gereken FP sayısını hesaplar."
+                }
+            },
+            "trade": {
+                "title": "$t(routes.trade.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Ticaret",
+                    "subtitle": "Bu araç, takas tarzınıza göre en iyi oranları hesaplayarak işinizi kolaylaştırır."
+                },
+                "tab": {
+                    "trade_2_1": {
+                        "title": "2:1",
+                        "message": "Basit ticaret, aynı çağdaki ürünlerde 1'de 1, bir çağ farklı olan ürünlerde 1'e 2."
+                    },
+                    "fair_trade": {
+                        "title": "Adil Ticaret",
+                        "message": "Bu tür bir ticaret, ürünler arasındaki oranları belirlemek için bir ürünün (para ve erzak bakımından) üretim maliyetini hesaba katar."
+                    }
+                }
+            },
+            "help_to_translate_the_site": {
+                "title": "$t(routes.help_to_translate_the_site.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Bu sitenin tercümesine yardımcı ol",
+                    "subtitle": "Çeviri ekibine katıl"
+                },
+                "p1": "Kullandığınız dil henüz listemizde yok. Çeviri hatalı veya eksik mi? Çeviri ekibine aktarmaktan çekinmeyin.",
+                "how_to_join_the_team": "Çeviri ekibine nasıl katılırım?",
+                "p2_html": "$t(common:site_title), kullanıcılar tarafından tercüme edilmektedir. Tercüme sürecini $t(common:links.translation_platform) üzerinden yürütmekteyiz. Ekibe katılmak için $t(common:links.contact_foe_tools) adresine, hangi dillerde tercüme yapabileceğinizi belirten bir email atabilirsiniz (email İngilizce olmalı); böylece size davet gönderebiliriz."
+            },
+            "survey": {
+                "title": "$t(routes.survey.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Anket",
+                    "subtitle": "$t(common:site_title) sitemizi geliştirmek için bu anketi tamamlayarak bize yardımcı olabilirsiniz"
+                },
+                "required_field": "Bu alan gereklidir",
+                "survey_complete": "Geri bildiriminiz için teşekkür ederiz!",
+                "error": "Bir hata oluştu, formu kontrol edip tekrar deneyin",
+                "unknown_error": "Bilinmeyen bir hata oluştu, lütfen site yöneticisiyle iletişime geçin"
+            },
+            "contact": {
+                "title": "$t(routes.contact.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "İletişim",
+                    "subtitle": "$t(common:site_title) yöneticisine başvurun"
+                },
+                "message_contact_html": "İşlevselliği geliştirmek için bir fikriniz mi var ? Veya bir sorununuz ? $t(common:links.contact_foe_tools) adresinden bana bir e-posta gönderebilirsiniz (İngilizce veya Fransızca).",
+                "message_translate": "Siteyi tercüme etmeye yardımcı olabileceğinizi biliyor muydunuz? Daha fazla bilgi için aşağıdaki bağlantıyı takip edin:",
+                "message_other_info_html": "Eğer geliştirici iseniz, $t(common:links.github) üzerinden sorun bildirebilirsiniz (ve sitenin gelişimine katkıda bulunabilirsiniz)."
+            },
+            "error": {
+                "404": {
+                    "title": "Sayfa bulunamadı | $t(common:site_title)",
+                    "message": "Üzgünüz, aradığınız sayfa bulunamıyor."
+                }
+            }
+        },
+        "foe_data": {
+            "age": {
+                "Oracle": "$t(foe_data.age.NoAge) ($t(foe_data.gb.Oracle_of_Delphi))",
+                "NoAge": "Çağ Yok",
+                "BronzeAge": "Tunç Devri",
+                "IronAge": "Demir Devri",
+                "EarlyMiddleAges": "Erken Dönem Orta Çağ",
+                "HighMiddleAges": "Zirve Dönem Orta Çağ",
+                "LateMiddleAges": "Geç Dönem Orta Çağ",
+                "ColonialAge": "Sömürge Çağı",
+                "IndustrialAge": "Sanayi Çağı",
+                "ProgressiveEra": "İlerleme Çağı",
+                "ModernEra": "Modern Çağ",
+                "PostmodernEra": "Postmodern Çağ",
+                "ContemporaryEra": "Yakın Çağ",
+                "Tomorrow": "Yakın Gelecek",
+                "TheFuture": "Gelecek",
+                "ArcticFuture": "Buzul Gelecek",
+                "OceanicFuture": "Okyanus Geleceği",
+                "VirtualFuture": "Sanal Gelecek",
+                "SpaceAgeMars": "Uzay Çağı: Mars"
+            },
+            "age_short": {
+                "NoAge": "Çağ Yok",
+                "BronzeAge": "Bronz Devri",
+                "IronAge": "Demir Devri",
+                "EarlyMiddleAges": "Erken Dönem Orta Çağ",
+                "HighMiddleAges": "Zirve Dönem Orta Çağ",
+                "LateMiddleAges": "Geç Dönem Orta Çağ",
+                "ColonialAge": "Sömürge Çağı",
+                "IndustrialAge": "Sanayi Çağı",
+                "ProgressiveEra": "İlerleme Çağı",
+                "ModernEra": "Modern Çağ",
+                "PostmodernEra": "Postmodern Çağ",
+                "ContemporaryEra": "Yakın Çağ",
+                "Tomorrow": "Yakın Gelecek",
+                "TheFuture": "Gelecek",
+                "ArcticFuture": "Buzul Gelecek",
+                "OceanicFuture": "Okyanus Geleceği",
+                "VirtualFuture": "Sanal Gelecek",
+                "SpaceAgeMars": "Uzay Çağı Mars"
+            },
+            "gb": {
+                "Observatory": "Gözlemevi",
+                "Temple_of_Relics": "Eserler Tapınağı",
+                "Oracle_of_Delphi": "Delphi Kahini",
+                "Tower_of_Babel": "Babil Kulesi ",
+                "Statue_of_Zeus": "Zeus Heykeli",
+                "Colosseum": "Kolezyum",
+                "Lighthouse_of_Alexandria": "İskenderiye Feneri",
+                "Hagia_Sophia": "AyaSofya",
+                "Cathedral_of_Aachen": "Aachen Katedrali",
+                "St_Mark_s_Basilica": "St. Marks Bazilikası",
+                "Notre_Dame": "Notre Dame",
+                "Saint_Basil_s_Cathedral": "St. Basil Katedrali",
+                "Castel_del_Monte": "Castel de Monte",
+                "Deal_Castle": "Deal Kalesi",
+                "Frauenkirche_of_Dresden": "Dresden Frauenkirche",
+                "Capitol": "Kongre Binası",
+                "Royal_Albert_Hall": "Royal Albert Hall",
+                "Chateau_Frontenac": "Frontenac Şatosu",
+                "Alcatraz": "Alcatraz",
+                "Space_Needle": "Space Needle",
+                "Atomium": "Atomium",
+                "Cape_Canaveral": "Cape Canaveral",
+                "The_Habitat": "Habitat",
+                "Lotus_Temple": "Lotus Tapınağı",
+                "Innovation_Tower": "Yenilik Kulesi",
+                "Dynamic_Tower": "Dinamik Kule",
+                "Voyager_V1": "Voyager V1",
+                "The_Arc": "Ark",
+                "Rain_Forest_Project": "Yağmur Ormanı Projesi",
+                "Gaea_Statue": "Gaea Heykeli",
+                "Arctic_Orangery": "Buzul Serası",
+                "Seed_Vault": "Tohum Mahzeni",
+                "Atlantis_Museum": "Atlantis Müzesi",
+                "The_Kraken": "Kraken",
+                "The_Blue_Galaxy": "Mavi Galaksi",
+                "Terracotta_Army": "Terrakota Ordusu",
+                "Himeji_Castle": "Himeji Kalesi",
+                "The_Virgo_Project": "TakımYıldızı Projesi",
+                "Star_Gazer": "Yıldız Gözetleyen"
+            },
+            "gb_short": {
+                "Observatory": "Gözlemevi",
+                "Temple_of_Relics": "Eserler",
+                "Oracle_of_Delphi": "Delphi",
+                "Tower_of_Babel": "Babil",
+                "Statue_of_Zeus": "Zeus",
+                "Colosseum": "Kollezyum",
+                "Lighthouse_of_Alexandria": "İskenderiye",
+                "Hagia_Sophia": "Ayasofya",
+                "Cathedral_of_Aachen": "Aachen",
+                "St_Mark_s_Basilica": "St. Marks",
+                "Notre_Dame": "Notre",
+                "Saint_Basil_s_Cathedral": "Basil",
+                "Castel_del_Monte": "Castel",
+                "Deal_Castle": "Deal",
+                "Frauenkirche_of_Dresden": "Dresden",
+                "Capitol": "Kongre",
+                "Royal_Albert_Hall": "Royal",
+                "Chateau_Frontenac": "Şato",
+                "Alcatraz": "Traz",
+                "Space_Needle": "SN",
+                "Atomium": "Atomium",
+                "Cape_Canaveral": "Cape",
+                "The_Habitat": "Hab",
+                "Lotus_Temple": "Lotus",
+                "Innovation_Tower": "Yenilik",
+                "Dynamic_Tower": "Dinamik",
+                "Voyager_V1": "Voyager V1",
+                "The_Arc": "Ark",
+                "Rain_Forest_Project": "YOP",
+                "Gaea_Statue": "Gaea",
+                "Arctic_Orangery": "Buzul",
+                "Seed_Vault": "Tohum",
+                "Atlantis_Museum": "Atlantis",
+                "The_Kraken": "Kraken",
+                "The_Blue_Galaxy": "MG",
+                "Terracotta_Army": "Tera",
+                "Himeji_Castle": "Himeji",
+                "The_Virgo_Project": "TYP",
+                "Star_Gazer": "Yıldız"
+            },
+            "goods": {
+                "dye": "Boya",
+                "lumber": "Kereste",
+                "marble": "Mermer",
+                "stone": "Taş",
+                "wine": "Şarap",
+                "cloth": "Giysi",
+                "ebony": "Abanoz",
+                "iron": "Demir",
+                "jewelry": "Mücevher",
+                "limestone": "Kireç Taşı",
+                "alabaster": "Kaymaktaşı",
+                "copper": "Bakır",
+                "gold": "Altın",
+                "granite": "Granit",
+                "honey": "Bal",
+                "brick": "Tuğla",
+                "dried_herbs": "Kurutulmuş Bitki",
+                "glass": "Cam",
+                "rope": "İp",
+                "salt": "Tuz",
+                "basalt": "Bazalt",
+                "brass": "Pirinç",
+                "gunpowder": "Barut",
+                "silk": "İpek",
+                "talc_powder": "Talk Pudrası",
+                "coffee": "Kahve",
+                "porcelain": "Porselen",
+                "paper": "Kağıt",
+                "tar": "Katran",
+                "wire": "Tel",
+                "coke": "Kok",
+                "fertilizer": "Gübre",
+                "rubber": "Kauçuk",
+                "textiles": "Dokuma",
+                "whale_oil": "Balina Yağı",
+                "asbestos": "Asbest",
+                "explosives": "Patlayıcı",
+                "gasoline": "Benzin",
+                "machine_parts": "Makine Parçası",
+                "tinplate": "Kalay Plaka",
+                "convenience_food": "Hazır Yemek",
+                "ferroconcrete": "Betonarme",
+                "flavorants": "Çeşnilendirici",
+                "luxury_materials": "Lüks Malzeme",
+                "packaging": "Paketleme",
+                "genome_data": "Genom Verileri",
+                "industrial_filters": "Endüstriyel Filtre",
+                "renewable_resources": "Yenilenebilir Kaynak",
+                "semiconductors": "Yarı İletken",
+                "steel": "Çelik",
+                "bionics_data": "Biyonik Verisi",
+                "electromagnets": "Elektromıknatıs",
+                "gas": "Gaz",
+                "plastics": "Plastik",
+                "robots": "Robot",
+                "nutrition_research": "Beslenme Araştırması",
+                "papercrete": "Kağıt Beton",
+                "preservatives": "Koruyucu Madde",
+                "smart_materials": "Akıllı Malzeme",
+                "translucent_concrete": "Şeffaf Beton",
+                "algae": "Alg",
+                "biogeochemical_data": "Biyojeokimyasal Veri",
+                "nanoparticles": "Nano Parça",
+                "purified_water": "Arıtılmış Su",
+                "superconductors": "Süper İletken",
+                "ai_data": "YZ verileri",
+                "bioplastics": "Biyoplastik",
+                "nanowire": "Nanotel",
+                "paper_batteries": "Kağıt pil",
+                "transester_gas": "Transesterifiye gazı",
+                "artificial_scales": "Yapay Pul",
+                "biolight": "Yaşayan Işık",
+                "corals": "Mercan",
+                "pearls": "İnci",
+                "plankton": "Plankton",
+                "promethium": "Prometyum",
+                "orichalcum": "Orichalcum",
+                "cryptocash": "Gizemli",
+                "data_crystals": "Veri Kristalleri",
+                "golden_rice": "Altın Tepsi",
+                "nanites": "Nanit",
+                "tea_silk": "Çay İpeği"
+            },
+            "province": {
+                "Dunarsund": "Dunarsund",
+                "Fel_Dranghyr": "Fel Dranghyr",
+                "Tyr": "Tyr",
+                "Hymir": "Hymir",
+                "Badakus": "Badakus",
+                "Paruuch": "Paruuch",
+                "Ruug": "Ruug",
+                "Karchagu": "Karchagu",
+                "East_Nagach": "Doğu-Nagach",
+                "West_Nagach": "Batı-Nagach",
+                "Maktaba": "Maktaba",
+                "Pfefferberg": "Pfefferberg",
+                "Dunkelwald": "Dunkelwald",
+                "Greifental": "Griefental",
+                "Sturmhohen": "Sturmhohen",
+                "Kaltenweiher": "Kaltenweiher",
+                "Teufelsfurt": "Teufelsfurt",
+                "Felssenke": "Felssenke",
+                "Galgenschlucht": "Galgenschlucht",
+                "Todepass": "Todepass",
+                "Steilsturz": "Steilsturz",
+                "Tarmelmann": "Tarmelmann",
+                "Breturia": "Breturia",
+                "Canturia": "Canturia",
+                "Veletrites": "Veletrites",
+                "Frathia": "Frathia",
+                "Mons_Suiry": "Mons Suiry",
+                "Jaims": "Jaims",
+                "Moravaria": "Moravaria",
+                "Cragshire": "Cragshire",
+                "Eldenborough": "Eldenborough",
+                "Cuttingham": "Cuttingham",
+                "Spearth": "Spearth",
+                "Wolvhampton": "Wolvhampton",
+                "FourGallows": "Four Gallows",
+                "Mount_Killmore": "Mount Killmore",
+                "RavensCreek": "Raven's Creek",
+                "Houndsmoor": "Houndsmoor",
+                "Zaldon_on_Sea": "Zaldon-on-Sea",
+                "Grand_Cap": "Grand Cap",
+                "Northcastle": "Northcastle",
+                "Queenshope": "Queenshope",
+                "Ashcrook": "Ashcrook",
+                "Narcien": "Narcien",
+                "Lavignon": "Lavignon",
+                "Troulope": "Troulope",
+                "Deuxerres": "Deuxerres",
+                "Lombardeaux": "Lombardeaux",
+                "Pisterrac": "Pisterrac",
+                "Varseille": "Varseille",
+                "Haulenois": "Haulenois",
+                "NewCragshire": "New Cragshire",
+                "Okahe": "Okahe",
+                "Rantford": "Rantford",
+                "Desperation": "Desperation",
+                "St_Marque": "St. Marque",
+                "Las_Penas": "Las Penas",
+                "DragonCity": "Dragon City",
+                "Garrincton": "Garrincton",
+                "ElFuego": "El Fuego",
+                "SantaCatalina": "Santa Catalina",
+                "Dorango": "Dorango",
+                "Nevarrone": "Nevarrone",
+                "Embruniez": "Embruniez",
+                "Gabordeaux": "Gabordeaux",
+                "Ydine": "Ydine",
+                "Wenoevre": "Wenoevre",
+                "Havre": "Havre",
+                "Omoien": "Omoien",
+                "Uxrow": "Uxrow",
+                "Gaelford": "Gaelford",
+                "Sud": "Sud",
+                "Kriegreich": "Kriegreich",
+                "Ostrand": "Ostrand",
+                "Langenreich": "Langenreich",
+                "Uceria": "Uceria",
+                "Gorski": "Gorski",
+                "Inashu": "Inashu",
+                "Natsuishu": "Natsuishu",
+                "Chigikawa": "Chigikawa",
+                "Igujima": "Igujima",
+                "Kyushima": "Kyushima",
+                "Igioka": "Igioka",
+                "Igamoto": "Igamoto",
+                "Higematsu": "Higematsu",
+                "Kibakuguchi": "Kibakuguchi",
+                "Hiromaguchi": "Hiromaguchi",
+                "Toimuro": "Toimuro",
+                "CaiChetNui": "CaiChetNui",
+                "SotDamLay": "SotDamLay",
+                "DayDuAo": "DayDuAo",
+                "TrungDoi": "TrungDoi",
+                "KhayHuyenBayGio": "KhayHuyenBayGio",
+                "RungTrai": "RungTrai",
+                "RungChienDau": "RungChienDau",
+                "GiaiCuuBinhMinh": "GiaiCuuBinhMinh",
+                "PhucKich": "PhucKich",
+                "MauMatDat": "MauMatDat",
+                "DongBangSong": "DongBangSong",
+                "OngChuCuoiCung": "OngChuCuoiCung",
+                "Amaryah_City": "Amaryah City",
+                "Khail": "Khail",
+                "Batif": "Batif",
+                "Hafar_Al_Karak": "Hafar Al Karak",
+                "Al_Shadyra": "Al-Shadyra",
+                "Salfah": "Salfah",
+                "Ain_Al_Khansa": "Ain Al-Khansa",
+                "Suqqah": "Suqqah",
+                "Shayhour": "Shayhour",
+                "Kardad": "Kardad",
+                "Qumeira": "Qumeira",
+                "Jandahar": "Jandahar",
+                "Torrinhos": "Torrinhos",
+                "Villabaja": "Villabaja",
+                "Itabarai": "Itabarai",
+                "Bajatai": "Bajatai",
+                "Villariba": "Villariba",
+                "Rio_Roxo": "Rio Roxo",
+                "Sierra_Torrido": "Sierra Torrido",
+                "Santa_Nerea": "Santa Nerea",
+                "La_Huega": "La Huega",
+                "Jamenez": "Jamenez",
+                "Falsa_Cruz": "Falsa Cruz",
+                "Desierto_de_la_Muerte": "Desierto de la Muerte",
+                "Sao_Malvado": "Sao Malvado",
+                "Agadar": "Agadar",
+                "Esan_Ewu": "Esan-Ewu",
+                "Omogba": "Omogba",
+                "Owopele": "Owopele",
+                "Jak": "Jak",
+                "Pala": "Pala",
+                "Kolabourg": "Kolabourg",
+                "Bontaville": "Bontaville",
+                "Botuku": "Botuku",
+                "Kalabuye": "Kalabuye",
+                "Bisoraba": "Bisoraba",
+                "Fort_Buntu": "Fort Buntu",
+                "Nutarniq": "Nutarniq",
+                "Iluliaq": "Iluliaq",
+                "Aurora_s_Dale": "Aurora's Dale",
+                "Cold_Bay": "Cold Bay",
+                "Arctic_Horizon": "Arctic Horizon",
+                "Tuklavik": "Tuklavik",
+                "Ananevut": "Ananevut",
+                "Qaniit": "Qaniit",
+                "White_Gate": "White Gate",
+                "Snowdrifts": "Snowdrifts",
+                "Median_Waters": "Median Waters",
+                "Frosty_Mountain": "Frosty Mountain",
+                "Southern_Valley": "Southern Valley",
+                "Ilug": "Ilug",
+                "Chugiak": "Chugiak",
+                "Kesukavut": "Kesukavut",
+                "Adlartok": "Adlartok",
+                "Northern_Passage": "Northern Passage",
+                "Avalanche": "Avalanche",
+                "Manirak": "Manirak",
+                "Tundra_Rock": "Tundra Rock",
+                "Patuktuq": "Patuktuq",
+                "Summit_Ice": "Summit Ice",
+                "Kilalurak": "Kilalurak",
+                "Nilak": "Nilak",
+                "Chulyin": "Chulyin",
+                "Tattilgat": "Tattilgat",
+                "Atka": "Atka",
+                "Pimniq": "Pimniq",
+                "Anyu": "Anyu",
+                "Glacial_Peak": "Glacial Peak",
+                "Nunataq": "Nunataq",
+                "Nanuq": "Nanuq",
+                "Precipice": "Precipice",
+                "Unalaq": "Unalaq",
+                "Neural_Rites": "Neural Rites",
+                "Frozen_Steppe": "Frozen Steppe",
+                "The_Grotto": "The Grotto",
+                "Temple_Floe": "Temple Floe",
+                "Spirit_Plane": "Spirit Plane",
+                "Murky_Waters": "Murky Waters",
+                "Cursed_Current": "Cursed Current",
+                "Coral_Depths": "Coral Depths",
+                "Rough_Expanse": "Rough Expanse",
+                "Strong_Tide": "Strong Tide",
+                "Dark_Abyss": "Dark Abyss",
+                "Fresh_Flow": "Fresh Flow",
+                "Tideless_Deep": "Tideless Deep",
+                "Glimmering_Surf": "Glimmering Surf",
+                "Serene_Waves": "Serene Waves",
+                "Red_Sea": "Red Sea",
+                "Wondering_Ocean": "Wondering Ocean",
+                "Foam_Ceiling": "Foam Ceiling",
+                "Walled_Gulf": "Walled Gulf",
+                "Lower_Grotto": "Lower Grotto",
+                "Silver_Swarms": "Silver Swarms",
+                "Upper_Grotto": "Upper Grotto",
+                "Rocky_Domain": "Rocky Domain",
+                "Nautical_Parlay": "Nautical Parlay",
+                "Restless_Buoy": "Restless Buoy",
+                "Ripped_Sails": "Ripped Sails",
+                "Nautilus_Mirage": "Nautilus Mirage",
+                "Ravenous_Tides": "Ravenous Tides",
+                "Deep_Dive": "Deep Dive",
+                "Furious_Storm": "Furious Storm",
+                "Silver_Crest": "Silver Crest",
+                "Grey_Clouds": "Grey Clouds",
+                "Translucent_Algae": "Translucent Algae",
+                "Treacherous_Surf": "Treacherous Surf",
+                "Single_Wave": "Single Wave",
+                "Cursed_Lip": "Cursed Lip",
+                "Coral_Kingdom": "Coral Kingdom",
+                "Telescopic_Barrel": "Telescopic Barrel",
+                "Sponge_Sands": "Sponge Sands",
+                "Seagull_Domain": "Seagull Domain",
+                "Tangled_Fins": "Tangled Fins",
+                "Scuba_Bay": "Scuba Bay",
+                "Tide_Ascent": "Tide Ascent",
+                "Breakwater_Wharf": "Breakwater Wharf",
+                "Adrift_Liner": "Adrift Liner",
+                "Bermuda_Quay": "Bermuda Quay",
+                "Sextant_Mast": "Sextant Mast",
+                "Grog_Wash": "Grog Wash",
+                "R_lyeh_Reef": "R'lyeh Reef",
+                "Capricorn_Waterway": "Capricorn Waterway",
+                "Barnacle_Deck": "Barnacle Deck",
+                "Ahab_s_Tomb": "Ahab's Tomb",
+                "Galley_Commodore": "Galley Commodore",
+                "Adamastor": "Adamastor",
+                "Deadeye_Admiral": "Deadeye Admiral",
+                "Monkey_s_Fist": "Monkey's Fist",
+                "Dagon_s_Dagger": "Dagon's Dagger",
+                "Sunken_Leviathan": "Sunken Leviathan",
+                "Raging_Tides": "Raging Tides",
+                "Buccaneer_Plateau": "Buccaneer Plateau",
+                "Craggy_Cay": "Craggy Cay",
+                "Behemoth": "Behemoth",
+                "Privateer_Helm": "Privateer Helm",
+                "Medusa_Cove": "Medusa Cove",
+                "Man_O_War": "Man-O-War",
+                "Nemo_s_Dock": "Nemo's Dock",
+                "Anchorage_Ruin": "Anchorage Ruin",
+                "Ahoy_Alee": "Ahoy Alee",
+                "Ursula_s_Valley": "Ursula's Valley",
+                "Dungbie_Trough": "Dungbie Trough",
+                "Idlers_Range": "Idlers Range",
+                "Wherry_Gap": "Wherry Gap",
+                "Nock_s_Turn": "Nock's Turn",
+                "Scuttle_Ridge": "Scuttle Ridge",
+                "Ghost_Trench": "Ghost Trench",
+                "Scurvy_Atoll": "Scurvy Atoll",
+                "Capsize_Lagoon": "Capsize Lagoon",
+                "Undertow_Bank": "Undertow Bank",
+                "Neptune_s_Galleon": "Neptune's Galleon",
+                "Seafarer_s_Current": "Seafarer's Current",
+                "Blackwater_Cape": "Blackwater Cape",
+                "Leviathan_Wreck": "Leviathan Wreck",
+                "Typhoon_Peninsula": "Typhoon Peninsula",
+                "Corsair_s_Skerry": "Corsair's Skerry",
+                "Mutiny_Canyon": "Mutiny Canyon",
+                "Bytedirt_Planes": "Bytedirt Planes",
+                "End_of_the_Void": "End of the Void",
+                "Banker_s_Heaven": "Banker's Heaven",
+                "Shift_Land": "Shift/Land",
+                "Black_Net_Market": "Black Net Market",
+                "Pulse_City": "Pulse City",
+                "Max_s_Shelter": "Max's Shelter",
+                "The_Open_Zone": "The Open Zone",
+                "The_Warring_Towers": "The Warring Towers",
+                "Forgotten_Fragments": "Forgotten Fragments",
+                "Backup_NET": "Backup:NET",
+                "Spoiled_Resort": "Spoiled Resort",
+                "Fort_Duplex": "Fort Duplex",
+                "LoneHub": "LoneHub",
+                "Alpha_1_Omega_2": "Alpha 1 Omega 2",
+                "Ray_s_Ray_s": "Ray's Ray's",
+                "Purple_Palace": "Mor Saray",
+                "Three_Oc3ans": "Üç Okyanuslar",
+                "Vortex": "Girdap",
+                "Twisted_Alps": "Çarpık Alpler",
+                "Archives_of_Junkman": "Hurdacının Arşivi",
+                "Frozen_RAM": "Donmuş RAM",
+                "Cas_Cade": "Cas.Cade",
+                "The_Historical_Museum": "Tarih Müzesi",
+                "Aerial_Boulevard": "Hava Bulvarı",
+                "Slate_13": "Slate 13",
+                "New_final_final_exe": "New_final_final.exe",
+                "Bizarre_Plains": "Garip Ova",
+                "Argus__Watch": "Argus'un Nöbeti",
+                "Berta_s_Byte_Sauce": "Berta'nın Bit-Sosu",
+                "Veil_of_Bits": "Veil of Bits",
+                "Harvey_s_Low_Core": "Harvey's Low Core",
+                "The_Byte_Parade": "The Byte Parade",
+                "Reboot_Bay": "Yeniden Başlatma Körfezi",
+                "Streaming_Forest": "Akan Orman",
+                "CMYK_Citadel": "CMYK Kalesi",
+                "Forgify": "Forgify",
+                "Digital_Town_of_Hope": "Dijital Umut Şehri",
+                "Cloud_One": "Küçük Mutluluk",
+                "Re_Birth": "Yeniden:Doğuş",
+                "Castle_You_Es_Bee": "Yu-Es-Bi Kalesi",
+                "NET_MASKerade": "NET MASKEradı",
+                "If_Then_Whatever": "Eğer, O zaman, Her neyse",
+                "The_Virtual_Cliffs_of_G0r3": "Sanal D3HŞ37 Tepeleri",
+                "The_Church_of_Games": "Oyun Kilisesi",
+                "The_Sacred_Database": "Kutsal Veritabanı",
+                "Game_Over": "Oyun bitti"
+            },
+            "bonus": {
+                "coin": {
+                    "name": "Para"
+                },
+                "supply": {
+                    "name": "Üretim"
+                },
+                "good": {
+                    "name": "Ürün"
+                },
+                "special_good": {
+                    "name": "Bonuslu ürünler"
+                },
+                "good_bonus": {
+                    "name": "Üretim bonusu"
+                },
+                "expansion": {
+                    "name": "Genişleme"
+                },
+                "medal": {
+                    "name": "Madalya"
+                },
+                "diamond": {
+                    "name": "Elmas"
+                },
+                "pvp_tower": {
+                    "name": "PvP Kulesi"
+                },
+                "blueprint": {
+                    "name": "Ozalit"
+                },
+                "military_boost": {
+                    "name": "Savaş bonusu",
+                    "gb_description": "Saldırı ordusunun saldırı ve savunma bonusunu arttırır, her bina ile katlanarak artar."
+                },
+                "fierce_resistance": {
+                    "name": "Yoğun direniş",
+                    "gb_description": "Orduyu savunan birimler için saldırı ve savunma bonusunu yükseltir ve her binaya ek olarak destek havuzu bonusunu arttırır."
+                },
+                "coin_boost": {
+                    "name": "Para artışı",
+                    "gb_description": "Her topladığınızda binanızın sonucunu 90 kata kadar yükseltir, verimlilik ve motivasyon katar."
+                },
+                "supply_boost": {
+                    "name": "Erzak artışı",
+                    "gb_description": "Üretim binalarının üretimlerini arttırır; motivasyon, üretim artışı ve diğer erzak artışları ile katlanarak artar."
+                },
+                "good_production": {
+                    "name": "Ürün üretimi",
+                    "gb_description": "Her 24 saatte bir, mevcut çağınızdan belli miktarda ürün üretir. Modern Çağ'dan itibaren işlenmemiş ürünlerdeki miktarı iki katına çıkarır."
+                },
+                "medal_production": {
+                    "name": "Madalya üretimi",
+                    "gb_description": "Her 24 saatte az miktarda madalya üretir."
+                },
+                "research": {
+                    "name": "Araştırma",
+                    "gb_description": "Her 24 saatte az miktarda FP üretir."
+                },
+                "coin_production": {
+                    "name": "Para üretimi",
+                    "gb_description": "Her 24 saatte bir miktar para üretir."
+                },
+                "supply_production": {
+                    "name": "Erzak üretimi",
+                    "gb_description": "Her 24 saatte bir miktar erzak üretir."
+                },
+                "population": {
+                    "name": "Nüfus",
+                    "gb_description": "Kalıcı nüfus bonusu."
+                },
+                "happiness": {
+                    "name": "Mutluluk",
+                    "gb_description": "Kalıcı mutluluk bonusu."
+                },
+                "quest_reward_boost": {
+                    "name": "Görev ödülü artışı",
+                    "gb_description": "Sadece paralarınızı, erzaklarınızı, ürünlerinizi, madalyalarınızı veya görev ödüllerindeki elmaslarınızı yükseltir."
+                },
+                "penal_unit": {
+                    "name": "Asker",
+                    "gb_description": "Her 24 saatte bir bağımsız asker üretir, şehrinizde üretilen askerlerden rastgele seçilir."
+                },
+                "guild_goods": {
+                    "name": "Lonca Ürünleri",
+                    "gb_description": "Doğrudan Lonca Hazinesine eklemek üzere kendi çağınızdan ürün üretir."
+                },
+                "support_pool_bonus": {
+                    "name": "Katkı Havuzu Bonusu",
+                    "gb_description": "Lonca destek havuzu bonusunu yükseltir, her binaya eklenir."
+                },
+                "aid_goods": {
+                    "name": "Yardım Ürünleri",
+                    "gb_description": "Diğer oyunculara yardım ettiğinizde 1 rastgele ürün üretir (elle motive/cila da yardım sayılır). Rastgele ürünün çağı, yardım ettiğiniz binanın çağıyla aynıdır."
+                },
+                "plunder_goods": {
+                    "name": "Yağma Ürünleri",
+                    "gb_description": "Her toplama ile, birini yağmaladığınızda 3 komşuya kadar rastgele ürün üretir. Rastgele ürünün çağı, yağmaladığınız binanın çağıyla aynıdır."
+                },
+                "contribution_boost": {
+                    "name": "Katkı Artışı",
+                    "gb_description": "Destek ödüllerinden aldığın Forge puanı, Madalya ve Ozalitleri arttırır."
+                },
+                "aid_blueprints": {
+                    "name": "Yardım Ozalitleri",
+                    "gb_description": "Başka bir oyuncuya yardım ettiğinde bir ozalit elde etme şansını arttırır (Elle motive/cilalama da yardım sayılır). Örn. %100 bonusunuz varsa, bir ozalit bulma şansınız ikiye katlanır."
+                },
+                "relic_hunt": {
+                    "name": "Eser Avı",
+                    "gb_description": "Bu yetenek, Lonca sefer haritasında bir çatışmayı başarıyla tamamladığınızda bir Eser elde etme şansı verir. Eserler 3 farklı nadirlikte bulunabilir. Her seviye, Eser elde etme şansınızı arttırdığı gibi; sıradan eserlerdense nadir veya seyrek eser bulma şansınızı da arttırır."
+                },
+                "critical_hit": {
+                    "name": "Kritik Vuruş",
+                    "gb_description": "Tüm birimlere, aynı çağa ait birimlere saldırırken beklenen hasarın 1.5 katı hasar verme şansı verir. Kritik vuruş, Reaktif Zırh'a karşı da çalışır (beklenen hasar 4-4 ise, Kritik Vuruş 6-6 hasar verecektir). Haydut (ve diğer tüm çağlar birimleri) bu yeteneği kullanamaz/farklı bir birime dönüşene kadar bu yeteneği kullanamaz. En az 11 hasar veren bir Kritik vuruş, karşısındaki birimi tek vuruşla öldürür, morale bonusu olsa dahi. Bu bonus saldıran tüm ordulara etki ettiği gibi, PvP'de savunma ordunuza da etki eder. Bir birim misilleme yaparken Kritik Vuruş çalışmaz."
+                },
+                "helping_hands": {
+                    "name": "Yardım Eli",
+                    "gb_description": "Başka bir oyuncunun şehrine yardım ederken rastgele bir kaynak bulma şansı verir (elle motive/cilalama da yardım sayılır). Kendi çağınızdan ürün, erzak, para, madalya ve hatta elmas kazanabilirsiniz."
+                },
+                "plunder_and_pillage": {
+                    "name": "Yağma ve Yağmalama",
+                    "gb_description": "Bir komşunuzun ordusunu yendikten sonra yağmalarken kazanacağınız ürünleri ikiye katlama şansı verir. Yağmalanabilen tüm ürünleri ikiye katlar; buna Forge Puanları ve Lonca Gücü dahildir."
+                },
+                "first_strike": {
+                    "name": "İlk atak",
+                    "gb_description": "Gelecek savaşların başlangcında, bir birimi anında öldürme şansı verir. Bu etki, iki dalgadan oluşan savaşların sadece ilk dalgasında geçerlidir."
+                },
+                "double_collection": {
+                    "name": "Çift Toplama",
+                    "gb_description": "Toplanan ilk binalardan iki kat ürün elde etme şansı verir. Devasa binalar ve ordu binaları dahil değildir. Binayı her toplamada bu etki yenilenir."
+                }
+            }
+        },
+        "utils": {
+            "content": {
+                "tools": "Araçlar",
+                "statistics": "İstatistikler"
+            },
+            "btn_calculate": "Hesapla",
+            "description": {
+                "p1": "Değerleri girin. Değiştirdiğinizde sonuç otomatik olarak güncellenecektir.",
+                "p2_html": "<strong>Not:</strong> Güncelleme otomatik olarak yapılmaz ise, buraya tıklayın: \"$t(utils.btn_calculate)\""
+            },
+            "choose_age": "Bir çağ seçin",
+            "permalink": "Kalıcı link",
+            "Add": "Ekle",
+            "Remove": "Sil",
+            "Yes": "Evet",
+            "No": "Hayır",
+            "Ok": "Tamam",
+            "Copy": "Kopyala",
+            "Copyed": "Kopyalandı",
+            "Information": "Bilgi",
+            "From": "Şu seviyeden:",
+            "To": "Şu seviyeye: (Maksimum {{max}})",
+            "Prefix": "Ön ek",
+            "Suffix": "Son ek",
+            "Path": "Yol",
+            "Name": "İsim",
+            "Description": "Açıklama",
+            "Rewards": "Ödüller",
+            "Cost": "Maliyet",
+            "Conquered": "Fethedildi mi ?",
+            "Total": "Toplam",
+            "Secured": "Güvenli",
+            "Reset": "Sıfırla",
+            "Confirm": "Onayla",
+            "Close": "Kapat",
+            "Result": "Sonuç",
+            "between_range": "{{min, number}} ve {{max, number}} arasında",
+            "Submit": "Gönder",
+            "Reset_values": "Değerleri sıfırla",
+            "Switch": "Değiştir",
+            "Save": "Kaydet",
+            "Show": "Göster",
+            "Hide": "Gizle",
+            "errors": {
+                "field_cannot_be_empty": "Bu alan boş olamaz"
+            },
+            "moment": {
+                "year": "{{count}} yıl",
+                "year_plural": "{{count, number}} years",
+                "month": "{{count}} ay",
+                "month_plural": "{{count}} ay",
+                "day": "{{count}} gün",
+                "day_plural": "{{count}} gün"
+            },
+            "graph": {
+                "gb_level": "Seviye ",
+                "gb_level_cost": "Seviye maliyeti",
+                "gb_reward_1st_place": "1. Sıra için seviye ödülü"
+            }
+        },
+        "contributions": {
+            "blog": "Blog gönderileri",
+            "bug": "Hata raporları",
+            "code": "Kod",
+            "design": "Tasarım",
+            "doc": "Dökümantasyon",
+            "eventOrganizing": "Etkinlik Organizasyonu",
+            "example": "Örnekler",
+            "financial": "Ekonomik",
+            "fundingFinding": "Fon Bulma",
+            "ideas": "Fikirler, Planlama ve Geri Bildirim",
+            "infra": "Altyapı (Sunucu, Yapım Araçları, vb.)",
+            "platform": "Yeni platforma paketleme/taşıma",
+            "plugin": "Eklenti / yardımcı program kütüphaneleri",
+            "question": "Soruları Cevaplama",
+            "review": "Gözden Geçirilen İstekler",
+            "talk": "Konuşmalar",
+            "test": "Testler",
+            "tool": "Araçlar",
+            "translation": "Çeviri",
+            "tutorial": "Öğretici",
+            "video": "Videolar",
+            "data": "Veri ekleme veya güncelleme",
+            "inspired_tool": "Bu araç, çalışmalarından ilham almıştır",
+            "creator": "Bu projenin yaratıcısı"
+        },
+        "seo": {
+            "keywords": {
+                "gb": "db",
+                "great_building": "devasa bina",
+                "fp": "fp",
+                "forge_point": "İlerleme puanı",
+                "medals": "madalyalar",
+                "military_units": "askeri birlikler"
+            }
+        }
+    }
+}

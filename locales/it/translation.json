@@ -1,0 +1,1108 @@
+{
+    "translation": {
+        "main_menu": {
+            "home": "Home",
+            "gb_investment": "$t(routes.gb_investment_gb_chooser.hero.title)",
+            "secure_position": "$t(routes.secure_position.hero.title)",
+            "cf_calculator": "$t(routes.cf_calculator.hero.title)",
+            "gb_statistics": "$t(routes.gb_statistics.hero.title)",
+            "gb_forecast_cost": "$t(routes.gb_forecast_cost.hero.title)",
+            "trade": "$t(routes.trade.hero.title)",
+            "help_to_translate_the_site": "$t(routes.help_to_translate_the_site.hero.title)",
+            "campaign_cost": "$t(routes.campaign_cost.hero.title)"
+        },
+        "footer_menu": {
+            "about": "A proposito di",
+            "contributors": "Contributori",
+            "changelog": "Registro delle modifiche",
+            "contact": "Contatti"
+        },
+        "components": {
+            "campaign_cost": {
+                "title": "$t(routes.campaign_cost.hero.title)",
+                "choose_province": "Scegli una provincia",
+                "message": {
+                    "haveUnknownCosts": "Questa provincia contiene uno o più settori in cui mancano i valori."
+                }
+            },
+            "cf_calculator": {
+                "block_cfc": {
+                    "title": "$t(routes.cf_calculator.hero.title)",
+                    "your_age": "La tua età",
+                    "your_cf_boost": "Il tuo $t(foe_data.gb.Chateau_Frontenac) potenziamento",
+                    "coins_to_use": "Monete da utilizzare su UBQ",
+                    "coins_supplies_info": "Questo valore deve essere uguale o più grande di  {{min}} altrimenti non possiamo garantire alcun profitto (statisticamente)",
+                    "supplies_to_use": "Materiali da utilizzare su UBQ",
+                    "gb_plunder_goods": "GE e beni da saccheggio",
+                    "fp_by_24h": "Produzione di punti forge da 24 ore",
+                    "other_rq": "Altri RQ giornalieri",
+                    "second_rq": "Il secondo RQ donatore ?",
+                    "supplies_gathered": "Materiali Raccolti",
+                    "table_reward": {
+                        "title": "$t(utils.Rewards)",
+                        "thead": {
+                            "th1": "Progetti di Grandi Edifici",
+                            "th2": "Medaglie",
+                            "th3": "Beni",
+                            "th4": "Punti Forge"
+                        }
+                    },
+                    "reward_message": {
+                        "daily_ubq": "Tutti i giorni UBQ {{count, number}}",
+                        "bonus_ubq": "Bonus UBQ's: {{count, number}}",
+                        "second_rq_completed": "Seconda RQ completata {{count, number}}",
+                        "total_goods": "Totale Beni: {{count, number}}",
+                        "total_fp": "Punti Forge Totali: {{count, number}}",
+                        "total_rq_completed": "RQ totali completate {{count, number}}"
+                    },
+                    "table_return": {
+                        "thead": {
+                            "th_level": "Livello",
+                            "th_coin": "Moneta restituita",
+                            "th_supply": "Materiali restituiti"
+                        }
+                    },
+                    "infinity_generator": {
+                        "message": "Con l'attuale bonus di $t(foe_data.gb.Chateau_Frontenac), guadagnerai più monete e materiali di quanti ne utilizzerai per completare le missioni. Scegli il numero di \"$t(components.cf_calculator.block_cfc.infinity_generator.label)\" che desideri eseguire.",
+                        "label": "Ricerca cumulativa"
+                    }
+                }
+            },
+            "gb_investment": {
+                "gb_list_select": {
+                    "label": "Cambia grande edificio",
+                    "info": "È possibile modificare lo stile del selettore (Selettore di eredità o completamento automatico) nelle impostazioni globali"
+                },
+                "gb_investment": {
+                    "title": "$t(routes.gb_investment_gb_chooser.hero.title)",
+                    "description": {
+                        "p1": "Inserisci il livello (quello che si deve raggiungere) e il bonus di Arc % (90% per un Arc livello 80). I valori si aggiorneranno automaticamente.",
+                        "p2_html": "<strong>Nota</strong>:Se l'aggiornamento non viene eseguito automaticamente, imposta prima il livello del GE e il valore complessivo dell'investimento e fai clic su \"$t(components.gb_investment.gb_investment.form.submit_global)\". Se desideri modificare i valori di ciascun elemento, modificali a piacimento e fai clic su \"$t(components.gb_investment.gb_investment.form.submit_custom)\"."
+                    },
+                    "form": {
+                        "level": "Livello {{fromLevel, number}} → {{level, number}} ($t(utils.between_range, { 'min': '{{min}}', 'max': '{{max}}' }))",
+                        "investor_percentage": "% globale degli investitori (bonus Arc)",
+                        "submit_global": "Calcolo globale",
+                        "submit_custom": "Calcolo personalizzato",
+                        "owner_investment": "Numero di punti forge messi attualmente dal proprietario (max {{max}})",
+                        "add_investors": "Aggiungi investitore (immetti il numero di punti forge, $t(utils.between_range, { 'min': '{{min}}', 'max': '{{max}}' }))",
+                        "tooltip_add_investors": "Clicca sul bottone \"$t(utils.Add)\" o premi  il tasto \"Invio\" per aggiungere un investitore",
+                        "investors_list": "Lista degli investitori aggiunti",
+                        "show_only_secured_places": "Mostra solo posizioni coperte",
+                        "display_card": "Visualizzare la scheda nella riduzione della schermata ? (su schermo piccolo)"
+                    },
+                    "table": {
+                        "title": "$t({{gb_key}}) livello {{fromLevel, number}} → {{level, number}}",
+                        "thead": {
+                            "th1": "Posizioni",
+                            "th2": "Ricompense standard",
+                            "th3": "PF che il proprietario deve mettere per coprire la posizione",
+                            "th4": "Ricompense con bonus",
+                            "th5": "% del bonus degli investitori (bonus Arc)",
+                            "th6": "Includi nel copiare",
+                            "fp_already_putin": "Numero di PF già inseriti",
+                            "expected_participation": "PF ottenuto con il bonus in % previsto dal proprietario",
+                            "real_participation": "PF ottenuti con la % di bonus del tuo Arc"
+                        },
+                        "tbody": {
+                            "button_show_extra_investor": "Mostra un ulteriore extra ",
+                            "button_show_extra_investor_plural": "Mostra investitori extra",
+                            "button_hide_extra_investor": "Nascondi un investitore extra",
+                            "button_hide_extra_investor_plural": "Nascondi investitori extra",
+                            "loss": "Questo giocatore perderà PF",
+                            "loss_plural": "Questo giocatore perderà PF",
+                            "tooltip_owner_investment": "PF che il proprietario deve ancora versare per coprire la posizione",
+                            "tooltip_expected_investment": "Investimento previsto",
+                            "profit": "Questo giocatore avrà un profitto",
+                            "neutral": "Questo giocatore non avrà profitti né perderà PF"
+                        },
+                        "tfoot": {
+                            "total_preparation": "Investimento totale da parte del proprietario",
+                            "level_cost": "Costo del livello"
+                        }
+                    },
+                    "display_gb_name": "Mostrare il nome del GE?",
+                    "use_short_name": "Usare un nome breve?",
+                    "show_level": "Mostrare il livello?"
+                },
+                "promotion": {
+                    "title": "Messaggio per promuovere",
+                    "prefix_placeholder": "testo prima del messaggio per promuovere",
+                    "suffix_placeholder": "testo dopo il messaggio per promuovere",
+                    "promo": [
+                        "P1({{investment}})",
+                        "P2({{investment}})",
+                        "P3({{investment}})",
+                        "P4({{investment}})",
+                        "P5({{investment}})"
+                    ]
+                }
+            },
+            "gb_investment_investors": {
+                "description": {
+                    "p1": "Questa vista permette di vedere il guadagno che si può ottenere prendendo una posizione con o senza considerare gli investimenti in altre posizioni. Ci sono {{count}} tipi di considerazione di altre posizioni:"
+                },
+                "takingPlaceInConsideration": {
+                    "label": "Vuoi prendere in considerazone le altre posizioni?",
+                    "form": {
+                        "show_place": "Mostra posizione",
+                        "no": "$t(utils.No)",
+                        "normal": "Normale",
+                        "optimal": "Ottimale"
+                    },
+                    "description": {
+                        "no": "non tenere in considerazione le altre posizioni",
+                        "normal": "prendi in considerazione le altre posizioni con un un investimento minimo da parte deglil investitori e senza che le posizioni siano coperte dal proprietario",
+                        "optimal": "prendi in considerazione le altre posizioni con un investimento senza profitto da parte degli investitori e senza che siano coperte dal proprietario"
+                    }
+                },
+                "table": {
+                    "thead": {
+                        "th_place": "Posizione {{count}}",
+                        "th_profit_loss": "Profitto / Perdita"
+                    }
+                }
+            },
+            "gb_forecast_cost": {
+                "title": "Previsioni",
+                "p1": "Determina il numero di PF da un livello all'altro con o senza bonus Arc.",
+                "custom_percentage": "Personalizza il bonus Arc (per ogni posizione)",
+                "estimated_time": "Tempo stimato per raggiungere la posizione",
+                "message": {
+                    "diff": "Con il bonus investimenti, risparmierai {{count}} PF",
+                    "diff_plural": "Con il bonus investimenti, risparmierai {{count, number}} PF",
+                    "single": "Per completare il livello {{level}} del \"$t({{gb}})\", il proprietario deve in vestire {{preparation, number}} PF. Costo totale del livello: {{cost, number}} PF.",
+                    "multi": "Per passare dal livello {{from}} al {{to}} di \"$t({{gb}})\", il proprietario deve investire {{preparation, number}} PF. Costo totale dei livelli: {{cost, number}} PF.",
+                    "estimated_time": "Tempo stimato per raggiungere il livello: {{time}}"
+                },
+                "prop_already_invested": "Numero di PF attualmente investiti dal proprietario nel livello corrente",
+                "graph": {
+                    "title": "Previsione del'importo che il proprietarioi deve preparare per \"$t({{gb}})\"",
+                    "x_axes_label": "$t(utils.graph.gb_level)",
+                    "y_axes_label": "$t(utils.graph.gb_level_cost)",
+                    "label": {
+                        "default": "Costo lordo del livello",
+                        "default_preparation": "Importo da preparare senza bonus",
+                        "custom_preparation": "Importo da preparare con il bonus"
+                    }
+                }
+            },
+            "gb_statistics": {
+                "title": "$t(routes.gb_statistics.hero.title)",
+                "p1": "I grafici sono realizzati in base all'Era perchè il costo / ricompensa del GE è lo stesso per ogni GE di una Era, eccetto in un caso particolare ($t(foe_data.gb.Oracle_of_Delphi)).",
+                "represent": "Rappresentate:",
+                "graph": {
+                    "title_1": "Evoluzione del costo dei livelli in base ai livelli",
+                    "title_2": "Evoluzione della ricompensa per il primo posto in base ai livelli",
+                    "title_3": "Evoluzione del costo dei livelli in base alla ricompensa del primo posto",
+                    "title_4": "Evoluzione della ricompensa del primo posto in base al costo dei livelli"
+                }
+            },
+            "secure_position": {
+                "block_place": {
+                    "fp_to_complete_level": "Numero di PF rimanenti per completare il livello:",
+                    "fp_to_complete_level_plural": "Numero di PF rimanenti per completare il livello:",
+                    "place": "{{place}} ({{count, number}} PF)",
+                    "place_plural": "{{place}} ({{count, number}} PF)",
+                    "title": "Blocca il suo posto",
+                    "level_cost": "Costo del livello",
+                    "current_deposits": "Somma dei versamenti correnti",
+                    "your_participation": "La tua attuale contribuzione",
+                    "other_participation": "Contribuzione del palyer da superare",
+                    "your_arc_bonus": "Il tuo bonus Arc",
+                    "fp_target_reward": "PF della posizione desiderata",
+                    "target_reward": "Posizione desiderata",
+                    "various_rate": "Tassi vari",
+                    "rate": "Tasso",
+                    "fp_according_rate": "PQ da mettere in base al tasso",
+                    "fp_to_lock": "PF da mettere per assicurare la posizione",
+                    "result": {
+                        "default": "Devi aver totalizzato {{count}} FP per bloccare il posto.",
+                        "default_plural": "Devi aver totalizzato {{count, number}} PF per bloccare il posto.",
+                        "fp_need_to_lock": "PF da mettere per assicurarti la posizione:",
+                        "fp_need_to_lock_plural": "PF da mettere per assicurarti la posizione:",
+                        "fp_to_secure_html": "Devi ancora mettere {{count}} PF.",
+                        "fp_to_secure_html_plural": "Devi ancora mettere {{count, number}} PF.",
+                        "error": "Uno o più valori non sono validi.",
+                        "roi": {
+                            "profit": "Il tuo guadagno sarà di {{count}} PF.",
+                            "profit_plural": "Il tuo guadagno sarà di {{count, number}} PF",
+                            "loss": "La tua perdita sarà di {{count}} PF",
+                            "loss_plural": "La tua perdita sarà di {{count, number}} PF",
+                            "neutral": "Non avrei un ritorno dal tuo investimento"
+                        },
+                        "already_blocked": "La tua posizione è bloccata.",
+                        "still_to_put": "Numero di PF ancora da mettere ",
+                        "cant_block": "Non puoi bloccare la posizione."
+                    },
+                    "unknown": "Sconosciuto"
+                }
+            },
+            "simple_trade": {
+                "title": "Versione tabella",
+                "table": {
+                    "thead": {
+                        "th1": "Era",
+                        "th2": "Beni",
+                        "th3": "$t(components.trade.label.i_want)",
+                        "th4": "Risultato",
+                        "split": "Dividi",
+                        "ratio": "Ratio"
+                    }
+                },
+                "slpit": "Dividi le offerte ?",
+                "show_ratio": "Mostra Ratio"
+            },
+            "site_layout": {
+                "hero": {
+                    "title": "$t(common:site_title)",
+                    "slogan_html": "Una serie di strumenti per semplificare la vita su $t(common:links.foe)"
+                },
+                "cookie": {
+                    "message": "COntinuando con l'uso di $t(common:site_title), accetti l'uso dei cookies per migliorare la comodità d'uso.",
+                    "link": "Ulteriori informazioni"
+                },
+                "new_year": {
+                    "message": "Il $t(common:site_title) celebra il suo {{count, number}} anno",
+                    "message_plural": "Il $t(common:site_title) celebra i suoi {{count, number}} anni"
+                },
+                "survey": {
+                    "message": "Aiutaci a migliorare $t(common:site_title) completando il sondaggio"
+                },
+                "permalink_info": "Stai visitando un permalink. di conseguenza, nessun cambiamento sarà salvato nei cookies.",
+                "footer": {
+                    "license_html": "Souce code sotto la licenza di $t(common:links.mit)",
+                    "version": "Versione {{version}}"
+                },
+                "day_night": {
+                    "Day": "Giorno",
+                    "start_day": "Inizio del giorno",
+                    "Night": "Notte",
+                    "start_night": "Inizio della notte",
+                    "Auto": "Automatico $t(components.site_layout.day_night.Day)/$t(components.site_layout.day_night.Night)"
+                },
+                "global_config": "Impostazioni generali",
+                "global_config_dialog": {
+                    "fixed_main_menu": "Menù principale sempre visibile",
+                    "select_gb_style": "GE selottore di stile",
+                    "select_gb_style_mode": {
+                        "datalist": "Autocompletamento",
+                        "select": "Seleziona (eredità)"
+                    },
+                    "day_night": "Tema",
+                    "day_night_mode": {
+                        "Day": "Giorno",
+                        "Night": "Notte",
+                        "Auto": "Automatico"
+                    }
+                },
+                "switch_locale": "$t(common:site_title) è disponibile nella tua lingua"
+            },
+            "trade": {
+                "title": "Dalla versione",
+                "label": {
+                    "i_have": "Io ho",
+                    "i_want": "Io voglio",
+                    "amount": "Ammontare"
+                },
+                "split_value": "Grandezza massima di una offerta (max {{count}})",
+                "split_message": {
+                    "msg": "{{valueFrom}}{{ageFrom}}per {{valueTo}}{{ageTo}}",
+                    "common": "{{count}} × ($t(components.trade.split_message.msg, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' }))",
+                    "multi": "$t(components.trade.split_message.common, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' }) e $t(components.trade.split_message.common, { 'count': 1, 'valueFrom': '{{valueFromSingle}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueToSingle}}', 'ageTo': '{{ageTo}}' })"
+                },
+                "message": {
+                    "result": "Per {{to}} beni del {{ageTo}}, hai bisogno {{from}} beni del {{ageFrom}} con offerte fino a {{count}};",
+                    "total": "(totale: {{amount}} {{key}})"
+                }
+            },
+            "promotion_message_builder": {
+                "title": "Costruttore di messaggi promozionali",
+                "info": "Questo può essere copiato per essere condiviso, per esempio, con i membri della tua gilda",
+                "note": "Si noti che il creatore di messaggi utilizza il livello 9 → 10 di $t(foe_data.gb.Observatory) con un rapporto di 1.9 per l'anteprima.",
+                "action": "Azione",
+                "actions": {
+                    "create": "Crea un nuovo modello",
+                    "update": "Aggiorna un modello esistente",
+                    "delete": "Cancella un modello esistente"
+                },
+                "start_from_template": "Vuoi partire da un modello ?",
+                "edit_template": "Selezione il modello da modificare",
+                "delete_template": "Seleziona il modello da cancellare",
+                "templates": {
+                    "default": "Modelli predefiniti",
+                    "custom": "Modelli personalizzati"
+                },
+                "config": "Configurazione",
+                "add_field_title": "Aggiungi campi personalizzati",
+                "add_field": {
+                    "name": "Campo nome",
+                    "value": "Campo valore"
+                },
+                "custom_field_title": "I tuoi campi personalizzati",
+                "use_short_name": "$t(components.gb_investment.gb_investment.use_short_name)",
+                "reverse_place_order": "Invertire l'ordine dei posti?",
+                "place_separator": "Separatore di posizioni",
+                "place_builder": "Costruttore di posizioni",
+                "place_preview": "Anteprima della posizione (prima posizione)",
+                "message_builder": "Costruttore di messaggi",
+                "message_preview": "Anteprima del messaggio",
+                "place_builder_title": "Costruttore di posizioni",
+                "message_builder_title": "Costruttore di messaggi",
+                "available_variables": "Variabili disponibili:",
+                "variables": {
+                    "place": {
+                        "PI": "Indice delle posizioni",
+                        "PV": "Valore della posizione (in PF)"
+                    },
+                    "message": {
+                        "FLVL": "Dal livello",
+                        "TLVL": "Al livello",
+                        "GBN": "Nome del GE",
+                        "P": "Posizioni",
+                        "LF": "Line Feed, aggiungere una nuova linea"
+                    }
+                },
+                "template_name": "Nome del modello",
+                "errors": {
+                    "template_cannot_have_this_name": "Il modello non può avere questo nome. Per favore scegli un altro nome.",
+                    "custom_name_empty": "Il nome in questo campo non può essere vuoto.",
+                    "custom_name_already_exists": "Il nome di questo campo esiste già."
+                },
+                "template_saved": "Modello salvato",
+                "template_updated": "Modello aggiornato",
+                "template_deleted": "Modello cancellato"
+            },
+            "import_promotion_message": {
+                "title": "Importa un messaggio promozionale",
+                "config_placeholder": "Incolla la tua configurazione qui",
+                "errors": {
+                    "invalid_data": "I dati non sono validi"
+                },
+                "template_imported": "Modello importato"
+            }
+        },
+        "routes": {
+            "home": {
+                "title": "$t(common:site_title)"
+            },
+            "about": {
+                "title": "A propposito di $t(common:site_title)",
+                "general_info": {
+                    "title": "Informazioni generali",
+                    "p1_html": "Forge of Empires, FOE, e tutti i relativi marchi e contenuti appartengono a InnoGames GmbH. <br/> $t(common:site_title) è un sito di terze parti non ufficiale e non è affiliato a InnoGames.",
+                    "p2_html": "$t(common:site_title) è stato creato dal giocatore francese <strong class=\"has-text-weight-semibold\">Yoratheon</strong>",
+                    "p3_html": "Il sito è OpenSource, il codice è liberamente disponibile su $t(common:links.github). <br/> Così, tutti coloro che hanno le competenze necessarie possono partecipare al miglioramento di questo sito."
+                },
+                "cookie": {
+                    "title": "Cookies",
+                    "p1": "Per migliorare il comfort di utilizzo, il sito utilizza i cookie.",
+                    "table_message": "La tabella seguente mostra tutti i cookie utilizzati su questo sito.",
+                    "info": {
+                        "cookieDisclaimerDisplayed": "Indica se avete letto il messaggio informativo sull'uso dei cookie",
+                        "gbi_tab": "Parametro globale per \"$t(routes.gb_investment_gb_chooser.hero.title)\" che indica quale scheda caricare di default ($t(routes.gb_investment.tab.owner_view.title), ecc.)",
+                        "gbPrefix": "Parametro globale per \"$t(routes.gb_investment_gb_chooser.hero.title)\" che contiene il prefisso per il messaggio di promozione.",
+                        "gbSuffix": "Parametro globale per \"$t(routes.gb_investment_gb_chooser.hero.title)\" che contiene il suffisso per il messaggio di promozione.",
+                        "locale": "Visualizza la lingua",
+                        "shortName": "Parametro globale per \"$t(routes.gb_investment_gb_chooser.hero.title)\" che indica se visualizzare o meno il nome breve del GE per il messaggio promozionale.",
+                        "showLevel": "Parametro globale per \"$t(routes.gb_investment_gb_chooser.hero.title)\" che indica se visualizzare o meno il livello del GE per il messaggio promozionale.",
+                        "yourArcBonus": "Parametri generali che comprendono il bonus del tuo Arc",
+                        "yourCfBoost": "Parametri generali che contengono il bonus del tuo Château Frontenac",
+                        "haveReadTipAboutAddInvestor": "Indica se avete letto il messaggio informativo relativo al suggerimento di utilizzare l'input per l'aggiunta di contributori.",
+                        "dayNightMode": "Indica quale modalità giorno/notte si sta utilizzando",
+                        "dayStart": "Tempo utilizzato per l'inizio della giornata (usato in \"$t(components.site_layout.day_night.Auto)\").",
+                        "nightStart": "Tempo utilizzato per l'inizio della notte (usato in \"$t(components.site_layout.day_night.Auto)\").",
+                        "coins": "$t(components.cf_calculator.block_cfc.coins_to_use)",
+                        "fpBy24h": "$t(components.cf_calculator.block_cfc.fp_by_24h)",
+                        "goods": "$t(components.cf_calculator.block_cfc.gb_plunder_goods)\n",
+                        "otherRq": "$t(components.cf_calculator.block_cfc.other_rq)",
+                        "cumulativeQuest": "Numero di missioni cumulative",
+                        "secondRq": "$t(components.cf_calculator.block_cfc.second_rq)",
+                        "supplies": "$t(components.cf_calculator.block_cfc.supplies_to_use)",
+                        "suppliesGathered": "$t(components.cf_calculator.block_cfc.supplies_gathered)",
+                        "yourAge": "$t(components.cf_calculator.block_cfc.your_age)",
+                        "investorPercentageCustom_x": "$t(components.gb_investment.gb_investment.table.thead.th5)\n",
+                        "investorPercentageGlobal": "$t(components.gb_investment.gb_investment.form.investor_percentage)",
+                        "investorParticipation_x": "Partecipazione prevista degli investitori quando la posizione non restituisce PF",
+                        "level": "Livello del GE",
+                        "ownerInvestment": "$t(components.gb_investment.gb_investment.table.thead.th3)\n",
+                        "showPx": "Indicare se mostrare o meno la posizione nel messaggio di promozione",
+                        "takingPlaceInConsideration": "Nella scheda \"$t(routes.gb_investment.tab.investors_view.title)\" di \"$t(routes.gb_investment_gb_chooser.hero.title)\", indica se le altre posizioni devono essere presi in considerazione nel calcolo.",
+                        "targetLevel": "Nella scheda \"$t(routes.gb_investment.tab.investors_view.title)\" di \"$t(routes.gb_investment_gb_chooser.hero.title)\", indica da quale livello visualizzare le informazioni nella tabella.",
+                        "displayGbName": "Indicare se mostrare o meno il nome GB nel messaggio di promozione",
+                        "investorParticipation": "Contiene un elenco di tutti gli investitori aggiunti",
+                        "displayTableCard": "Indicare se mostrare la tabella in \"$t(routes.gb_investment_gb_chooser.hero.title)\" in modalità semplice (tabella) o in vista scheda su piccolo schermo.",
+                        "from": "Livello da dove iniziare l'array (usato nella scheda \"$t(routes.gb_investment.tab.investors_view.title)\" di \"$t(routes.gb_investment_gb_chooser.hero.title)\").",
+                        "to": "Livello dove terminare l'array (usato nella scheda \"$t(routes.gb_investment.tab.investors_view.title)\" di \"$t(routes.gb_investment_gb_chooser.hero.title)\").",
+                        "showPlace": "Un array che contiene se mostrare o meno una posizione (usato nella scheda \"$t(routes.gb_investment.tab.investors_view.title)\" di \"$t(routes.gb_investment_gb_chooser.hero.title)\").",
+                        "survey": "Un array che contiene tutti i sondaggi che hai già completato",
+                        "fixedMainMenu": "Indica se il menu principale è sempre visibile o meno.",
+                        "gbSelectMode": "Indica Quale modalità di selezione GE stai usando",
+                        "haveReadLocaleInfoAvailable": "Indica se avete letto le informazioni sul fatto che il sito è disponibile nella vostra lingua",
+                        "promotionMessageList": "Contiene l'elenco dei messaggi promozionali che si desidera visualizzare",
+                        "customPromotionMessagesTemplates": "Contiene tutti i vostri messaggi promozionali personalizzati",
+                        "gbShowPrefix": "Indica se si desidera mostrare il prefisso nei messaggi promozionali",
+                        "gbShowSuffix": "Indica se si desidera mostrare il suffisso nei messaggi promozionali"
+                    }
+                },
+                "dev_info": {
+                    "title": "Informazioni sullo sviluppo",
+                    "p1": "Il sito è un semplice sito statico ospitato su GitHub.",
+                    "p2_html": "Lo sviluppo è fatto in Node.js usando $t(common:links.framework). Lo stile è fatto usando $t(common:links.style).",
+                    "p3_html": "Un'idea di funzionalità? Un problema? Sentitevi liberi di creare un problema su $t(common:links.github) o inviatemi un'email (in inglese o in francese) a $t(common:links.contact_foe_tools).",
+                    "message_info_github_issue": "<b>Nota:</b> Per quanto riguarda i problemi su GitHub, assicurati di scriverli in inglese per facilitare la comprensione per il maggior numero di persone."
+                }
+            },
+            "campaign_cost": {
+                "title": "$t(routes.campaign_cost.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Costo della campagna",
+                    "subtitle": "Questo strumento prevede il costo di un settore o di una provincia."
+                }
+            },
+            "cf_calculator": {
+                "title": "$t(routes.cf_calculator.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Calcolatore per Château Frontenac ",
+                    "subtitle": "Uno strumento che aiuta a prevedere i beni e le produzioni di PF che si ottengono facendo le missioni ricorrenti e le missioni per la Festa di non compleanno (Rinbin)."
+                }
+            },
+            "changelog": {
+                "title": "Changelog | $t(common:site_title)"
+            },
+            "contributors": {
+                "title": "$t(routes.contributors.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Collaboratori",
+                    "subtitle": "Questa pagina cerca di elencare tutti i collaboratori"
+                }
+            },
+            "gb_investment": {
+                "title": "$t(routes.gb_investment.hero.title, { 'gb_key': '{{gb_key}}' }) | $t(common:site_title)\n",
+                "hero": {
+                    "title": "$t(routes.gb_investment_gb_chooser.hero.title) - $t({{gb_key}})"
+                },
+                "tab": {
+                    "owner_view": {
+                        "title": "Vista del proprietario"
+                    },
+                    "investors_view": {
+                        "title": "Vista investitori"
+                    }
+                }
+            },
+            "gb_investment_gb_chooser": {
+                "title": "$t(routes.gb_investment_gb_chooser.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "GE Investimento",
+                    "subtitle": "Questo strumento permette di calcolare il numero di punti che un giocatore deve mettere sul proprio GE per assicurarsi i primi 5 posti seguendo una percentuale (bonus Arc)."
+                },
+                "choose_gb": {
+                    "title": "Scegli un Grande Edificio"
+                }
+            },
+            "gb_forecast_cost": {
+                "title": "$t(routes.gb_forecast_cost.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Costo previsto del GE",
+                    "subtitle": "Questo strumento determina il numero di FPs per passare da un livello ad un altro di un GE, con o senza i bonus di Arc."
+                }
+            },
+            "gb_statistics": {
+                "title": "$t(routes.gb_statistics.hero.title) | $t(common:site_title)\n",
+                "hero": {
+                    "title": "Statisctiche del GE",
+                    "subtitle": "Questo strumento permette di visualizzare grafici sull'evoluzione dei costi del GB in base all'Era."
+                }
+            },
+            "secure_position": {
+                "title": "$t(routes.secure_position.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Posto coperto",
+                    "subtitle": "Questo strumento calcola il numero di PF che un giocatore deve mettere su un GE per bloccare il suo posto."
+                }
+            },
+            "trade": {
+                "title": "$t(routes.trade.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Commercio",
+                    "subtitle": "Questo strumento facilita il tuo business offrendoti i migliori tassi in base al tuo modo di fare commercio."
+                },
+                "tab": {
+                    "trade_2_1": {
+                        "title": "2:1",
+                        "message": "Commercio semplice, rapporto 1 per 1 con risorse della stessa età e 1 per 2 al fine di ottenere risorse con un divario di una Era."
+                    },
+                    "fair_trade": {
+                        "title": "Commercio Equo",
+                        "message": "Questo tipo di commercio tiene conto del costo di fabbricazione di un bene (monete e forniture) per determinare i tassi tra le merci."
+                    }
+                }
+            },
+            "help_to_translate_the_site": {
+                "title": "$t(routes.help_to_translate_the_site.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Aiutaci a tradurre il sito",
+                    "subtitle": "Entra a far parte del team di traduzione"
+                },
+                "p1": "La tua lingua non è disponibile, la traduzione è incompleta o contiene errori? Sentitevi liberi di unirvi al team di traduzione del sito.",
+                "how_to_join_the_team": "Come unirsi al gruppo?",
+                "p2_html": "$t(common:site_title) è tradotto dagli utenti. Usiamo la piattaforma $t(common:links.translation_platform) per facilitare il processo di traduzione. Per unirsi al team invia un'e-mail (in inglese) a $t(common:links.contact_foe_tools) specificando la lingua o le lingue in cui puoi tradurre in modo che possiamo inviarti un invito."
+            },
+            "survey": {
+                "title": "$t(routes.survey.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Sondaggio",
+                    "subtitle": "Aiuta a migliorare $t(common:site_title) completando questo sondaggio."
+                },
+                "required_field": "Questo campo è obbligatorio",
+                "survey_complete": "Grazie per il vostro feedback!",
+                "error": "Si è verificato un errore, controlla il modulo e riprova.",
+                "unknown_error": "Si è verificato un errore sconosciuto, si prega di contattare l'amministratore del sito"
+            },
+            "contact": {
+                "title": "$t(routes.contact.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Contatti",
+                    "subtitle": "Contatta l'amministratore di $t(common:site_title)"
+                },
+                "message_contact_html": "Un'idea per migliorare la funzionalità? Un problema? Sentitevi liberi di inviarmi un'e-mail (in inglese o in francese) a $t(common:links.contact_foe_tools).",
+                "message_translate": "Lo sapevi che puoi anche aiutare a tradurre il sito? Segui il seguente link per ulteriori informazioni:",
+                "message_other_info_html": "Se siete sviluppatori, potete anche creare un problema (e contribuire allo sviluppo del sito) su $t(common:links.github)."
+            },
+            "error": {
+                "404": {
+                    "title": "Pagina non trovata | $t(common:site_title)",
+                    "message": "Spiacente, la pagina che stai cercando non esiste o non esiste più"
+                }
+            }
+        },
+        "foe_data": {
+            "age": {
+                "Oracle": "$t(foe_data.age.NoAge) ($t(foe_data.gb.Oracle_of_Delphi))",
+                "NoAge": "Nessuna Età",
+                "BronzeAge": "Età del Bronzo",
+                "IronAge": "Età del ferro",
+                "EarlyMiddleAges": "Alto Medioevo",
+                "HighMiddleAges": "Pieno Medioevo",
+                "LateMiddleAges": "Basso Medioevo",
+                "ColonialAge": "Età Coloniale",
+                "IndustrialAge": "Età Industriale",
+                "ProgressiveEra": "Età Progressista",
+                "ModernEra": "Età Moderna",
+                "PostmodernEra": "Età Postmoderna ",
+                "ContemporaryEra": "Età Contemporanea",
+                "Tomorrow": "Domani",
+                "TheFuture": "Il Futuro",
+                "ArcticFuture": "Futuro Artico",
+                "OceanicFuture": "Futuro Oceanico",
+                "VirtualFuture": "Futuro Virtuale",
+                "SpaceAgeMars": "Era spaziale di Marte"
+            },
+            "gb": {
+                "Observatory": "Osservatorio",
+                "Temple_of_Relics": "Tempio delle Reliquie",
+                "Oracle_of_Delphi": "Oracolo di Delfi",
+                "Tower_of_Babel": "Torre di Babele",
+                "Statue_of_Zeus": "Statua di Zeus",
+                "Colosseum": "Colosseo",
+                "Lighthouse_of_Alexandria": "Il Faro di Alessandria",
+                "Hagia_Sophia": "Basilica di Santa Sofia",
+                "Cathedral_of_Aachen": "Cattedrale di Acquisgrana",
+                "St_Mark_s_Basilica": "Basilica di San Marco",
+                "Notre_Dame": "Notre Dame",
+                "Saint_Basil_s_Cathedral": "Cattedrale di San Basilio",
+                "Castel_del_Monte": "Castel del Monte",
+                "Deal_Castle": "Deal Castle",
+                "Frauenkirche_of_Dresden": "Frauenkirche di Dresda",
+                "Capitol": "Campidoglio",
+                "Royal_Albert_Hall": "Royal Albert Hall",
+                "Chateau_Frontenac": "Château Frontenac",
+                "Alcatraz": "Alcatraz",
+                "Space_Needle": "Space Needle",
+                "Atomium": "Atomium",
+                "Cape_Canaveral": "Cape Canaveral",
+                "The_Habitat": "Habitat 67",
+                "Lotus_Temple": "Tempio del Loto",
+                "Innovation_Tower": "Innovation Tower",
+                "Dynamic_Tower": "Dynamic Tower",
+                "Voyager_V1": "Voyager V1",
+                "The_Arc": "Progetto Arc",
+                "Rain_Forest_Project": "Progetto Foresta Pluviale",
+                "Gaea_Statue": "Statua di Gea",
+                "Arctic_Orangery": "Serra Artica",
+                "Seed_Vault": "Deposito di sementi",
+                "Atlantis_Museum": "Museo di Atlantide",
+                "The_Kraken": "Il Kraken",
+                "The_Blue_Galaxy": "La Galassia Blu",
+                "Terracotta_Army": "L'esercito di Terracotta",
+                "Himeji_Castle": "Castello di Himeji",
+                "The_Virgo_Project": "Progetto della Vergine",
+                "Star_Gazer": "Osservatorio delle Stelle"
+            },
+            "gb_short": {
+                "Observatory": "Oss",
+                "Statue_of_Zeus": "Zeus",
+                "Colosseum": "Colosseo",
+                "Deal_Castle": "Deal",
+                "Capitol": "Campidoglio",
+                "Atomium": "Atom",
+                "The_Habitat": "Hab",
+                "Innovation_Tower": "Inno",
+                "Voyager_V1": "Voyager",
+                "The_Arc": "Arc",
+                "Gaea_Statue": "Gea",
+                "Atlantis_Museum": "Atlantis",
+                "The_Kraken": "Kraken"
+            },
+            "goods": {
+                "dye": "Dye",
+                "lumber": "Legname",
+                "marble": "Marmo",
+                "stone": "Pietra",
+                "wine": "Vino",
+                "cloth": "Stoffa",
+                "ebony": "Ebano",
+                "iron": "Ferro",
+                "jewelry": "Gioielli",
+                "limestone": "Roccia Calcarea",
+                "alabaster": "Alabastro",
+                "copper": "Rame",
+                "gold": "Oro",
+                "granite": "Granito",
+                "honey": "Miele",
+                "brick": "Mattone",
+                "dried_herbs": "Erbe secche",
+                "glass": "Vetro",
+                "rope": "Corde",
+                "salt": "Sale",
+                "basalt": "Basalto",
+                "brass": "Ottone",
+                "gunpowder": "Polvere da Sparo",
+                "silk": "Seta",
+                "talc_powder": "Polvere di Talco",
+                "coffee": "Caffè",
+                "porcelain": "Porcellana",
+                "paper": "Carta",
+                "tar": "Pece",
+                "wire": "Filo",
+                "coke": "Carbone",
+                "fertilizer": "Fertilizzante",
+                "rubber": "Gomma",
+                "textiles": "Tessuto",
+                "whale_oil": "olio di Balena",
+                "asbestos": "Amianto",
+                "explosives": "Esplosivi",
+                "gasoline": "Benzina",
+                "machine_parts": "Parti Meccaniche",
+                "tinplate": "Lastra di Stagno",
+                "convenience_food": "Alimenti pronti",
+                "ferroconcrete": "Cemento Armato",
+                "flavorants": "Aromatizzanti",
+                "luxury_materials": "Materiali di lusso",
+                "packaging": "Imballaggi",
+                "genome_data": "Dati Genomici",
+                "industrial_filters": "Filtri industriali",
+                "renewable_resources": "Risorse rinnovabili",
+                "semiconductors": "Semiconduttori",
+                "steel": "Acciaio",
+                "bionics_data": "Dati bionici",
+                "electromagnets": "Elettromagneti",
+                "gas": "Gas",
+                "plastics": "Plastica",
+                "robots": "Robot",
+                "nutrition_research": "Ricerca nutrizionale",
+                "papercrete": "Cartacemento",
+                "preservatives": "Conservanti",
+                "smart_materials": "Materiali intelligenti",
+                "translucent_concrete": "Cemento traslucente",
+                "algae": "Alghe",
+                "biogeochemical_data": "Dati biogeochimici",
+                "nanoparticles": "Nanoparticelle",
+                "purified_water": "Acqua demineralizzata",
+                "superconductors": "Superconduttori",
+                "ai_data": "Dati I.A.",
+                "bioplastics": "Bioplastiche",
+                "nanowire": "Nanofilo",
+                "paper_batteries": "Batterie di carta",
+                "transester_gas": "Gas transesterificato",
+                "artificial_scales": "Squame artificiali",
+                "biolight": "Bioluce",
+                "corals": "Coralli",
+                "pearls": "Perle",
+                "plankton": "Plancton",
+                "cryptocash": "Criptovaluta",
+                "data_crystals": "Cristalli di dati",
+                "golden_rice": "Riso d'Oro",
+                "nanites": "Nanorobot",
+                "tea_silk": "Seta di tè"
+            },
+            "province": {
+                "Dunarsund": "Dunarsund",
+                "Fel_Dranghyr": "Fel Dranghyr",
+                "Tyr": "Tyr",
+                "Hymir": "Hymir",
+                "Badakus": "Badakus",
+                "Paruuch": "Paruuch",
+                "Ruug": "Ruug",
+                "Karchagu": "Karchagu",
+                "East_Nagach": "East-Nagach",
+                "West_Nagach": "West-Nagach",
+                "Maktaba": "Maktaba",
+                "Pfefferberg": "Pfefferberg",
+                "Dunkelwald": "Dunkelwald",
+                "Greifental": "Griefental",
+                "Sturmhohen": "Sturmhohen",
+                "Kaltenweiher": "Kaltenweiher",
+                "Teufelsfurt": "Teufelsfurt",
+                "Felssenke": "Felssenke",
+                "Galgenschlucht": "Galgenschlucht",
+                "Todepass": "Todepass",
+                "Steilsturz": "Steilsturz",
+                "Tarmelmann": "Tarmelmann",
+                "Breturia": "Breturia",
+                "Canturia": "Canturia",
+                "Veletrites": "Veletrites",
+                "Frathia": "Frathia",
+                "Mons_Suiry": "Mons Suiry",
+                "Jaims": "Jaims",
+                "Moravaria": "Moravaria",
+                "Cragshire": "Cragshire",
+                "Eldenborough": "Eldenborough",
+                "Cuttingham": "Cuttingham",
+                "Spearth": "Spearth",
+                "Wolvhampton": "Wolvhampton",
+                "FourGallows": "FourGallows",
+                "Mount_Killmore": "Mount Killmore",
+                "RavensCreek": "RavensCreek",
+                "Houndsmoor": "Houndsmoor",
+                "Zaldon_on_Sea": "Zaldon-on-Sea",
+                "Grand_Cap": "Grand Cap",
+                "Northcastle": "Northcastle",
+                "Queenshope": "Queenshope",
+                "Ashcrook": "Ashcrook",
+                "Narcien": "Narcien",
+                "Lavignon": "Lavignon",
+                "Troulope": "Troulope",
+                "Deuxerres": "Deuxerres",
+                "Lombardeaux": "Lombardeaux",
+                "Pisterrac": "Pisterrac",
+                "Varseille": "Varseille",
+                "Haulenois": "Haulenois",
+                "NewCragshire": "NewCragshire",
+                "Okahe": "Okahe",
+                "Rantford": "Rantford",
+                "Desperation": "Desperation",
+                "St_Marque": "St.Marque",
+                "Las_Penas": "Las Penas",
+                "DragonCity": "DragonCity",
+                "Garrincton": "Garrincton",
+                "ElFuego": "ElFuego",
+                "SantaCatalina": "SantaCatalina",
+                "Dorango": "Dorango",
+                "Nevarrone": "Nevarrone",
+                "Embruniez": "Embruniez",
+                "Gabordeaux": "Gabordeaux",
+                "Ydine": "Ydine",
+                "Wenoevre": "Wenoevre",
+                "Havre": "Havre",
+                "Omoien": "Omoien",
+                "Uxrow": "Uxrow",
+                "Gaelford": "Gaelford",
+                "Sud": "Sud",
+                "Kriegreich": "Kriegreich",
+                "Ostrand": "Ostrand",
+                "Langenreich": "Langenreich",
+                "Uceria": "Uceria",
+                "Gorski": "Gorski",
+                "Inashu": "Inashu",
+                "Natsuishu": "Natsuishu",
+                "Chigikawa": "Chigikawa",
+                "Igujima": "Igujima",
+                "Kyushima": "Kyushima",
+                "Igioka": "Igioka",
+                "Igamoto": "Igamoto",
+                "Higematsu": "Higematsu",
+                "Kibakuguchi": "Kibakuguchi",
+                "Hiromaguchi": "Hiromaguchi",
+                "Toimuro": "Toimuro",
+                "CaiChetNui": "CaiChetNui",
+                "SotDamLay": "SotDamLay",
+                "DayDuAo": "DayDuAo",
+                "TrungDoi": "TrungDoi",
+                "KhayHuyenBayGio": "KhayHuyenBayGio",
+                "RungTrai": "RungTrai",
+                "RungChienDau": "RungChienDau",
+                "GiaiCuuBinhMinh": "GiaiCuuBinhMinh",
+                "PhucKich": "PhucKich",
+                "MauMatDat": "MauMatDat",
+                "DongBangSong": "DongBangSong",
+                "OngChuCuoiCung": "OngChuCuoiCung",
+                "Amaryah_City": "Amaryah City",
+                "Khail": "Khail",
+                "Batif": "Batif",
+                "Hafar_Al_Karak": "Hafar Al Karak",
+                "Al_Shadyra": "Al-Shadyra",
+                "Salfah": "Salfah",
+                "Ain_Al_Khansa": "Ain Al-Khansa",
+                "Suqqah": "Suqqah",
+                "Shayhour": "Shayhour",
+                "Kardad": "Kardad",
+                "Qumeira": "Qumeira",
+                "Jandahar": "Jandahar",
+                "Torrinhos": "Torrinhos",
+                "Villabaja": "Villabaja",
+                "Itabarai": "Itabarai",
+                "Bajatai": "Bajatai",
+                "Villariba": "Villariba",
+                "Rio_Roxo": "Rio Roxo",
+                "Sierra_Torrido": "Sierra Torrido",
+                "Santa_Nerea": "Santa Nerea",
+                "La_Huega": "La Huega",
+                "Jamenez": "Jamenez",
+                "Falsa_Cruz": "Falsa Cruz",
+                "Desierto_de_la_Muerte": "Desierto de la Muerte",
+                "Sao_Malvado": "Sao Malvado",
+                "Agadar": "Agadar",
+                "Esan_Ewu": "Esan-Ewu",
+                "Omogba": "Omogba",
+                "Owopele": "Owopele",
+                "Jak": "Jak",
+                "Pala": "Pala",
+                "Kolabourg": "Kolabourg",
+                "Bontaville": "Bontaville",
+                "Botuku": "Botuku",
+                "Kalabuye": "Kalabuye",
+                "Bisoraba": "Bisoraba",
+                "Fort_Buntu": "Fort Buntu",
+                "Nutarniq": "Nutarniq",
+                "Iluliaq": "Iluliaq",
+                "Aurora_s_Dale": "Aurora's Dale",
+                "Game_Over": "Game Over"
+            },
+            "bonus": {
+                "coin": {
+                    "name": "Monete"
+                },
+                "supply": {
+                    "name": "Materiali"
+                },
+                "good": {
+                    "name": "Beni"
+                },
+                "special_good": {
+                    "name": "Beni Speciali"
+                },
+                "good_bonus": {
+                    "name": "Bonus produzioni"
+                },
+                "expansion": {
+                    "name": "Espansioni"
+                },
+                "medal": {
+                    "name": "Medaglie"
+                },
+                "diamond": {
+                    "name": "Diamanti"
+                },
+                "pvp_tower": {
+                    "name": "Torre PvP"
+                },
+                "blueprint": {
+                    "name": "Progetti"
+                },
+                "military_boost": {
+                    "name": "Potenziamenti militari",
+                    "gb_description": "Aumenta il bonus di attacco e difesa per le unità dell'esercito attaccante, si somma ad ogni edificio."
+                },
+                "fierce_resistance": {
+                    "name": "Resistenza fiera",
+                    "gb_description": "Aumenta il bonus di attacco e difesa per le unità dell'esercito in difesa e aumenta il bonus del pool di supporto, si somma ad ogni edificio."
+                },
+                "coin_boost": {
+                    "name": "Potenziamento monete",
+                    "gb_description": "Aumenta il risultato delle vostre case fino a 90 volte ad ogni raccolta, aggiunge produttività e motivazione."
+                },
+                "supply_boost": {
+                    "name": "Potenziamento materiali",
+                    "gb_description": "Aumenta il risultato dei vostri edifici di produzione, aumenta la produttività, la motivazione e altri aumenti di fornitura."
+                },
+                "good_production": {
+                    "name": "Produzione di beni",
+                    "gb_description": "Produce una certa quantità di merci della vostra età attuale ogni 24 ore. Dall'era moderna in poi, produce il doppio della quantità di merci non raffinate."
+                },
+                "medal_production": {
+                    "name": "Produzione di medaglie",
+                    "gb_description": "Produce una certa quantità di medaglie ogni 24 ore."
+                },
+                "research": {
+                    "name": "Ricerca",
+                    "gb_description": "Produce un piccolo quantitativo di punti forge ogni 24 ore."
+                },
+                "coin_production": {
+                    "name": "Produzione di monete",
+                    "gb_description": "Produce una certa quantità di monete ogni 24 ore."
+                },
+                "supply_production": {
+                    "name": "Produzione di materiali",
+                    "gb_description": "Produce una certa quantità di materiali ogni 24 ore."
+                },
+                "population": {
+                    "name": "Popolazione",
+                    "gb_description": "Bonus permanente popolazione "
+                },
+                "happiness": {
+                    "name": "Felicità",
+                    "gb_description": "Bonus permanente felicità"
+                },
+                "quest_reward_boost": {
+                    "name": "potenziamento ricompense missioni",
+                    "gb_description": "Aumenta solo le tue monete, materiali, beni, medaglie o diamanti dalle ricompense della missione."
+                },
+                "penal_unit": {
+                    "name": "Unità Militari",
+                    "gb_description": "Recluta unitài ndipendenti ogni 24 ore, scelte casualmente da qualsiasi edificio militare della tua città."
+                },
+                "guild_goods": {
+                    "name": "Beni della Gilda",
+                    "gb_description": "Produce beni dell'epoca attuale che vanno direttamente al Tesoro della Gilda."
+                },
+                "aid_goods": {
+                    "name": "Beni di aiuto",
+                    "gb_description": "Produce 1 bene casuale quando si aiuta la città di un altro giocatore (motivare manualmente/abbellendo contano come aiuto). L'età del bene casuale corrisponde all'età dell'edificio che si sta aiutando."
+                },
+                "plunder_goods": {
+                    "name": "Beni da saccheggio",
+                    "gb_description": "Produce prodotti casuali per un massimo di 3 vicini di casa con ogni raccolta quando si saccheggia la città di un altro giocatore. L'età dei beni casuali corrisponde all'età dell'edificio che si sta saccheggiando."
+                },
+                "contribution_boost": {
+                    "name": "Potenziamento contribuzione",
+                    "gb_description": "Aumenta i punti di forgia, le medaglie e i progetti che ricevete dalle ricompense per le donazioni."
+                },
+                "aid_blueprints": {
+                    "name": "Progetti di aiuto",
+                    "gb_description": "Aumenta la possibilità di ottenere un progetto quando si aiuta la città di un altro giocatore (motivare manualmente/abbellire conta come aiuto). Cioè, avere un bonus del 100% raddoppierà la tua possibilità di trovare un progetto."
+                },
+                "relic_hunt": {
+                    "name": "Caccia delle reliquie",
+                    "gb_description": "Questa abilità ti dà la possibilità di ricevere le reliquie sulla mappa della spedizione della gilda ogni volta che risolvi con successo un incontro. Le reliquie sono molto preziose e possono apparire in 3 diverse rarità. Ogni livello aumenta la possibilità di trovare una reliquia, ma anche le probabilità di trovare una reliquia non comune o rara, a differenza di una comune."
+                },
+                "critical_hit": {
+                    "name": "Colpo critico",
+                    "gb_description": "Dà a tutte le unità la possibilità di infliggere 1,5 volte il danno atteso quando attaccano unità della stessa epoca. Il colpo critico funziona anche contro l'Armatura Reattiva (se il danno atteso è 4-4, un colpo critico infliggerà 6-6 danni). I Furfanti (e le altre unità non in età avanzata) non sono colpiti/non possono usare questa abilità fino a quando non si trasformano in un'altra unità. Un colpo critico che infligge almeno 11 danni ucciderà un colpo qualsiasi unità, anche con il bonus morale. Questo bonus si applica a tutti gli eserciti attaccanti più il tuo esercito difensore in PvP. Il colpo critico non si verifica quando un'unità si sta vendicando."
+                },
+                "helping_hands": {
+                    "name": "Mani che aiutano",
+                    "gb_description": "Ti dà una certa possibilità di ottenere una risorsa casuale quando aiutiamo la città di un altro giocatore (motivare manualmente/abbellire conta anche come aiuto). Puoi ricevere beni della tua età attuale, materiali, monete, medaglie o anche Diamanti."
+                },
+                "plunder_and_pillage": {
+                    "name": "Saccheggio o razzia",
+                    "gb_description": "Ti dà una certa possibilità di ottenere il doppio delle risorse quando si saccheggia la città di un vicino di casa dopo aver sconfitto con successo le loro difese. Raddoppierà tutte le risorse che puoi saccheggiare, compresi i Punti Forge e il Potere della gilda."
+                },
+                "first_strike": {
+                    "name": "Primo colpo",
+                    "gb_description": "Ti dà la possibilità che all'inizio dei prossimi combattimenti, un'unità dell'esercito di difesa del nemico sarà uccisa immediatamente. Questo vale solo per la prima ondata di battaglia."
+                },
+                "double_collection": {
+                    "name": "Doppia raccolta",
+                    "gb_description": "Dà la possibilità di ottenere il doppio delle risorse nei primi edifici raccolti. Esclude gli edifici militari e grandi edifici. Si rinfresca con ogni collezione di questo edificio."
+                }
+            }
+        },
+        "utils": {
+            "content": {
+                "tools": "Strumenti",
+                "statistics": "Statistiche"
+            },
+            "btn_calculate": "Calcolare",
+            "description": {
+                "p1": "Inserire i diversi valori. Il risultato viene aggiornato automaticamente.",
+                "p2_html": "<strong>Nota</strong>: Se l'aggiornamento non viene effettuato automaticamente, clicca su \"$t(utils.btn_calculate)\"."
+            },
+            "choose_age": "Scegli un'Era",
+            "permalink": "Permalink",
+            "Add": "Aggiungi",
+            "Remove": "Rimuovi",
+            "Yes": "Si",
+            "No": "No",
+            "Ok": "Ok",
+            "Copy": "Copia",
+            "Copyed": "Copiato !",
+            "Information": "Informazioni",
+            "From": "Da",
+            "To": "A {{max}}",
+            "Prefix": "Prefisso",
+            "Suffix": "Suffisso",
+            "Path": "Percorso",
+            "Name": "Nome",
+            "Description": "Descrizione",
+            "Rewards": "Ricompense",
+            "Cost": "Costo",
+            "Conquered": "Conquistato",
+            "Total": "Totale",
+            "Secured": "Coperta",
+            "Reset": "Resetta",
+            "Confirm": "Conferma",
+            "Close": "Chiudi",
+            "Result": "Risultato",
+            "between_range": "Tra {{min, number}} e {{max, number}}",
+            "Submit": "Invia",
+            "Reset_values": "Resetta i valori",
+            "Switch": "Cambia",
+            "Save": "Salva",
+            "Show": "Mostra",
+            "Hide": "Nascondi",
+            "errors": {
+                "field_cannot_be_empty": "Questo campo non può rimanere vuoto"
+            },
+            "moment": {
+                "year": "{{count}} anno",
+                "year_plural": "{{count, number}} anni",
+                "month": "{{count}} mese",
+                "month_plural": "{{count}} mesi",
+                "day": "{{count}} giorno",
+                "day_plural": "{{count}} giorni"
+            },
+            "graph": {
+                "gb_level": "Livello",
+                "gb_level_cost": "Costo del livello",
+                "gb_reward_1st_place": "Ricompensa livello (primo posto)"
+            }
+        },
+        "contributions": {
+            "blog": "Post del blog",
+            "bug": "Riporta un errore",
+            "code": "Codice",
+            "design": "Design",
+            "doc": "Documentazione",
+            "eventOrganizing": "Organizzazione di eventi",
+            "example": "Esempi",
+            "financial": "Finanze",
+            "fundingFinding": "Trovare fondi",
+            "ideas": "Idee, Pianificazione e Feedback",
+            "infra": "Infrastrutture (Hosting, Build-Tools, ecc.)",
+            "platform": "Imballaggio/porting alla nuova piattaforma",
+            "plugin": "Librerie di Plugin/utility",
+            "question": "Rispondere alle domande",
+            "talk": "Parliamo",
+            "test": "Test",
+            "tool": "Strumenti",
+            "translation": "Traduzioni",
+            "tutorial": "Tutorial",
+            "video": "Video",
+            "data": "Aggiungere o aggiornare dei dati",
+            "inspired_tool": "Strumento ispirato al suo lavoro",
+            "creator": "Creatore di questo progetto"
+        },
+        "seo": {
+            "keywords": {
+                "gb": "ge",
+                "great_building": "grande edificio",
+                "fp": "pf",
+                "forge_point": "punto forge",
+                "medals": "medaglie",
+                "military_units": "unità militari"
+            }
+        }
+    }
+}

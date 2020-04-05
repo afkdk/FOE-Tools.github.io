@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[43],{742:function(t,e,n){"use strict";n.r(e);var r="routes.help_to_translate_the_site.";e.default={head:function(){return{title:this.$t(r+"title")}},data:function(){return this.$store.set("hero",{title:r+"hero.title",subtitle:r+"hero.subtitle"}),{i18nPrefix:r}}}}}]);

@@ -1,0 +1,893 @@
+{
+    "translation": {
+        "main_menu": {
+            "home": "Hjem",
+            "gb_investment": "$t(routes.gb_investment_gb_chooser.hero.title)",
+            "secure_position": "$t(routes.secure_position.hero.title)",
+            "cf_calculator": "$t(routes.cf_calculator.hero.title)",
+            "gb_statistics": "$t(routes.gb_statistics.hero.title)",
+            "gb_forecast_cost": "$t(routes.gb_forecast_cost.hero.title)",
+            "trade": "$t(routes.trade.hero.title)",
+            "help_to_translate_the_site": "$t(routes.help_to_translate_the_site.hero.title)",
+            "campaign_cost": "$t(routes.campaign_cost.hero.title)"
+        },
+        "footer_menu": {
+            "about": "Om",
+            "contributors": "Bidragydere",
+            "changelog": "Changelog",
+            "contact": "Kontakt"
+        },
+        "components": {
+            "campaign_cost": {
+                "title": "$t(routes.campaign_cost.hero.title)",
+                "choose_province": "Vælg en provins",
+                "message": {
+                    "haveUnknownCosts": "Denne provins indeholder én eller flere sektorer, der mangler værdier."
+                }
+            },
+            "cf_calculator": {
+                "block_cfc": {
+                    "title": "$t(routes.cf_calculator.hero.title)",
+                    "your_age": "Din tidsalder",
+                    "your_cf_boost": "Dit $t(foe_data.gb.Chateau_Frontenac) boost",
+                    "coins_to_use": "Mønter der skal bruges til UBQ",
+                    "coins_supplies_info": "Denne værdi skal være større eller lig med {{min}}fordi der nedenunder ikke kan garanteres for nogen profit (statistisk)",
+                    "supplies_to_use": "Forsynger der skal bruges til UBQ",
+                    "gb_plunder_goods": "SB & Plyndrings varer",
+                    "fp_by_24h": "24-timers FP Produktion",
+                    "other_rq": "Andre daglige RQ's",
+                    "second_rq": "Sekundær RQ giver ?",
+                    "supplies_gathered": "Forsyninger samlet",
+                    "table_reward": {
+                        "title": "$t(utils.Rewards)",
+                        "thead": {
+                            "th1": "BP's",
+                            "th2": "Medaljer",
+                            "th3": "Varer",
+                            "th4": "FP's"
+                        }
+                    },
+                    "reward_message": {
+                        "daily_ubq": "Daglige UBQ'er {{count, number}}",
+                        "bonus_ubq": "Bonus UBQ'er {{count, number}}",
+                        "second_rq_completed": "2. RQ's afsluttet. {{count, number}}",
+                        "total_goods": "Samlede varer: {{count, number}}",
+                        "total_fp": "Samlede FP's: {{count, number}}",
+                        "total_rq_completed": "Total RQ'er afsluttet: {{count, number}}"
+                    },
+                    "table_return": {
+                        "thead": {
+                            "th_level": "Level",
+                            "th_coin": "Mønter returneret",
+                            "th_supply": "Forsynger returneret"
+                        }
+                    },
+                    "infinity_generator": {
+                        "message": "Med den nuværende bonus på $t(foe_data.gb.Chateau_Frontenac), vil du tjene flere mønter og flere forsyninger end du vil bruge for at gennemføre opgaverne. Vælg antallet af \"$t(components.cf_calculator.block_cfc.infinity_generator.label)\" du vil gøre.",
+                        "label": "Kumulativ quest"
+                    }
+                },
+                "tutorial": {
+                    "welcome": "This tool is purely informal. It gives you information about what you can statistically obtain with your $t(foe_data.gb.Chateau_Frontenac)."
+                }
+            },
+            "gb_investment": {
+                "gb_list_select": {
+                    "label": "Skift SB",
+                    "info": "Du kan ændre stilen på vælgeren i globale instillinger"
+                },
+                "gb_investment": {
+                    "title": "$t(routes.gb_investment_gb_chooser.hero.title)",
+                    "description": {
+                        "p1": "Indtast niveau (til) og Ark bonus % (90% for Arken i level 80). Værdierne i tabellen opdateres automatisk.",
+                        "p2_html": "<strong>Note</strong>: Hvis opdateringen ikke sker automatisk, skal du først indstille SB niveauet, og den samlede investerings-værdi, og klikke på \"$t(components.gb_investment.gb_investment.form.submit_global)\". Hvis du vil justere værdierne ved hver enkelt placering, skal du justere til din bekvæmmelighed og klikke på \"$t(components.gb_investment.gb_investment.form.submit_custom)\"."
+                    },
+                    "form": {
+                        "level": "Niveau {{fromLevel, number}} → {{level, number}} ($t(utils.between_range, { 'min': '{{min, number}}', 'max': '{{max, number}}' }))",
+                        "investor_percentage": "Ark bonus i %",
+                        "submit_global": "Global beregning",
+                        "submit_custom": "Brugerdefineret beregning",
+                        "owner_investment": "Antal Fp's der i øjeblikket er sat af ejeren (Max {{max, number}})",
+                        "add_investors": "Tilføj bidrager (sæt FP værdi, $t(utils.between_range, { 'min': '{{min, number}}', 'max': '{{max, number}}' }))",
+                        "tooltip_add_investors": "Klik på knappen \"$t(utils.Add)\" eller tryk \"Enter\" for at tilføje bidrager",
+                        "investors_list": "Liste over tilføjede bidragere",
+                        "show_snipe": "Vis Spot/Snipe",
+                        "show_only_secured_places": "Vis kun sikrede placeringer",
+                        "display_card": "Vis tabellen i kortvisning? (på lille skærm)"
+                    },
+                    "table": {
+                        "title": "$t({{gb_key}}) niveau {{fromLevel, number}} → {{level, number}}",
+                        "thead": {
+                            "th1": "Placeringer",
+                            "th2": "Standard belønninger",
+                            "th3": "FP, som ejeren skal placere for at sikre placeringen",
+                            "th4": "Belønninger med bonus",
+                            "th5": "Ark bonus i %",
+                            "th6": "Medtag i kopiboksene",
+                            "fp_already_putin": "Antal FP der allerede er",
+                            "spot_snipe": "Spot/Snipe",
+                            "expected_participation": "FP opnået med % bonus der forventes af ejeren",
+                            "real_participation": "FP opnået med % bonus fra din ark",
+                            "is_sniper": "er en potentiel sniper ?"
+                        },
+                        "tbody": {
+                            "button_show_extra_investor": "Vis ekstra bidrager",
+                            "button_show_extra_investor_plural": "Vis ekstra bidragere",
+                            "button_hide_extra_investor": "Skjul ekstra bidrager",
+                            "button_hide_extra_investor_plural": "Skjul ekstra bidragere",
+                            "loss": "Denne spiller vil miste et FP",
+                            "loss_plural": "Denne spiller vil miste FP's",
+                            "tooltip_owner_investment": "FP der mangler at blive lagt af ejeren for at sikre placeringen",
+                            "tooltip_expected_investment": "Forventet bidrag",
+                            "profit": "Denne spille vil tjene FP's",
+                            "neutral": "Denne spille vil hverken tjene eller miste FP's"
+                        },
+                        "tfoot": {
+                            "total_preparation": "Ejerens samlede bidrag",
+                            "tooltip_owner_investment": "FP's der mangler at blive bidraget af ejeren for at fuldføre niveauet",
+                            "level_cost": "Niveau pris"
+                        }
+                    },
+                    "display_gb_name": "Vis SB navn ?",
+                    "use_short_name": "Brug kort navn ?",
+                    "show_level": "Vis niveau ?"
+                },
+                "promotion": {
+                    "title": "Promotion besked",
+                    "prefix_placeholder": "Tekst før promotion besked",
+                    "suffix_placeholder": "Tekst efter promotion besked",
+                    "promo": [
+                        "P1({{investment}})",
+                        "P2({{investment}})",
+                        "P3({{investment}})",
+                        "P4({{investment}})",
+                        "P5({{investment}})"
+                    ]
+                }
+            },
+            "gb_investment_investors": {
+                "description": {
+                    "p1": "Denne visning giver mulighed for at se den gevinst der kan opnås ved at tage en placering ved eller uden at tage højde for bidrag andre steder. Der er {{count}} typer at tage højde for, til andre placeringer:"
+                },
+                "takingPlaceInConsideration": {
+                    "label": "Tag andre placeringer i betragtning ?",
+                    "form": {
+                        "show_place": "Vis placering",
+                        "no": "$t(utils.No)",
+                        "normal": "Normal",
+                        "optimal": "Optimal"
+                    },
+                    "description": {
+                        "no": "tag ikke andre placeringer i betragtning",
+                        "normal": "tag højde for andre placeringer med et minimumsbidrag af en bidrager og uden sikring af ejeren",
+                        "optimal": "tag højde for andre placeringer med et bidrag uden fortjeneste hos bidrageren og med sikring af ejeren"
+                    }
+                },
+                "table": {
+                    "thead": {
+                        "th_place": "Placering {{count}}",
+                        "th_profit_loss": "Profit / Tab"
+                    }
+                }
+            },
+            "gb_forecast_cost": {
+                "title": "Udsigt",
+                "p1": "Bestem antallet af FP's fra et niveau til et andet, med eller uden Ark bonus",
+                "custom_percentage": "Tilpasset Ark Bonus (for hver placering)",
+                "estimated_time": "Forventet tid til at nå niveauet",
+                "message": {
+                    "diff": "Med bonus bidrag, vil du spare {{count}} FP",
+                    "diff_plural": "Med bonusbidrag, vil du spare {{count, number}} FPs",
+                    "single": "For at fuldføre niveauet {{level}} af \"$t({{gb}})\", skal ejeren bidrage med {{preparation, number}} FPs. Samlede omkostning for niveauet: {{cost, number}} FPs.",
+                    "multi": "For at gå fra niveau {{from}} til {{to}} i \"$t({{gb}})\", skal ejeren bidrage {{preparation, number}} FPa. Samlede omkostninger for niveauer: {{cost, number}} FPs.",
+                    "estimated_time": "Anslået tid til at nå niveauet: {{time}}"
+                },
+                "prop_already_invested": "FP's der allerede er blevet bidraget med af ejer, på nuværende niveau",
+                "graph": {
+                    "title": "Prognose for ejerens forberedelsesbidrag for \"$t({{gb}})\"",
+                    "x_axes_label": "$t(utils.graph.gb_level)",
+                    "y_axes_label": "$t(utils.graph.gb_level_cost)",
+                    "label": {
+                        "default": "Brutto omkostninger for niveauet",
+                        "default_preparation": "Mængde af forberedning uden bonus",
+                        "custom_preparation": "Mængde af forberedning med bonus"
+                    }
+                }
+            },
+            "gb_statistics": {
+                "title": "$t(routes.gb_statistics.hero.title)",
+                "p1": "Graferne er lavet i henhold til tidsalder, da prisen/belønningen for en SB er det samme for hver SB i en tidsalder, kun med en enkelt undtagelse ($t(foe_data.gb.Oracle_of_Delphi)). ",
+                "represent": "Repræsenteringer:",
+                "graph": {
+                    "title_1": "Udvikling af omkostningernes niveau i henhold til niveauerne",
+                    "title_2": "Udvikling af belønningen fra første placering i henhold til niveauerne",
+                    "title_3": "Udvikling af omkostningerne ved niveauerne",
+                    "title_4": "Udvikling af belønningen fra første placering i henhold til omkostningerne ved niveauerne"
+                }
+            },
+            "secure_position": {
+                "block_place": {
+                    "fp_to_complete_level": "Antal af FP der mangler for at fuldføre niveauet:",
+                    "fp_to_complete_level_plural": "Antal resterende FP's for at fuldføre niveauet:",
+                    "place": "{{place}}({{count, number}}FP)",
+                    "place_plural": "{{place}}({{count, number}}FP's)",
+                    "title": "Bloker vedkommendes placering",
+                    "level_cost": "Niveau omkostninger",
+                    "current_deposits": "Summen af de nuværende bidrag",
+                    "your_participation": "Dit nuværende bidrag",
+                    "other_participation": "Spilleren du vil overhale's bidrag",
+                    "your_arc_bonus": "Din Ark bonus",
+                    "fp_target_reward": "FP for den placering du vil have ",
+                    "target_reward": "Placering du vil have",
+                    "various_rate": "Forskellige rater",
+                    "rate": "Rate",
+                    "fp_according_rate": "FP der skal bidrages efter kursen",
+                    "fp_to_lock": "FP der skal bidrages med for at sikre din placering",
+                    "result": {
+                        "default": "Du skal have samlet {{count}}FP for at blokke placeringen.",
+                        "default_plural": "Du skal have samlet {{count, number}}FP's for at sikre placeringen.",
+                        "fp_need_to_lock": "FP du skal placere for at sikre din placering:",
+                        "fp_need_to_lock_plural": "FP's, du skal placere for at sikre din plads:",
+                        "fp_to_secure_html": "Du skal stadig bidrage med {{count}}FP.",
+                        "fp_to_secure_html_plural": "Du skal stadig placere {{count, number}}FP's.",
+                        "error": "En eller flere værdier er ikke gyldige.",
+                        "roi": {
+                            "profit": "Din gevinst vil være {{count}}FP",
+                            "profit_plural": "Din gevinst vil være {{count, number}}FP's",
+                            "loss": "Dit tab vil være {{count}}FP",
+                            "loss_plural": "Dit tab vil være {{count, number}}FP's",
+                            "neutral": "Du vil ikke få gevinst ud af bidraget"
+                        },
+                        "already_blocked": "Din placering er sikret",
+                        "still_to_put": "Antal FP's, du stadig skal placere",
+                        "cant_block": "Du kan ikke sikre placeringen."
+                    },
+                    "unknown": "ukendt"
+                }
+            },
+            "simple_trade": {
+                "title": "Tabelversion",
+                "table": {
+                    "thead": {
+                        "th1": "Tidsalder",
+                        "th2": "Varer",
+                        "th3": "$t(components.trade.label.i_want)",
+                        "th4": "Resultat",
+                        "split": "Dele",
+                        "ratio": "Forhold"
+                    }
+                },
+                "slpit": "Opdele tilbudene?",
+                "show_ratio": "Skærmforhold"
+            },
+            "site_layout": {
+                "update": "En opdatering siden dit sidste besøg.",
+                "update_plural": "{{count}}opdateringer siden dit sidste besøg.",
+                "hero": {
+                    "title": "$t(common:site_title)",
+                    "slogan_html": "Et sæt værktøjer til at forenkle $t(common:links.foe)"
+                },
+                "cookie": {
+                    "message": "Ved at fortsætte med at bruge $t(common:site_title), accepterer du brugen af cookies for at forbedre brugeroplevelsen.",
+                    "link": "Mere information"
+                },
+                "new_year": {
+                    "message": "$t(common:site_title)fejrer sit {{count, number}}år",
+                    "message_plural": "$t(common:site_title)fejrer sine {{count, number}}år"
+                },
+                "survey": {
+                    "message": "Hjælp os med at forbedre $t(common:site_title)ved at gennemføre denne undersøgelse"
+                },
+                "whats_new": "Hvad er nyt ?",
+                "permalink_info": "Du besøger en permalink. Derfor ændres foretagne ændringer ikke i cookies.",
+                "footer": {
+                    "license_html": "Kildekode under $t(common:links.mit) licens",
+                    "version": "Version {{version}}"
+                },
+                "day_night": {
+                    "Day": "Dag",
+                    "start_day": "Dagens start",
+                    "Night": "Nat",
+                    "start_night": "Natens start",
+                    "Auto": "Automatisk $t(components.site_layout.day_night.Day)/ $t(components.site_layout.day_night.Night)"
+                },
+                "global_config": "Globale indstillinger",
+                "global_config_dialog": {
+                    "fixed_main_menu": "Hovedmenu er altid synlig",
+                    "select_gb_style": "SB Vælger tema",
+                    "select_gb_style_mode": {
+                        "datalist": "Auto-fuldfør",
+                        "select": "Vælg (ældre)"
+                    },
+                    "day_night": "Tema",
+                    "day_night_mode": {
+                        "Day": "Dag",
+                        "Night": "Nat",
+                        "Auto": "Automatisk"
+                    }
+                },
+                "switch_locale": "$t(common:site_title)er tilgængelig på dit sprog"
+            },
+            "trade": {
+                "title": "Formversion",
+                "label": {
+                    "i_have": "jeg har",
+                    "i_want": "Jeg vil have",
+                    "amount": "Antal"
+                },
+                "split_value": "Max størrelse på et bidrag (max. {{count}})",
+                "split_message": {
+                    "msg": "{{valueFrom}}{{ageFrom}}for {{valueTo}}{{ageTo}}",
+                    "common": "{{count}}× ($t(components.trade.split_message.msg, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' }))",
+                    "multi": "$t(components.trade.split_message.common, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' })og $t(components.trade.split_message.common, { 'count': 1, 'valueFrom': '{{valueFromSingle}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueToSingle}}', 'ageTo': '{{ageTo}}' })"
+                },
+                "message": {
+                    "result": "For {{to}}varer fra {{ageTo}}, skal du bruge {{from}}varer fra {{ageFrom}} med tilbud op til {{count}}",
+                    "total": "(i alt: {{amount}}{{key}})"
+                }
+            },
+            "promotion_message_builder": {
+                "title": "Builder til promoveringsmeddelelse",
+                "info": "Dette kan kopieres for at blive delt, f.eks. Med dine klanmedlemmer",
+                "note": "Bemærk, at meddelelsesbyggeren bruger niveau 9 → 10 i $t(foe_data.gb.Observatory)med et forhold på 1,9 til forhåndsvisning.",
+                "action": "Handling",
+                "actions": {
+                    "create": "Opret en ny skabelon",
+                    "update": "Opdater en eksisterende skabelon",
+                    "delete": "Slet en eksisterende skabelon"
+                },
+                "start_from_template": "Start fra en skabelon?",
+                "edit_template": "Vælg den skabelon, du vil redigere",
+                "delete_template": "Vælg den skabelon, der skal slettes",
+                "templates": {
+                    "default": "Standardskabeloner",
+                    "custom": "Tilpassede skabeloner"
+                },
+                "config": "Konfiguration",
+                "add_field_title": "Tilføj brugerdefinerede felter",
+                "add_field": {
+                    "name": "Feltnavn",
+                    "value": "Feltværdi"
+                },
+                "custom_field_title": "Dine brugerdefinerede felter",
+                "use_short_name": "$t(components.gb_investment.gb_investment.use_short_name)",
+                "reverse_place_order": "Omvendt rækkefølge af placeringer?",
+                "place_separator": "Placerings separator",
+                "place_builder": "Placeringsbygger",
+                "place_preview": "Pladseringsvisning (1. plads)",
+                "message_builder": "Meddelelsesbygger",
+                "message_preview": "Forhåndsvisning af besked",
+                "place_builder_title": "Pladseringsbygger",
+                "message_builder_title": "Meddelelsesbygger",
+                "available_variables": "Tilgængelige variabler:",
+                "variables": {
+                    "place": {
+                        "PI": "Placerings indeks",
+                        "PV": "Pladseringsværdi (i FP's)",
+                        "PP": "$t(components.gb_investment.gb_investment.table.thead.th3)"
+                    },
+                    "message": {
+                        "FLVL": "Fra niveau",
+                        "TLVL": "Til niveau",
+                        "GBN": "SB navn",
+                        "P": "Pladseringer",
+                        "OP": "$t(components.gb_investment.gb_investment.table.tfoot.total_preparation)",
+                        "PPx": "Antal FP's, der skal pladseres af ejeren til pladsering \"x\" (\"x\" = 1 - 5)",
+                        "LF": "Linje Feed, tilføj en ny linje"
+                    }
+                },
+                "template_name": "Skabelon navn",
+                "errors": {
+                    "template_cannot_have_this_name": "Skabelonen kan ikke have dette navn. Brug et andet navn.",
+                    "custom_name_empty": "Navnet på feltet kan ikke være tomt.",
+                    "custom_name_already_exists": "Dette feltnavn findes allerede."
+                },
+                "template_saved": "Skabelon gemt",
+                "template_updated": "Skabelonen er opdateret",
+                "template_deleted": "Skabelonen er slettet"
+            },
+            "import_promotion_message": {
+                "title": "Importer promoveringsmeddelelse",
+                "config_placeholder": "Indsæt din konfigurering her",
+                "errors": {
+                    "invalid_data": "Data er ugyldigt"
+                },
+                "template_imported": "Skabelon importeret"
+            }
+        },
+        "routes": {
+            "home": {
+                "title": "$t(common:site_title)"
+            },
+            "about": {
+                "title": "Om $t(common:site_title)",
+                "general_info": {
+                    "title": "Generel information",
+                    "p1_html": "Forge of Empires, FOE og alle relaterede varemærker og indhold hører til InnoGames GmbH. <br/>$t(common:site_title)er et uofficielt tredjeparts websted og er ikke tilknyttet InnoGames.",
+                    "p2_html": "$t(common:site_title)blev oprettet af den franske spiller <strong class=\"has-text-weight-semibold\">Yoratheon </strong>.",
+                    "p3_html": "Webstedet er OpenSource, koden er frit tilgængelig på $t(common:links.github). <br/>Således kan alle med de nødvendige færdigheder deltage i forbedringen af dette websted."
+                },
+                "cookie": {
+                    "title": "Cookies",
+                    "p1": "For at forbedre din brugeroplevelse bruger webstedet cookies.",
+                    "table_message": "Tabellen herunder viser alle cookies, der bruges på dette websted.",
+                    "info": {
+                        "cookieDisclaimerDisplayed": "Angiver, om du har læst informationsmeddelelsen om brugen af cookies",
+                        "gbi_tab": "Global parameter for \"$t(routes.gb_investment_gb_chooser.hero.title)\", der angiver, hvilken fane der skal indlæses som standard ($t(routes.gb_investment.tab.owner_view.title)osv.).",
+                        "gbPrefix": "Global parameter for \"$t(routes.gb_investment_gb_chooser.hero.title)\", der indeholder præfikset til promoveringsmeddelelsen",
+                        "gbSuffix": "Global parameter for \"$t(routes.gb_investment_gb_chooser.hero.title)\", der indeholder suffikset til promoveringsmeddelelsen",
+                        "locale": "Visnings sprog",
+                        "shortName": "Global parameter for \"$t(routes.gb_investment_gb_chooser.hero.title)\", der angiver, om SB-kortnavnet skal vises for promoveringsmeddelelsen",
+                        "showLevel": "Global parameter for \"$t(routes.gb_investment_gb_chooser.hero.title)\", der angiver, om SB-niveauet for promoveringsmeddelelsen skal vises",
+                        "yourArcBonus": "Global indstilling, der indeholder bonusen på din Ark",
+                        "yourCfBoost": "Global indstilling, der indeholder bonusen på din Château Frontenac",
+                        "haveReadTipAboutAddInvestor": "Angiver, om du har læst informationsmeddelelsen angående tip til brug for tilføj spillers bidrag",
+                        "dayNightMode": "Angiver hvilken dag / nat-tilstand du bruger",
+                        "dayStart": "Tidspunkt for start af dagen (brugt i \"$t(components.site_layout.day_night.Auto)\")",
+                        "nightStart": "Tidspunkt for start af natten (brugt i \"$t(components.site_layout.day_night.Auto)\")",
+                        "showSnipe": "Vis eller skjul Spot / Snipe (brugt i \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "coins": "$t(components.cf_calculator.block_cfc.coins_to_use)",
+                        "fpBy24h": "$t(components.cf_calculator.block_cfc.fp_by_24h)",
+                        "goods": "$t(components.cf_calculator.block_cfc.gb_plunder_goods)",
+                        "otherRq": "$t(components.cf_calculator.block_cfc.other_rq)",
+                        "cumulativeQuest": "Antal kumulative opgaver",
+                        "secondRq": "$t(components.cf_calculator.block_cfc.second_rq)",
+                        "supplies": "$t(components.cf_calculator.block_cfc.supplies_to_use)",
+                        "suppliesGathered": "$t(components.cf_calculator.block_cfc.supplies_gathered)",
+                        "yourAge": "$t(components.cf_calculator.block_cfc.your_age)",
+                        "investorPercentageCustom_x": "$t(components.gb_investment.gb_investment.table.thead.th5)",
+                        "investorPercentageGlobal": "$t(components.gb_investment.gb_investment.form.investor_percentage)",
+                        "investorParticipation_x": "Forventet deltagelse af bidragere, når stedet ikke giver FP's",
+                        "level": "SB-niveau",
+                        "ownerInvestment": "$t(components.gb_investment.gb_investment.table.thead.th3)",
+                        "showPx": "Angiv, om placeringen skal vises i promoveringsmeddelelsen",
+                        "takingPlaceInConsideration": "Under fanen \"$t(routes.gb_investment.tab.investors_view.title)\" af \"$t(routes.gb_investment_gb_chooser.hero.title)\" angiver, om de andre placeringer skal tages med i beregningen",
+                        "targetLevel": "Under fanen \"$t(routes.gb_investment.tab.investors_view.title)\" til \"$t(routes.gb_investment_gb_chooser.hero.title)\" angiver fra hvilket niveau, der skal vises oplysninger i tabellen",
+                        "displayGbName": "Angiv, om SB-navnet skal vises i promoveringsmeddelelsen",
+                        "investorParticipation": "Indeholder en liste over alle tilføjede bidragere",
+                        "displayTableCard": "Angiv, om tabellen skal vises i \"$t(routes.gb_investment_gb_chooser.hero.title)\" i simpel tilstand (tabel) eller i kortvisning på lille skærm",
+                        "from": "Niveau, hvor arrayet skal startes (brugt i fanen \"$t(routes.gb_investment.tab.investors_view.title)\" til \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "to": "Niveau, hvor arrayet skal afsluttes (brugt i fanen \"$t(routes.gb_investment.tab.investors_view.title)\" til \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "showPlace": "En matrix, der indeholder, om der skal vises en placering eller ej (brugt i fanen \"$t(routes.gb_investment.tab.investors_view.title)\" af \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "survey": "En matrix, der indeholder alle de undersøgelser, du allerede har udført",
+                        "fixedMainMenu": "Angiver, om hovedmenuen altid er synlig eller ej",
+                        "gbSelectMode": "Angiver hvilken SB-valgtilstand du bruger",
+                        "haveReadLocaleInfoAvailable": "Angiver, om du har læst oplysningerne om, at webstedet er tilgængeligt på dit sprog",
+                        "promotionMessageList": "Indeholder listen over promoveringsmeddelelser, som du vil have vist",
+                        "customPromotionMessagesTemplates": "Indeholder alle dine tilpassede promoveringsmeddelelser",
+                        "gbShowPrefix": "Angiver, om du vil vise præfiks i promoveringsmeddelelser",
+                        "gbShowSuffix": "Angiver, om du vil vise suffiks i promoveringsmeddelelser",
+                        "lastVisitVersion": "Indeholder versionen af webstedet for dit sidste besøg"
+                    }
+                },
+                "dev_info": {
+                    "title": "Udviklingsinformation",
+                    "p1": "Webstedet er et simpelt statisk websted, der er hosted på GitHub.",
+                    "p2_html": "Udviklingen udføres i Node.js ved hjælp af $t(common:links.framework). Stilen er lavet ved hjælp af $t(common:links.style).",
+                    "p3_html": "En idé om funktionalitet? Et problem ? Du er velkommen til at oprette et problem på $t(common:links.github) eller sende mig en e-mail (på engelsk eller på fransk) på $t(common:links.contact_foe_tools).",
+                    "message_info_github_issue": "<b> Bemærk: </b> Hvad angår problemer på GitHub, skal du sørge for at skrive dem på engelsk for at gøre det lettere at forstå det største antal."
+                }
+            },
+            "campaign_cost": {
+                "title": "$t(routes.campaign_cost.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Kampagneomkostninger",
+                    "subtitle": "Dette værktøj forudsiger omkostningerne for en sektor eller provins."
+                }
+            },
+            "cf_calculator": {
+                "title": "$t(routes.cf_calculator.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Château Frontenac-regnemaskine",
+                    "subtitle": "Et værktøj, der hjælper med at forudsige varer og fp-produktioner for at udføre gentagne opgaver og ikkefødselsdags questen (Rinbin)."
+                }
+            },
+            "changelog": {
+                "title": "Changelog | $t(common:site_title)"
+            },
+            "contributors": {
+                "title": "$t(routes.contributors.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Bidragydere",
+                    "subtitle": "Denne side forsøger at liste alle bidragydere"
+                }
+            },
+            "gb_investment": {
+                "title": "$t(routes.gb_investment.hero.title, { 'gb_key': '{{gb_key}}' }) | $t(common:site_title)",
+                "hero": {
+                    "title": "$t(routes.gb_investment_gb_chooser.hero.title)- $t({{gb_key}})"
+                },
+                "tab": {
+                    "owner_view": {
+                        "title": "Ejervisning"
+                    },
+                    "investors_view": {
+                        "title": "Bidragervisning"
+                    }
+                }
+            },
+            "gb_investment_gb_chooser": {
+                "title": "$t(routes.gb_investment_gb_chooser.hero.title)| $t(common:site_title)",
+                "hero": {
+                    "title": "SB-investering",
+                    "subtitle": "Dette værktøj gør det muligt at beregne antallet af point, som en spiller skal lægge i sin SB for at sikre de første 5 pladser efter en sats (ark bonus)."
+                },
+                "choose_gb": {
+                    "title": "Vælg en storslået bygning"
+                }
+            },
+            "gb_forecast_cost": {
+                "title": "$t(routes.gb_forecast_cost.hero.title)| $t(common:site_title)",
+                "hero": {
+                    "title": "Forudberegnet pris SB",
+                    "subtitle": "Dette værktøj bestemmer antallet af FP's, der skal til fra et niveau til et andet af en SB, med eller uden Ark bonusser."
+                }
+            },
+            "gb_statistics": {
+                "title": "$t(routes.gb_statistics.hero.title)| $t(common:site_title)",
+                "hero": {
+                    "title": "SB-statistik",
+                    "subtitle": "Dette værktøj gør det muligt at visualisere grafer over udviklingen af omkostningerne til en SB efter tidsalder."
+                }
+            },
+            "secure_position": {
+                "title": "$t(routes.secure_position.hero.title)| $t(common:site_title)",
+                "hero": {
+                    "title": "Sikker pladsering",
+                    "subtitle": "Dette værktøj beregner antallet af FP, som en spiller skal lægge i en SB for at blokere pladseringen."
+                }
+            },
+            "trade": {
+                "title": "$t(routes.trade.hero.title)| $t(common:site_title)",
+                "hero": {
+                    "title": "Handle",
+                    "subtitle": "Dette værktøj gør det nemmere for dig at handle ved at tilbyde dig de bedste priser i henhold til din måde at handle på."
+                },
+                "tab": {
+                    "trade_2_1": {
+                        "title": "2:1",
+                        "message": "Enkel handel, i forholdet 1 til 1for varer i samme tidsalder og 1 til 2 for varer med én tidsalder til forskel."
+                    },
+                    "fair_trade": {
+                        "title": "Fair Trade",
+                        "message": "Denne type handel tager højde for omkostningerne ved fremstilling af en vare (mønter og forsyninger) for at bestemme satserne mellem varerne."
+                    }
+                }
+            },
+            "help_to_translate_the_site": {
+                "title": "$t(routes.help_to_translate_the_site.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Hjælp med at oversætte webstedet",
+                    "subtitle": "Deltag i oversættelsesteamet"
+                },
+                "p1": "Dit sprog er ikke tilgængeligt, oversættelsen er ufuldstændig eller indeholder fejl? Du er velkommen til at deltage i webstedets oversættelsesteam.",
+                "how_to_join_the_team": "Hvordan tilslutter man sig teamet?",
+                "p2_html": "$t(common:site_title) er oversat af brugere. Vi bruger $t(common:links.translation_platform) platformen til at lette oversættelsesprocessen. For at deltage i teamet skal du sende en e-mail (på engelsk) til $t(common:links.contact_foe_tools) med angivelse af det / de sprog, som du kan oversætte til, så vi kan sende dig en invitation."
+            },
+            "survey": {
+                "title": "$t(routes.survey.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Undersøgelse",
+                    "subtitle": "Hjælp med at forbedre $t(common:site_title) ved at gennemføre denne undersøgelse"
+                },
+                "required_field": "Dette felt er påkrævet",
+                "survey_complete": "Tak for din feedback !",
+                "error": "Der er opstået en fejl, kontroller formularen og prøv igen",
+                "unknown_error": "Der er opstået en ukendt fejl. Kontakt webstedets administrator"
+            },
+            "contact": {
+                "title": "$t(routes.contact.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Kontakt",
+                    "subtitle": "Kontakt administratoren af $t(common:site_title)"
+                },
+                "message_contact_html": "En idé til at forbedre funktionaliteten? Et problem? Send mig en e-mail (på engelsk eller på fransk) på $t(common:links.contact_foe_tools).",
+                "message_translate": "Vidste du, at du også kan hjælpe med at oversætte webstedet? Følg følgende link for mere information:",
+                "message_other_info_html": "Hvis du er udvikler, kan du også oprette et problem (og bidrage til udviklingen af webstedet) på $t(common:links.github)."
+            },
+            "error": {
+                "404": {
+                    "title": "Side ikke fundet | $t(common:site_title)",
+                    "message": "Beklager, den side, du leder efter, findes ikke eller findes ikke mere"
+                }
+            }
+        },
+        "foe_data": {
+            "age": {
+                "Oracle": "$t(foe_data.age.NoAge) ($t(foe_data.gb.Oracle_of_Delphi))",
+                "NoAge": "Ingen tidsalder",
+                "BronzeAge": "Bronzealder",
+                "IronAge": "Jernalder",
+                "EarlyMiddleAges": "Tidlig middelalder",
+                "HighMiddleAges": "Høj middelalder",
+                "LateMiddleAges": "Sen middelalder",
+                "ColonialAge": "Kolonitiden",
+                "IndustrialAge": "Industritiden",
+                "ProgressiveEra": "Den progressive æra",
+                "ModernEra": "Moderne æra",
+                "PostmodernEra": "Den postmoderne tidsalder",
+                "ContemporaryEra": "Nutiden",
+                "Tomorrow": "Morgendagen",
+                "TheFuture": "Fremtiden",
+                "ArcticFuture": "Den arktiske fremtid",
+                "OceanicFuture": "Den oceaniske fremtid",
+                "VirtualFuture": "Virtuel fremtid",
+                "SpaceAgeMars": "Rumalder, Mars"
+            },
+            "age_short": {
+                "NoAge": "SA",
+                "BronzeAge": "BA",
+                "IronAge": "JA",
+                "EarlyMiddleAges": "TM",
+                "HighMiddleAges": "HM",
+                "LateMiddleAges": "SM",
+                "ColonialAge": "KT",
+                "IndustrialAge": "IT",
+                "ProgressiveEra": "DPÆ",
+                "ModernEra": "MÆ",
+                "PostmodernEra": "DPT",
+                "ContemporaryEra": "NT",
+                "Tomorrow": "MD",
+                "TheFuture": "FT",
+                "ArcticFuture": "AF",
+                "OceanicFuture": "OF",
+                "VirtualFuture": "VF",
+                "SpaceAgeMars": "RAM"
+            },
+            "gb": {
+                "Observatory": "Observatoriet",
+                "Temple_of_Relics": "Relikvietemplet",
+                "Oracle_of_Delphi": "Oraklet i Delfi",
+                "Tower_of_Babel": "Babelstårnet",
+                "Statue_of_Zeus": "Statue af Zeus",
+                "Colosseum": "Colosseum",
+                "Lighthouse_of_Alexandria": "Fyrtårnet i Alexandria",
+                "Hagia_Sophia": "Hagia Sophia",
+                "Cathedral_of_Aachen": "Aachen Domkirke",
+                "St_Mark_s_Basilica": "Markuskirken",
+                "Notre_Dame": "Notre Dame",
+                "Saint_Basil_s_Cathedral": "Vasilij-katedralen",
+                "Castel_del_Monte": "Castel del Monte",
+                "Deal_Castle": "Deal Castle",
+                "Frauenkirche_of_Dresden": "Frauenkirche i Dresden",
+                "Capitol": "Capitol",
+                "Royal_Albert_Hall": "Royal Albert Hall",
+                "Chateau_Frontenac": "Château Frontenac",
+                "Alcatraz": "Alcatraz",
+                "Space_Needle": "Space Needle",
+                "Atomium": "Atomium",
+                "Cape_Canaveral": "Cape Canaveral",
+                "The_Habitat": "Habitatet",
+                "Lotus_Temple": "Lotustemplet",
+                "Innovation_Tower": "Innovation Tower",
+                "Dynamic_Tower": "Dynamic Tower",
+                "Voyager_V1": "Voyager V1",
+                "The_Arc": "Arken",
+                "Rain_Forest_Project": "Regnskovsprojektet",
+                "Gaea_Statue": "Gaea-statue",
+                "Arctic_Orangery": "Arktisk orangeri",
+                "Seed_Vault": "Frøbanken",
+                "Atlantis_Museum": "Atlantismuseum",
+                "The_Kraken": "Kraken",
+                "The_Blue_Galaxy": "Den Blå Galakse",
+                "Terracotta_Army": "Terrakottahær",
+                "Himeji_Castle": "Himeji-borgen",
+                "The_Virgo_Project": "Jomfruprojektet",
+                "Star_Gazer": "Stjernekigger"
+            },
+            "gb_short": {
+                "Observatory": "Observatoriet",
+                "Temple_of_Relics": "Relikvietemplet",
+                "Oracle_of_Delphi": "OiD",
+                "Tower_of_Babel": "Bab",
+                "Statue_of_Zeus": "Zeus",
+                "Colosseum": "Colosseum",
+                "Lighthouse_of_Alexandria": "FiA",
+                "Hagia_Sophia": "HS",
+                "Cathedral_of_Aachen": "AD",
+                "St_Mark_s_Basilica": "Markus",
+                "Notre_Dame": "ND",
+                "Saint_Basil_s_Cathedral": "VC",
+                "Castel_del_Monte": "CDM",
+                "Deal_Castle": "DC",
+                "Frauenkirche_of_Dresden": "FiD",
+                "Capitol": "Capitol",
+                "Royal_Albert_Hall": "RAH",
+                "Chateau_Frontenac": "CF",
+                "Alcatraz": "Alca",
+                "Space_Needle": "SN",
+                "Atomium": "Atom",
+                "Cape_Canaveral": "CC",
+                "The_Habitat": "Hab",
+                "Lotus_Temple": "LT",
+                "Innovation_Tower": "IT",
+                "Dynamic_Tower": "DT",
+                "Voyager_V1": "Voyager",
+                "The_Arc": "Ark",
+                "Rain_Forest_Project": "RP",
+                "Gaea_Statue": "Gaea",
+                "Arctic_Orangery": "AO",
+                "Seed_Vault": "FB",
+                "Atlantis_Museum": "Atlantis",
+                "The_Kraken": "Kraken",
+                "The_Blue_Galaxy": "DBG",
+                "Terracotta_Army": "TH",
+                "Himeji_Castle": "HB",
+                "The_Virgo_Project": "Jomfru",
+                "Star_Gazer": "SK"
+            },
+            "goods": {
+                "dye": "Farvestoffer",
+                "lumber": "Tømmer",
+                "marble": "Marmor",
+                "stone": "Sten",
+                "wine": "Vin",
+                "cloth": "Stof",
+                "ebony": "Ibenholt",
+                "iron": "Jern",
+                "jewelry": "Smykke",
+                "limestone": "Kalksten",
+                "alabaster": "Alabast",
+                "copper": "Kobber",
+                "gold": "Guld",
+                "granite": "Granit",
+                "honey": "Honning",
+                "brick": "Teglsten",
+                "dried_herbs": "Tørrede urter",
+                "glass": "Glas",
+                "rope": "Tov",
+                "salt": "Salt",
+                "basalt": "Basalt",
+                "brass": "Messing",
+                "gunpowder": "Krudt",
+                "silk": "Silke",
+                "talc_powder": "Talkumpudder",
+                "coffee": "Kaffe",
+                "porcelain": "Porcelæn",
+                "paper": "Papir",
+                "tar": "Tjære",
+                "wire": "Metaltråd",
+                "coke": "Koks",
+                "fertilizer": "Gødning",
+                "rubber": "Gummi",
+                "textiles": "Tekstiler",
+                "whale_oil": "Hvalolie",
+                "asbestos": "Asbest",
+                "explosives": "Sprængstoffer",
+                "gasoline": "Benzin",
+                "machine_parts": "Maskindele",
+                "tinplate": "Blik",
+                "convenience_food": "Færdigret",
+                "ferroconcrete": "Jernbeton",
+                "flavorants": "Smagsstoffer",
+                "luxury_materials": "Luksusmaterialer",
+                "packaging": "Emballage",
+                "genome_data": "Genomdata",
+                "industrial_filters": "Industrifiltre",
+                "renewable_resources": "Genanvendelige ressourcer",
+                "semiconductors": "Halvledere",
+                "steel": "Stål",
+                "bionics_data": "Biometriske data",
+                "electromagnets": "Elektromagneter",
+                "gas": "Gas",
+                "plastics": "Plastik",
+                "robots": "Robotter",
+                "nutrition_research": "Ernæringsforskning",
+                "papercrete": "Papirbeton",
+                "preservatives": "Konserveringsmidler",
+                "smart_materials": "Intelligente materialer",
+                "translucent_concrete": "Gennemskinneligt beton",
+                "algae": "Alger",
+                "biogeochemical_data": "Bio-geokemiske data",
+                "nanoparticles": "Nanopartikler",
+                "purified_water": "Renset vand",
+                "superconductors": "Superledere",
+                "ai_data": "Date om kunstig intelligens",
+                "bioplastics": "Bioplastik",
+                "nanowire": "Nanotråd",
+                "paper_batteries": "Papirbatterier",
+                "transester_gas": "Bio benzin",
+                "artificial_scales": "Kunstskæl",
+                "biolight": "Biolys",
+                "corals": "Koraller",
+                "pearls": "Perler",
+                "plankton": "Plankton",
+                "promethium": "Promethium",
+                "orichalcum": "Orichalcum",
+                "cryptocash": "Kryptovaluta",
+                "data_crystals": "Datakrystaller",
+                "golden_rice": "Guldris",
+                "nanites": "Nanitter",
+                "tea_silk": "Te silke"
+            },
+            "province": {
+                "Dunarsund": "Dunarsund",
+                "Fel_Dranghyr": "Fel Dranghyr",
+                "Tyr": "Tyr",
+                "Hymir": "Hymir",
+                "Badakus": "Badakus",
+                "Paruuch": "Paruuch",
+                "Ruug": "Ruug",
+                "Karchagu": "Karchagu",
+                "East_Nagach": "Østnagach",
+                "West_Nagach": "Vestnagach",
+                "Maktaba": "Maktaba",
+                "Pfefferberg": "Pfefferberg",
+                "Dunkelwald": "Dunkelwald",
+                "Greifental": "Griefental",
+                "Sturmhohen": "Sturmhohen",
+                "Kaltenweiher": "Kaltenweiher",
+                "Teufelsfurt": "Teufelsfurt",
+                "Felssenke": "Felssenke",
+                "Galgenschlucht": "Galgenschlucht",
+                "Todepass": "Todepass",
+                "Steilsturz": "Steilsturz",
+                "Tarmelmann": "Tarmelmann",
+                "Breturia": "Breturia",
+                "Canturia": "Canturia",
+                "Veletrites": "Veletrites",
+                "Frathia": "Frathia",
+                "Mons_Suiry": "Mons Suiry",
+                "Jaims": "Jaims",
+                "Moravaria": "Moravaria",
+                "Cragshire": "Cragshire",
+                "Eldenborough": "Eldenborough",
+                "Cuttingham": "Cuttingham",
+                "Spearth": "Spearth",
+                "Wolvhampton": "Wolvhampton",
+                "FourGallows": "FourGallows",
+                "Mount_Killmore": "Mount Killmore",
+                "RavensCreek": "RavensCreek",
+                "Houndsmoor": "Houndsmoor",
+                "Zaldon_on_Sea": "Zaldon-on-Sea",
+                "Grand_Cap": "Grand Cap",
+                "Northcastle": "Northcastle",
+                "Queenshope": "Queenshope",
+                "Ashcrook": "Ashcrook",
+                "Narcien": "Narcien",
+                "Lavignon": "Lavignon",
+                "Troulope": "Troulope",
+                "Deuxerres": "Deuxerres",
+                "Lombardeaux": "Lombardeaux",
+                "Pisterrac": "Pisterrac",
+                "Varseille": "Varseille",
+                "Haulenois": "Haulenois",
+                "NewCragshire": "NewCragshire",
+                "Okahe": "Okahe",
+                "Rantford": "Rantford",
+                "Desperation": "Desperation",
+                "St_Marque": "St.Marque",
+                "Las_Penas": "Las Penas",
+                "DragonCity": "DragonCity",
+                "Garrincton": "Garrincton",
+                "ElFuego": "ElFuego",
+                "SantaCatalina": "SantaCatalina",
+                "Dorango": "Dorango",
+                "Nevarrone": "Nevarrone",
+                "Embruniez": "Embruniez",
+                "Gabordeaux": "Gabordeaux",
+                "Ydine": "Ydine",
+                "Wenoevre": "Wenoevre",
+                "Havre": "Havre",
+                "Omoien": "Omoien",
+                "Uxrow": "Uxrow",
+                "Gaelford": "Gaelford",
+                "Sud": "Sud",
+                "Kriegreich": "Kriegreich",
+                "Ostrand": "Ostrand",
+                "Langenreich": "Langenreich",
+                "Uceria": "Uceria",
+                "Gorski": "Gorski",
+                "Inashu": "Inashu",
+                "Natsuishu": "Natsuishu",
+                "Chigikawa": "Chigikawa",
+                "Igujima": "Igujima"
+            },
+            "bonus": {
+                "exploration_site": {
+                    "gb_description": "---"
+                }
+            }
+        }
+    }
+}

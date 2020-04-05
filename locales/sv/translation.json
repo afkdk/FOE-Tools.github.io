@@ -1,0 +1,1464 @@
+{
+    "translation": {
+        "main_menu": {
+            "home": "Hem",
+            "gb_investment": "$t(routes.gb_investment_gb_chooser.hero.title)",
+            "secure_position": "$t(routes.secure_position.hero.title)",
+            "cf_calculator": "$t(routes.cf_calculator.hero.title)",
+            "gb_statistics": "$t(routes.gb_statistics.hero.title)",
+            "gb_forecast_cost": "$t(routes.gb_forecast_cost.hero.title)",
+            "trade": "$t(routes.trade.hero.title)",
+            "help_to_translate_the_site": "$t(routes.help_to_translate_the_site.hero.title)",
+            "campaign_cost": "$t(routes.campaign_cost.hero.title)"
+        },
+        "footer_menu": {
+            "about": "Om",
+            "contributors": "Bidragare",
+            "changelog": "Ändringslogg",
+            "contact": "Kontakt"
+        },
+        "components": {
+            "campaign_cost": {
+                "title": "$t(routes.campaign_cost.hero.title)",
+                "choose_province": "Välj en provins",
+                "message": {
+                    "haveUnknownCosts": "Denna provins innehåller en eller flera sektorer som saknar värden."
+                }
+            },
+            "cf_calculator": {
+                "block_cfc": {
+                    "title": "$t(routes.cf_calculator.hero.title)",
+                    "your_age": "Din era",
+                    "your_cf_boost": "Din $t(foe_data.gb.Chateau_Frontenac) boost",
+                    "coins_to_use": "Mynt att använda på I.F.U",
+                    "coins_supplies_info": "Detta värde bör vara större eller lika med {{min}} eftersom det inte går att garantera någon vinst (statistiskt sett)",
+                    "supplies_to_use": "Förnödenheter att använda på I.F.U",
+                    "gb_plunder_goods": "MB & plundring av varor",
+                    "fp_by_24h": "FP produktion per 24 timmar",
+                    "other_rq": "Övriga dagliga Å.U",
+                    "second_rq": "2:a Å.U -givare ?",
+                    "supplies_gathered": "Förnödenheter insamlade",
+                    "table_reward": {
+                        "title": "$t(utils.Rewards)",
+                        "thead": {
+                            "th1": "Ritningar",
+                            "th2": "Medaljer",
+                            "th3": "Varor",
+                            "th4": "FP"
+                        }
+                    },
+                    "reward_message": {
+                        "daily_ubq": "Dagliga I.F.U: {{count, number}}",
+                        "bonus_ubq": "Bonus I.F.U: {{count, number}}",
+                        "second_rq_completed": "2:a Å.U gjorda: {{count, number}}",
+                        "total_goods": "Total mängd varor: {{count, number}}",
+                        "total_fp": "Total mängd FP: {{count, number}}",
+                        "total_rq_completed": "Totalt antal Å.U gjorda: {{count, number}}"
+                    },
+                    "table_return": {
+                        "thead": {
+                            "th_level": "Nivå",
+                            "th_coin": "Mynt returnerade",
+                            "th_supply": "Förnödenheter returnerade"
+                        }
+                    },
+                    "infinity_generator": {
+                        "message": "Med den nuvarande bonusen från $t(foe_data.gb.Chateau_Frontenac), kommer du att tjäna mer mynt och förnödenheter än vad du kommer att förbruka för att genomföra uppdragen. Välj det antal $t(components.cf_calculator.block_cfc.infinity_generator.label) du vill genomföra.",
+                        "label": "Ytterligare uppdrag"
+                    }
+                },
+                "tutorial": {
+                    "secondRqCompleted": "Antal 2:a återkommande uppdrag du kan genomföra.",
+                    "bonusUbq": "Antal InteFödelsedagsFest du (statistiskt) kan genomföra med med de mynt och förnödenheter du initialt kommer att tjäna.",
+                    "dailyUbq": "Antal InteFödelsedagsFest du kan genomföra i enlighet med hur mycket mynt och förnödenheter du är villig att spendera.",
+                    "totalRqCompleted": "Antal återkommande uppdrag du (statistiskt) kan genomföra.",
+                    "totalFp": "Antal FP du kommer att tjäna via uppdrag, MB's, etc.",
+                    "totalGoods": "Antalet gods du kommer att tjäna via uppdrag, MB's, etc.",
+                    "tableReward": "Denna tabell visar dig de belöningar du kommer att tjäna. Håll i minnet att värdena är baserade på empirisk probabilitet.",
+                    "cumulativeQuest": "I så fall, ange antalet uppdrag du vill köra.",
+                    "infiniteGenerator": "Denna sektion visas bara när $t(foe_data.gb.Chateau_Frontenac) boost (enligt din era) statistisk ger dig mer mynt och förnödenheter än du spenderar.",
+                    "otherRq": "Ange de övriga dagliga uppdragen du har gjort.",
+                    "suppliesGathered": "Ange antalet förnödenheter du ska använda för det 2:a återkommande uppdraget.",
+                    "checkSecondQuest": "From $t(foe_data.age.LateMiddleAges) kan du köra ett 2:a återkommande uppdrag. Ange \"$t(utils.Yes)\" om du ska köra det.\n\n<i><b>Notera</b>: Det antas att det 2:a uppdraget är: Samla X förnödenheter.</i>.",
+                    "fpBy24h": "Ange antalet FP du får under 24 timmar.",
+                    "goods": "Ange antalet gods du samlar in från MB och plundringar.",
+                    "supplies": "Ange antal förnödenheter du tänker använda för alla uppdrag.",
+                    "coins": "Ange antalet mynt du tänker använda för alla uppdrag.",
+                    "yourCfBoost": "Ange din $t(foe_data.gb.Chateau_Frontenac) boost.\n\nExempel: för 450%, ange 450.",
+                    "yourAge": "Välj din era.",
+                    "welcome": "Detta verktyg ger bara information. Det talar om vad som är statistiskt möjligt att få ut av din $t(foe_data.gb.Chateau_Frontenac).",
+                    "coinSupplyReturn": "Denna tabell visar mänged mynt och förnödenheter som du statistiskt kommer att tjäna på din initiala investering (bestående av mynt och förnödenheter, som du är villig att spendera)."
+                }
+            },
+            "gb_investment": {
+                "gb_list_select": {
+                    "label": "Byt Mäktig Byggnad",
+                    "info": "Du kan ändra utseendet på väljaren (standard-väljare eller auto-kompletterande) i de globala inställningarna."
+                },
+                "gb_investment": {
+                    "title": "$t(routes.gb_investment_gb_chooser.hero.title)",
+                    "description": {
+                        "p1": "Ange värdena på nivå och procentuell bonus. Tabellvärdena kommer att uppdateras automatiskt.",
+                        "p2_html": "<strong>Obs</strong>: Om uppdateringen inte görs automatiskt, ange först nivån på MB't och den generella investeringen, sedan klicka på [$t(components.gb_investment.gb_investment.form.submit_global)]. Om du vill justera värdet enskilt, gör så och klicka på [$t(components.gb_investment.gb_investment.form.submit_custom)]."
+                    },
+                    "form": {
+                        "level": "Level {{fromLevel, number}} → {{level, number}} ($t(utils.between_range, { 'min': '{{min, number}}', 'max': '{{max, number}}' }))",
+                        "investor_percentage": "% av globala investerares Ark-bonus",
+                        "submit_global": "Global uträkning",
+                        "submit_custom": "Anpassad uträkning",
+                        "owner_investment": "Antal FP f.n. investerat av ägaren (max {{max, number}})",
+                        "add_investors": "Lägg till investerare (put FP value, $t(utils.between_range, { 'min': '{{min, number}}', 'max': '{{max, number}}' }))",
+                        "tooltip_add_investors": "Klicka på knappen [$t(utils.Add)] eller tryck på [Enter], för att lägga till investerare",
+                        "investors_list": "Lista över tillagda investerare",
+                        "show_snipe": "Visa Plats/Kapare",
+                        "show_only_secured_places": "Visa endast säkra platser",
+                        "display_card": "Visa tabellen i kort-vy (för liten skärm) ?"
+                    },
+                    "table": {
+                        "title": "$t({{gb_key}}) nivå {{fromLevel, number}} → {{level, number}}",
+                        "thead": {
+                            "th1": "Platser",
+                            "th2": "Standardbelöningar",
+                            "th3": "FP att lägga av ägaren för att grunda platsen",
+                            "th4": "Belöningar med boost",
+                            "th5": "% av investerares Ark-bonus",
+                            "th6": "Inkludera i annonser",
+                            "fp_already_putin": "Antal FP redan lagda",
+                            "spot_snipe": "Plats/Kapare",
+                            "expected_participation": "FP anskaffade med % bonus förväntat av ägaren",
+                            "real_participation": "FP anskaffade med % bonus från din Ark",
+                            "is_sniper": "Är en potentiell kapare ?"
+                        },
+                        "tbody": {
+                            "button_show_extra_investor": "Visa extra investerare",
+                            "button_show_extra_investor_plural": "Visa extra investerare",
+                            "button_hide_extra_investor": "Dölj extra investerare",
+                            "button_hide_extra_investor_plural": "Dölj extra investerare",
+                            "loss": "Denna spelare kommer att förlora FP",
+                            "loss_plural": "Denna spelare kommer att förlora FP",
+                            "tooltip_owner_investment": "FP som återstår för ägaren att lägga för att grunda platsen",
+                            "tooltip_expected_investment": "Förväntad investering",
+                            "profit": "Denna spelare kommer att profitera",
+                            "neutral": "Denna spelare kommer att gå +/- 0 i FP"
+                        },
+                        "tfoot": {
+                            "total_preparation": "Total investering av ägaren",
+                            "tooltip_owner_investment": "FP som återstår för att fylla nivån",
+                            "level_cost": "Nivåkostnad"
+                        }
+                    },
+                    "display_gb_name": "Visa namn på MB ?",
+                    "use_short_name": "Använd förkortning ?",
+                    "show_level": "Visa nivå ?"
+                },
+                "promotion": {
+                    "title": "Annons-text",
+                    "prefix_placeholder": "text före annons-text",
+                    "suffix_placeholder": "text efter annons-text",
+                    "promo": [
+                        "1({{investment}})",
+                        "4({{investment}})",
+                        "3({{investment}})",
+                        "2({{investment}})",
+                        "5({{investment}})"
+                    ]
+                },
+                "tutorial": {
+                    "welcome": "Avsikten med denna handledning är att förklara alla funktioner med detta verktyg.\n\nDu kan klicka på länkarna nedan för att lära dig mer om dem.\nFör att forsätta, klicka på knappen \"$t(utils.Next)\".",
+                    "rush_1_9": {
+                        "title": "Påskynda 1.9, 1.8, etc.",
+                        "content": "$t(foe_data.gb.The_Arc) är ett MB som ökar belöningarna du får från topp-5 platserna i någon annans MB.  Ju högre nivå på $t(foe_data.gb.The_Arc), desto större nivå på belöningarna.\n\nDet var så uttrycken \"1.8\", \"1.9\", började.  I verkligheten är det  $t(foe_data.gb.The_Arc) bonus.\n1.0 representerar bas-belöningen (ingen $t(foe_data.gb.The_Arc)), 1.8 representerar en $t(foe_data.gb.The_Arc) på nivå 70 (då ökar belöningar med 80%), och 1.9 representerar en $t(foe_data.gb.The_Arc) på nivå 80 (90% mer i belöning).\n\nTrådar skapades i gillen och/eller vänner emellan, avsedda att enbart hantera denna typ av investeringar.  Detta är baserat på principen \"jag ger vad jag får\", och på så sätt minimera konflikter gille-medlemmar / vänner, emellan genom att inte profitera på varandra. Olikt \"oändliga trådar\" (10, 50, 100, etc.),  är en ytterligare fördel med 1.8, 1.9, etc. -trådar att det sparar tid för MB-ägaren. Detta då ägaren bara behöver investera en viss mängd FP för att säkra upp platserna åt dem som med hjälp av sin $t(foe_data.gb.The_Arc) bonus tar platserna.\n\nEtt exempel:\n\nTänk dig att du vill öka upp ditt $t(foe_data.gb.Observatory) från nivå 10 till 60 och att du tjänar $t(utils.FP, {'count': 50 }) per dag.\nDen totala kostnaden för nivåerna blir då $t(utils.FP, {'count': 64975 }).\n\nOm du använder \"oändliga bytestrådar\" blir din investering 1:1, i.e. $t(utils.FP, {'count': 25 }) investerat i ett MB = $t(utils.FP, {'count': 25 }) som en annan spelare kommer att investera i ditt MB. Så du kommer att behöva <strong>investera $t(utils.FP, {'count': 37320 })</strong> för att nå nivå 60.  Med $t(utils.FP, {'count': 50 }) per dag kommer det att ta dig <strong>2 år och 17 dagar</strong>.\n\nOm du istället använder dig av en 1.9 tråd, kommer du att <strong>endast investera $t(utils.FP, {'count': 12363 })</strong> för att nå nivå 60, så <strong>en besparing på $t(utils.FP, {'count': 24957 }) !</strong>.\nDock, med $t(utils.FP, {'count': 50 }) per dag, går du från 2 år och 17 dagar, till <strong>8 månader och 5 dagar</strong> !"
+                    },
+                    "snipe": {
+                        "title": "Kapa",
+                        "content": "\"Kapa\" är när en spelare tar en plats (1-5) i ett MB för att profitera och vanligen, inte möta upp till ägarens förväntningar.\n\nT.ex. nivå 49 → 50 på MB \"$t(foe_data.gb.The_Virgo_Project)\" kräver ingen grundning i form av FP av ägaren för att säkra de 2 första platserna.  Den förväntade investeringen med 1.9 (190%) för plats 1 är $t(utils.FP, {'count': 1739 }). En \"kapare\" (med en $t(foe_data.gb.The_Arc) på nivå 80) kan så fort tillfälle ges, ta platsen med en investering på endast $t(utils.FP, {'count': 1679 }), detta räcker för att säkra platsen och generera en profit på $t(utils.FP, {'count': 60 })."
+                    },
+                    "gb_select": "Detta fält tillåter ett snabbt byte av MB.\nDet finns två typer selektorer.\n\nDen enkla selektorn (gamla versionen) som visar en \"drop-down\"-lista. Detta är standard-selektorn:\n\n{{- videoSelect}}\n\nDen auto-kompletterande låter dig finna ett MB genom att skriva ett fåtal bokstäver från namnet på ett MB:\n\n{{- videoAutoComplete}}",
+                    "display_modes": {
+                        "title": "Visnings lägen",
+                        "content": "Detta verktyg ger all information ägaren och investeraren behöver veta för investeringar på en nivå i ett MB. Det har två lägen:\n\n\"$t(routes.gb_investment.tab.owner_view.title)\" (where you are) visar detaljerad information på den nuvarande nivån endast.\n\n\"$t(routes.gb_investment.tab.investors_view.title)\" visar värdena på flera nivåer i tabulär form. Du ser endast antal FP ägaren och investerarna behöver bidra med, med resulterande profit/förlust."
+                    },
+                    "level": "Välj nivån du vill jobba med.",
+                    "investor_percentage": "Välj kursen du förväntar dig av investerarna\nEx.  för investeringar på 190%, välj 90",
+                    "owner_investment": "Har du redan FP investerat i ditt MB?\nOm ja, ange hur många",
+                    "your_arc_bonus": "Detta fält är för investerarna och måsta användas med \"$t(components.gb_investment.gb_investment.form.show_snipe)\" satt till \"$t(utils.Yes)\".\nDet anger hur många FP du behöver lägga på en nivå för att säkra en plats; det anger också nivån på din profit/förlust.",
+                    "display_card": "Detta fält visar tabell-datan i \"Kort Vy\".\nDetta är \"optimerat\" för smarttelefoner, så du slipper scroll horisontellt.\nDetta fält visas endast på små skärmar.",
+                    "table": {
+                        "message": "Denna tabell visar all information du vill ha.",
+                        "place": "Korresponderande till plats-index.",
+                        "default_rewards": "Detta är standard-belöning (utan $t(foe_data.gb.The_Arc) bonus) för platsen.",
+                        "fp_to_put_by_the_owner": "Som namnet indikerar, anger det mängden FP ägaren måste lägga i sitt MB för att grunda platsen.",
+                        "rewards_with_rate": "Detta är mängden FP förväntat av ägaren när en investerare tar en plats.",
+                        "fp_already_putin": "Denna kolumn visas när du har lagt till minst en investerare. Den visar vilken plats investeraren hamnar på med strategin (förväntad investering) av ägaren.",
+                        "percentage_investors": "Likt \"$t(components.gb_investment.gb_investment.form.investor_percentage)\", tillåter denna kolumn ägaren att definiera de förväntade investeringarna, men då för varje plats enskilt.",
+                        "is_sniper": "Denna kolumn visas när du har definierat minst en investerare. Den är avsedd för att ange om spelaren är en potentiell \"kapare\" eller inte. Denna information används vid kalkylering för grundning av platser.",
+                        "include_in_copy_boxes": "Detta fält låter dig visa denna plats i annonstexten som du kan klistra in i spelet.",
+                        "spot_snipe": "Denna kolumn visas endast om du har satt  \"$t(components.gb_investment.gb_investment.form.show_snipe)\" till \"$t(utils.Yes)\" och är till för investerare. Denna kolumn anger (baserat på värdena i \"$t(components.secure_position.block_place.your_arc_bonus)\") hur många FP du måste lägga för att säkra din plats.\nDen visar även din profit/förlust."
+                    },
+                    "promotion_message": {
+                        "message": "Denna sektion låter dig ha meddelanden innehållandes information om det nuvarande MB's nivå och platser. Du kan kopiera informationen och klistra in den i spelet, t.ex. en 1.9 tråd.",
+                        "prefix": "Text som läggs till i början på meddelandet.",
+                        "suffix": "Text som läggs till i slutet på meddelandet.",
+                        "display_gb_name": "Visar namnet på MB't (om inkluderat i meddelande-mallen).",
+                        "show_level": "Visar nivån på MB't (om inkluderat i meddelande-mallen).",
+                        "show_only_secured_places": "Detta alternativ låter dig lägga till platser i annonstexten automatiskt om dessa platser är grundade och lediga. För att använda denna funktion måste du ange mängden FP lagda av både ägare och investerare.",
+                        "custom_fields": "Notera att vissa mallar har egna fält med egna namn.",
+                        "add_message": "Detta fält låter dig lägga till meddelanden.",
+                        "tabs": "Meddelandena följer en mall. Du kan importera en mall i fliken \"$t(components.import_promotion_message.title)\" eller skapa en egen i fliken \"$t(components.promotion_message_builder.title)\".",
+                        "use_short_name": "Låter dig definiera om du vill visa förkortningen på MB't (Ex. \"$t(foe_data.gb.Observatory)\" visas som \"$t(foe_data.gb_short.Observatory)\")."
+                    },
+                    "add_investors": "Har du slumpartade investeringar i dina MB som är lägre/högre än din designerade kurs?\nAnge alla nuvarande udda investeringar i detta fält, separat.\nDetta verktyg kalkylerar dina säkra FP och vilka platser du har säkrat.",
+                    "show_snipe": "Detta fält är avsett för investerare och visar en ytterligare kolumn i tabellen named \"$t(components.gb_investment.gb_investment.form.show_snipe)\".\nDenna kolumn anger (baserat på värdena definierade i \"$t(components.secure_position.block_place.your_arc_bonus)\") hur många FP du behöver lägga för att säkra din plats i ett MB.\nDet indikerar även din profit/förlust."
+                }
+            },
+            "gb_investment_investors": {
+                "description": {
+                    "p1": "Denna vy visar förtjänsten som kan fås genom att ta en plats, med eller utan hänsyn till investeringar på övriga platser. Det finns {{count}} varianter att förhålla sig till de övriga platserna:"
+                },
+                "takingPlaceInConsideration": {
+                    "label": "Ta hänsyn till övriga platser ?",
+                    "form": {
+                        "show_place": "Visa plats",
+                        "no": "$t(utils.No)",
+                        "normal": "Normal",
+                        "optimal": "Optimal"
+                    },
+                    "description": {
+                        "no": "ta inte hänsyn till övriga platser",
+                        "normal": "räkna med övriga platser, med en minimal investering, samt ingen grundning av ägaren",
+                        "optimal": "räkna med övriga platser, utan förtjänst, samt grundning av ägaren"
+                    }
+                },
+                "table": {
+                    "thead": {
+                        "th_place": "Plats {{count}}",
+                        "th_profit_loss": "Förtjänst / Förlust"
+                    }
+                }
+            },
+            "gb_forecast_cost": {
+                "title": "Prognos",
+                "p1": "Fastställ mängden FP för att gå från en nivå till nästa, med eller utan hänsyn till Ark-bonus.",
+                "custom_percentage": "Anpassad Ark-bonus (för varje plats)",
+                "estimated_time": "Estimera tiden för att nå nästa nivå",
+                "message": {
+                    "diff": "Med bonus investeringar sparar du {{count}} FP",
+                    "diff_plural": "Med bonus investeringar sparar du {{count, number}} FP",
+                    "single": "För att fullfölja nivå {{level}} av \"$t({{gb}})\", måste ägaren investera {{preparation, number}} FP. Total nivåkostnad: {{cost, number}} FP.",
+                    "multi": "För att gå från nivå {{from}} till {{to}} på $t({{gb}}), måste ägaren investera {{preparation, number}} FP. Totalkostnad för nivåer: {{cost, number}} FP.",
+                    "estimated_time": "Estimerad tid för att nå nivån: {{time}}"
+                },
+                "prop_already_invested": "FP redan investerade av ägaren på nuvarande nivå",
+                "graph": {
+                    "title": "Prognos på storleken av ägarens grundning för \"$t({{gb}})\"",
+                    "x_axes_label": "$t(utils.graph.gb_level)",
+                    "y_axes_label": "$t(utils.graph.gb_level_cost)",
+                    "label": {
+                        "default": "Bruttokostnad för nivån",
+                        "default_preparation": "Storlek på grund utan bonus",
+                        "custom_preparation": "Storlek på grund med bonus"
+                    }
+                }
+            },
+            "gb_statistics": {
+                "title": "$t(routes.gb_statistics.hero.title)",
+                "p1": "Graferna skapade med hänsyn till era. Kostnad / belöning för alla MB är densamma för repektive era (förutom i ett speciellt fall, $t(foe_data.gb.Oracle_of_Delphi)).",
+                "represent": "Representerar:",
+                "graph": {
+                    "title_1": "Utveckling av kostnader baserat på nivåerna",
+                    "title_2": "Utveckling av belöningar på 1:a platsen baserat på nivåerna",
+                    "title_3": "Utveckling av kostnader på nivåerna baserat på belöning på 1:a platsen",
+                    "title_4": "Utveckling av belöningar på 1:a platsen baserat på kostnad av nivåerna"
+                }
+            },
+            "secure_position": {
+                "block_place": {
+                    "fp_to_complete_level": "Återstående FP för att fylla nivån:",
+                    "fp_to_complete_level_plural": "Återstående FP för att fylla nivån:",
+                    "place": "{{place}} ({{count, number}} FP)",
+                    "place_plural": "{{place}} ({{count, number}} FP)",
+                    "title": "Säkra din plats",
+                    "level_cost": "Nivåkostnad",
+                    "current_deposits": "Summan av investeringar",
+                    "your_participation": "Ditt nuvarande bidrag",
+                    "other_participation": "Bidrag att överträffa",
+                    "your_arc_bonus": "Din Ark-bonus",
+                    "fp_target_reward": "FP för önskad plats",
+                    "target_reward": "Önskad plats",
+                    "various_rate": "Diverse kurser",
+                    "rate": "Kurs",
+                    "fp_according_rate": "FP att lägga enligt kursen",
+                    "fp_to_lock": "FP att lägga för att låsa din plats",
+                    "result": {
+                        "default": "Du måste lägga minst {{count}} FP för att säkra platsen.",
+                        "default_plural": "Du måste lägga minst {{count, number}} FP för att säkra platsen.",
+                        "fp_need_to_lock": "FP du måste investera för att säkra din plats:",
+                        "fp_need_to_lock_plural": "FP du måste investera för att säkra din plats:",
+                        "fp_to_secure_html": "Du måste lägga {{count}} FP.",
+                        "fp_to_secure_html_plural": "Du måste lägga {{count, number}} FP.",
+                        "error": "En eller flera värden är ogiltiga.",
+                        "roi": {
+                            "profit": "Din förtjänst kommer att bli {{count}} FP",
+                            "profit_plural": "Din förtjänst kommer att bli {{count, number}} FP",
+                            "loss": "Din förlust kommer att bli {{count}} FP",
+                            "loss_plural": "Din förlust kommer att bli {{count, number}} FP",
+                            "neutral": "Du kommer inte att få retur på din investering"
+                        },
+                        "already_blocked": "Din plats är säkrad.",
+                        "still_to_put": "FP du måste investera ytterligare för att säkra din plats",
+                        "cant_block": "Du kan inte säkra platsen."
+                    },
+                    "unknown": "okänd"
+                }
+            },
+            "simple_trade": {
+                "title": "Tabellversion",
+                "table": {
+                    "thead": {
+                        "th1": "Era",
+                        "th2": "Vara",
+                        "th3": "$t(components.trade.label.i_want)",
+                        "th4": "Resultat",
+                        "split": "Dela",
+                        "ratio": "Förhållande"
+                    }
+                },
+                "slpit": "Dela erbjudanden ?",
+                "show_ratio": "Visa förhållande"
+            },
+            "site_layout": {
+                "update": "En uppdatering sedan ditt senaste besök.",
+                "update_plural": "{{count}} uppdaterinarg sedan ditt senaste besök.",
+                "hero": {
+                    "title": "$t(common:site_title)",
+                    "slogan_html": "Ett uppsättning verktyg att underlätta livet på $t(common:links.foe)"
+                },
+                "cookie": {
+                    "message": "Genom att fortsätta använda $t(common:site_title), accepterar du användande av kakor (avsedda att underlätta handhavandet).",
+                    "link": "Mer information"
+                },
+                "new_year": {
+                    "message": "$t(common:site_title) firar sitt {{count, number}} år",
+                    "message_plural": "$t(common:site_title) firar sitt {{count, number}} år"
+                },
+                "survey": {
+                    "message": "Hjälp oss att förbättra $t(common:site_title) genom att fylla i denna enkät"
+                },
+                "whats_new": "Vad är nytt ?",
+                "permalink_info": "You besöker via en \"permalänk\", följdaktligen kommer inga ändringar att sparas (i kakor).",
+                "footer": {
+                    "license_html": "Källkod under $t(common:links.mit) -licens",
+                    "version": "Version {{version}}"
+                },
+                "day_night": {
+                    "Day": "Dag",
+                    "start_day": "Start på dagen",
+                    "Night": "Natt",
+                    "start_night": "Start på natten",
+                    "Auto": "Automatiskt $t(components.site_layout.day_night.Day)/$t(components.site_layout.day_night.Night)"
+                },
+                "global_config": "Globala inställningar",
+                "global_config_dialog": {
+                    "fixed_main_menu": "Huvudmeny alltid synlig",
+                    "select_gb_style": "Stil på MB-väljare",
+                    "select_gb_style_mode": {
+                        "datalist": "Autokomplettera",
+                        "select": "Välj (arv)"
+                    },
+                    "day_night": "Tema",
+                    "day_night_mode": {
+                        "Day": "Dag",
+                        "Night": "Natt",
+                        "Auto": "Automatiskt"
+                    }
+                },
+                "switch_locale": "$t(common:site_title) är tillgängligt på ditt språk"
+            },
+            "trade": {
+                "title": "Formulär version",
+                "label": {
+                    "i_have": "Jag har",
+                    "i_want": "Jag vill ha",
+                    "amount": "Mängd"
+                },
+                "split_value": "Max storlek på ett erbjudande ({{count}})",
+                "split_message": {
+                    "msg": "{{valueFrom}} {{ageFrom}} för {{valueTo}} {{ageTo}}",
+                    "common": "{{count}} × ($t(components.trade.split_message.msg, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' }))",
+                    "multi": "$t(components.trade.split_message.common, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' }) och $t(components.trade.split_message.common, { 'count': 1, 'valueFrom': '{{valueFromSingle}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueToSingle}}', 'ageTo': '{{ageTo}}' })"
+                },
+                "message": {
+                    "result": "För {{to}} från {{ageTo}}, behöver du {{from}} från {{ageFrom}} med erbjudande upp till {{count}}:",
+                    "total": "(totalt: {{amount}} {{key}})"
+                }
+            },
+            "promotion_message_builder": {
+                "title": "Annons-text-byggare",
+                "info": "Detta kan kopieras för att delas, till exempel med dina gille-medlemmar",
+                "note": "Observera att annonsbyggaren använder nivå 9 → 10 på $t(foe_data.gb.Observatory) med en boost på 90% för förhandsgranskning.",
+                "action": "Handling",
+                "actions": {
+                    "create": "Skapa en ny mall",
+                    "update": "Uppdatera en befintlig mall",
+                    "delete": "Ta bort en befintlig mall"
+                },
+                "start_from_template": "Börja från en mall ?",
+                "edit_template": "Välj mallen för att redigera",
+                "delete_template": "Välj mallen som ska raderas",
+                "templates": {
+                    "default": "Standardmallar",
+                    "custom": "Anpassade mallar"
+                },
+                "config": "Konfiguration",
+                "add_field_title": "Lägg till anpassade fält",
+                "add_field": {
+                    "name": "Fältnamn",
+                    "value": "Fältvärde"
+                },
+                "custom_field_title": "Dina anpassade fält",
+                "use_short_name": "$t(components.gb_investment.gb_investment.use_short_name)",
+                "reverse_place_order": "Reversera ordning på platser?",
+                "place_separator": "Plats separator",
+                "place_builder": "Platsbyggare",
+                "place_preview": "Plats förhandsgranskning (1:a plats)",
+                "message_builder": "Annonsbyggare",
+                "message_preview": "Förhandsgranskning av annons-text",
+                "place_builder_title": "Platsbyggare",
+                "message_builder_title": "Annonsbyggare",
+                "available_variables": "Tillgängliga variabler:",
+                "variables": {
+                    "place": {
+                        "PI": "Platsindex",
+                        "PV": "Plats värde (i FP)",
+                        "PP": "$t(components.gb_investment.gb_investment.table.thead.th3)"
+                    },
+                    "message": {
+                        "FLVL": "Från nivå",
+                        "TLVL": "Till nivå",
+                        "GBN": "MB namn",
+                        "P": "Plats",
+                        "OP": "$t(components.gb_investment.gb_investment.table.tfoot.total_preparation)",
+                        "PPx": "Antal FP att läggas av ägaren för plats \"x\" (\"x\" avser 1 till 5)",
+                        "LF": "Fältmatning, lägg till ny rad"
+                    }
+                },
+                "template_name": "Mallnamn",
+                "errors": {
+                    "template_cannot_have_this_name": "Mallen kan inte ha detta namn, använd ett annat namn.",
+                    "custom_name_empty": "Namnet på fältet kan inte vara tomt.",
+                    "custom_name_already_exists": "Fältnamnet finns redan."
+                },
+                "template_saved": "Mall sparad",
+                "template_updated": "Mall uppdaterad",
+                "template_deleted": "Mall raderad"
+            },
+            "import_promotion_message": {
+                "title": "Importera annonstexter",
+                "config_placeholder": "Klistra in din konfiguration här",
+                "errors": {
+                    "invalid_data": "Datan är ogiltig"
+                },
+                "template_imported": "Mall importerad"
+            }
+        },
+        "routes": {
+            "home": {
+                "title": "$t(common:site_title)"
+            },
+            "about": {
+                "title": "Om $t(common:site_title)",
+                "general_info": {
+                    "title": "Allmän information",
+                    "p1_html": "Forge of Empires, FoE och alla relaterade varumärken och innehåll, tillhör InnoGames GmbH.<br/>$t(common:site_title) är en inofficiell tredje parts plats och är inte affilierad med InnoGames.",
+                    "p2_html": "$t(common:site_title) skapades av den franske spelaren <strong class=\"has-text-weight-semibold\">Yoratheon</strong>.",
+                    "p3_html": "Denna plats är \"OpenSource\" och koden är fritt tillgänglig på $t(common:links.github).<br/>Alla med erfoderliga färdigheter kan delta i denna plats förbättring."
+                },
+                "cookie": {
+                    "title": "Kakor",
+                    "p1": "För att förbättra handhavandet används kakor på denna plats.",
+                    "table_message": "Tabellen nedan visar alla kakor som används på denna plats.",
+                    "info": {
+                        "cookieDisclaimerDisplayed": "Indikerar att du har läst informationen angående kakor",
+                        "gbi_tab": "Global parameter för \"$t(routes.gb_investment_gb_chooser.hero.title)\" som indikerar vilken flik att ladda som standard ($t(routes.gb_investment.tab.owner_view.title), etc.).",
+                        "gbPrefix": "Global parameter for \"$t(routes.gb_investment_gb_chooser.hero.title)\" som innehåller prefixet för annons-texten",
+                        "gbSuffix": "Global parameter for \"$t(routes.gb_investment_gb_chooser.hero.title)\" som innehåller suffixet för annons-texten",
+                        "locale": "Visa språk",
+                        "shortName": "Global parameter för \"$t(routes.gb_investment_gb_chooser.hero.title)\" som indikerar om det förkortade namnet för MB skall användas i annons-texten",
+                        "showLevel": "Global parameter för \"$t(routes.gb_investment_gb_chooser.hero.title)\" som indikerar om nivån för MB skall användas i annons-texten",
+                        "yourArcBonus": "Global inställning innehållandes bonus från din Ark",
+                        "yourCfBoost": "Global inställning innehållandes bonus från din Château Frontenac",
+                        "haveReadTipAboutAddInvestor": "Indikerar om du läst informationen angående tips om att använda inmatning av bidragare",
+                        "dayNightMode": "Indikerar vilket Dag/Natt -läge du använder",
+                        "dayStart": "Tid använd för start av dag (använt av \"$t(components.site_layout.day_night.Auto)\")",
+                        "nightStart": "Tid använd för start av natt (använt av \"$t(components.site_layout.day_night.Auto)\")",
+                        "showSnipe": "Visa/dölj Plats/Kapare (använt av \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "coins": "$t(components.cf_calculator.block_cfc.coins_to_use)",
+                        "fpBy24h": "$t(components.cf_calculator.block_cfc.fp_by_24h)",
+                        "goods": "$t(components.cf_calculator.block_cfc.gb_plunder_goods)",
+                        "otherRq": "$t(components.cf_calculator.block_cfc.other_rq)",
+                        "cumulativeQuest": "Antal kumulativa uppdrag",
+                        "secondRq": "$t(components.cf_calculator.block_cfc.second_rq)",
+                        "supplies": "$t(components.cf_calculator.block_cfc.supplies_to_use)",
+                        "suppliesGathered": "$t(components.cf_calculator.block_cfc.supplies_gathered)",
+                        "yourAge": "$t(components.cf_calculator.block_cfc.your_age)",
+                        "investorPercentageCustom_x": "$t(components.gb_investment.gb_investment.table.thead.th5)",
+                        "investorPercentageGlobal": "$t(components.gb_investment.gb_investment.form.investor_percentage)",
+                        "investorParticipation_x": "Förväntat deltagande av investerare när platsen inte ger FP",
+                        "level": "MB nivå",
+                        "ownerInvestment": "$t(components.gb_investment.gb_investment.table.thead.th3)",
+                        "showPx": "Indikerar om platsen ska visas i postningstexten",
+                        "takingPlaceInConsideration": "I fliken \"$t(routes.gb_investment.tab.investors_view.title)\" av \"$t(routes.gb_investment_gb_chooser.hero.title)\", indikerar om övriga platser ska tas hänsyn till i beräkningen",
+                        "targetLevel": "I fliken \"$t(routes.gb_investment.tab.investors_view.title)\" av \"$t(routes.gb_investment_gb_chooser.hero.title)\", indikerar fr.o.m vilken nivå att visa tabellinfo",
+                        "displayGbName": "Indikerar om namnet på MB ska visas i postningstexten",
+                        "investorParticipation": "Innehåller en lista på alla tillagda investerare",
+                        "displayTableCard": "Indikerar om tabell $t(routes.gb_investment_gb_chooser.hero.title) ska visas i enkelt läge (tabell) eller kort-vy (på liten skärm)",
+                        "from": "Vilken nivå att börja uppställningen (använt i tabell \"$t(routes.gb_investment.tab.investors_view.title)\" från \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "to": "Vilken nivå att avsluta uppställningen (använt i tabell \"$t(routes.gb_investment.tab.investors_view.title)\" från \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "showPlace": "En uppställning som indikerar om plats ska visas eller ej (använt i tabell \"$t(routes.gb_investment.tab.investors_view.title)\" från \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "survey": "En uppställning som innehåller alla undersökningar du redan har genomfört",
+                        "fixedMainMenu": "Indikerar om huvud-menyn alltid är synlig",
+                        "gbSelectMode": "Indikerar vilket läge av MB-val du använder",
+                        "haveReadLocaleInfoAvailable": "Indikerar att du läst information om att platsen är tillgänglig på ditt språk",
+                        "promotionMessageList": "Innehåller listan över annonstexter som du vill visa",
+                        "customPromotionMessagesTemplates": "Innehåller alla dina anpassade annonstexter",
+                        "gbShowPrefix": "Anger om du vill visa prefix i annonstexter",
+                        "gbShowSuffix": "Anger om du vill visa suffix i annonstexter",
+                        "lastVisitVersion": "Innehåller versionen av platsen sedan ditt senaste besök"
+                    }
+                },
+                "dev_info": {
+                    "title": "Utvecklingsinformation",
+                    "p1": "Platsen är enkel, statisk och härbärgerad hos GitHub.",
+                    "p2_html": "Utvecklingen är gjord med Node.js och $t(common:links.framework). Stilen med hjälp av $t(common:links.style).",
+                    "p3_html": "Ideer kring funtionaliteten? Problem? Det är fritt fram att skapa ett ärende på $t(common:links.github) eller skicka mig e-post (på engelska eller franska) hit $t(common:links.contact_foe_tools).",
+                    "message_info_github_issue": "<b>Obs:</b> Angående ärenden på GitHub, vänligen skriv dem på engelska då det gör dem tillgängliga för en större publik."
+                }
+            },
+            "campaign_cost": {
+                "title": "$t(routes.campaign_cost.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Kampanjkostnad",
+                    "subtitle": "Detta verktyg ger en prognos på kostnaden för en sektor eller provins."
+                }
+            },
+            "cf_calculator": {
+                "title": "$t(routes.cf_calculator.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Château Frontenac Kalkylator",
+                    "subtitle": "Ett verktyg som försöker räkna ut mängden av varor och fp från att göra Å.U (Återkommande Uppdrag), och I.F.U (InteFödelsedagsFest uppdrag)."
+                }
+            },
+            "changelog": {
+                "title": "Ändringslogg | $t(common:site_title)"
+            },
+            "contributors": {
+                "title": "$t(routes.contributors.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Bidragare",
+                    "subtitle": "Den här sidan är ett försök att lista alla bidragare"
+                }
+            },
+            "gb_investment": {
+                "title": "$t(routes.gb_investment.hero.title, {'gb_key': '{{gb_key}}'}) | $t(common:site_title)",
+                "hero": {
+                    "title": "$t(routes.gb_investment_gb_chooser.hero.title) - $t({{gb_key}})"
+                },
+                "tab": {
+                    "owner_view": {
+                        "title": "Ägarens vy"
+                    },
+                    "investors_view": {
+                        "title": "Investerarens vy"
+                    }
+                }
+            },
+            "gb_investment_gb_chooser": {
+                "title": "$t(routes.gb_investment_gb_chooser.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "MB Investering",
+                    "subtitle": "Detta verktyg gör det möjligt att beräkna antalet FP som en spelare måste lägga på sitt MB för att säkra de 5 första platserna, beräknat på Ark-bonus."
+                },
+                "choose_gb": {
+                    "title": "Välj en Mäktig Byggnad"
+                }
+            },
+            "gb_forecast_cost": {
+                "title": "$t(routes.gb_forecast_cost.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "MB Kostnads-prognos",
+                    "subtitle": "Det här verktyget visar antalet FP för att gå från en nivå till nästa på ett MB, med eller utan hänsyn till Ark-bonus."
+                }
+            },
+            "gb_statistics": {
+                "title": "$t(routes.gb_statistics.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "MB Statistik",
+                    "subtitle": "Det här verktyget gör det möjligt att visualisera grafer på utvecklingen av kostnaderna för MB efter era."
+                }
+            },
+            "secure_position": {
+                "title": "$t(routes.secure_position.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Säkra plats",
+                    "subtitle": "Detta verktyg beräknar antalet FP som en spelare måste lägga på ett MB för att säkra sin plats."
+                }
+            },
+            "trade": {
+                "title": "$t(routes.trade.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Handel",
+                    "subtitle": "Det här verktyget kan underlätta dina affärer genom att räkna ut de bästa kurserna enligt ditt sätt att handla."
+                },
+                "tab": {
+                    "trade_2_1": {
+                        "title": "2:1",
+                        "message": "Enkel handel: kurs 1 för 1, med varor från samma era; kurs 1 för 2, med varor från nästa era."
+                    },
+                    "fair_trade": {
+                        "title": "Rättvis handel",
+                        "message": "Denna typ av handel tar hänsyn till kostnaden för att tillverka en vara (mynt och resurser) för att fastställa kursen mellan varorna."
+                    }
+                }
+            },
+            "help_to_translate_the_site": {
+                "title": "$t(routes.help_to_translate_the_site.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Hjälp till att översätta webbplatsen",
+                    "subtitle": "Gå med i översättningsgruppen"
+                },
+                "p1": "Ditt språk är inte tillgängligt, översättningen är ofullständig eller innehåller fel? Känn dig fri att gå med i webbplatsens översättningsgrupp.",
+                "how_to_join_the_team": "Hur går man med i gruppen?",
+                "p2_html": "$t(common:site_title) översätts av användare. Vi använder plattformen $t(common:links.translation_platform) för att underlätta översättningsprocessen. För att gå med i gruppen klicka på följande länk och registrera dig: $t(common:links.translation_platform)",
+                "state_of_translation": "Status på översättning :"
+            },
+            "survey": {
+                "title": "$t(routes.survey.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Undersökning",
+                    "subtitle": "Hjälp att förbättra $t(common:site_title) genom att fylla i denna enkät"
+                },
+                "required_field": "Detta fält är obligatoriskt",
+                "survey_complete": "Tack för din återkoppling !",
+                "error": "Ett fel har inträffat.  Kontrollera formuläret och försök igen",
+                "unknown_error": "Ett okänt fel har uppstått.  Var vänlig kontakta webbplats-administratören"
+            },
+            "contact": {
+                "title": "$t(routes.contact.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Kontakt",
+                    "subtitle": "Kontakta underhållaren av $t(common:site_title)"
+                },
+                "message_contact_html": "En idé om funktionalitet? Ett problem? Skicka gärna e-post till mig (på engelska eller franska) hit $t(common:links.contact_foe_tools).",
+                "message_translate": "Visste du att du också kan hjälpa till att översätta webbplatsen? Följ följande länk för mer information:",
+                "message_other_info_html": "Om du är utvecklare kan du skapa ett ärende (och bidra till utvecklingen av webbplatsen) på $t(common:links.github)."
+            },
+            "error": {
+                "404": {
+                    "title": "Sidan hittades inte | $t(common:site_title)",
+                    "message": "Tyvärr, sidan du söker fanns/finns inte (längre)"
+                }
+            },
+            "donate": {
+                "conversion": "Om du uppskattar mitt arbete, vänligen betänk en donation.",
+                "donation_options": "Donera via $t(common:links.donorbox) eller $t(common:links.paypal).",
+                "hero": {
+                    "title": "$t(utils.Donate)",
+                    "subtitle": "Donera till $t(common:site_title)"
+                },
+                "title": "$t(routes.donate.hero.title) | $t(common:site_title)",
+                "donation_message": "$t(common:site_title) är en annons-fri, öppen källkod projekt, och jag gör inte detta för finansiell förtjänst. Således, min tid går åt till att göra detta oavlönat. Dock välkomnar jag donationer från alla och envar som uppskattar mitt arbete tillräckligt nog för att vilja göra så, oavsett storlek eller metod (en-gångs eller månadsvis). Donationer betyder mycket för mig då de hjälper till att hantera associerade kostnader; servrar, domäner, webb-hotell samt kostnader i allmänhet. Dessutom uppmuntrar det mig till att fortsätta med detta projekt."
+            }
+        },
+        "foe_data": {
+            "age": {
+                "Oracle": "$t(foe_data.age.NoAge) ($t(foe_data.gb.Oracle_of_Delphi))",
+                "NoAge": "Ingen era",
+                "BronzeAge": "Bronsålder",
+                "IronAge": "Järnålder",
+                "EarlyMiddleAges": "Tidig medeltid",
+                "HighMiddleAges": "Högmedeltid",
+                "LateMiddleAges": "Senmedeltid",
+                "ColonialAge": "Kolonialålder",
+                "IndustrialAge": "Industriålder",
+                "ProgressiveEra": "Progressiva eran",
+                "ModernEra": "Modern tid",
+                "PostmodernEra": "Postmodern tid",
+                "ContemporaryEra": "Nutid",
+                "Tomorrow": "Morgondagen",
+                "TheFuture": "Framtiden",
+                "ArcticFuture": "Arktisk framtid",
+                "OceanicFuture": "Oceanisk framtid",
+                "VirtualFuture": "Virtuell framtid",
+                "SpaceAgeMars": "Rymdålder Mars"
+            },
+            "age_short": {
+                "NoAge": "NA",
+                "BronzeAge": "BÅ",
+                "IronAge": "JÅ",
+                "EarlyMiddleAges": "TMT",
+                "HighMiddleAges": "HMT",
+                "LateMiddleAges": "SMT",
+                "ColonialAge": "KÅ",
+                "IndustrialAge": "IÅ",
+                "ProgressiveEra": "PE",
+                "ModernEra": "MT",
+                "PostmodernEra": "PMT",
+                "ContemporaryEra": "NT",
+                "Tomorrow": "MD",
+                "TheFuture": "FT",
+                "ArcticFuture": "AF",
+                "OceanicFuture": "OF",
+                "VirtualFuture": "VF",
+                "SpaceAgeMars": "RÅM"
+            },
+            "gb": {
+                "Observatory": "Observatorium",
+                "Temple_of_Relics": "Reliktemplet",
+                "Oracle_of_Delphi": "Oraklet i Delfi",
+                "Tower_of_Babel": "Babels torn",
+                "Statue_of_Zeus": "Zeusstatyn",
+                "Colosseum": "Colosseum",
+                "Lighthouse_of_Alexandria": "Fyrtornet från Alexandria",
+                "Hagia_Sophia": "Hagia Sofia",
+                "Cathedral_of_Aachen": "Aachens katedral",
+                "St_Mark_s_Basilica": "Markuskyrkan i Venedig",
+                "Notre_Dame": "Notre Dame",
+                "Saint_Basil_s_Cathedral": "Vasilijkatedralen",
+                "Castel_del_Monte": "Castel del Monte",
+                "Deal_Castle": "Deal Castle",
+                "Frauenkirche_of_Dresden": "Frukyrkan i Dresden",
+                "Capitol": "Kapitolium",
+                "Royal_Albert_Hall": "Royal Albert Hall",
+                "Chateau_Frontenac": "Château Frontenac",
+                "Alcatraz": "Alcatraz",
+                "Space_Needle": "Space Needle",
+                "Atomium": "Atomium",
+                "Cape_Canaveral": "Cape Canaveral",
+                "The_Habitat": "Habitat 67",
+                "Lotus_Temple": "Lotustemplet",
+                "Innovation_Tower": "Innovationstornet",
+                "Dynamic_Tower": "Dynamic Tower",
+                "Voyager_V1": "Voyager V1",
+                "The_Arc": "Arken",
+                "Rain_Forest_Project": "Regnskogsprojektet",
+                "Gaea_Statue": "Gaea-staty",
+                "Arctic_Orangery": "Arktiskt orangeri",
+                "Seed_Vault": "Frövalv",
+                "Atlantis_Museum": "Atlantismuseum",
+                "The_Kraken": "Kraken",
+                "The_Blue_Galaxy": "Den blå galaxen",
+                "Terracotta_Army": "Terracottaarmé",
+                "Himeji_Castle": "Himeji-slottet",
+                "The_Virgo_Project": "Jungfruprojektet",
+                "Star_Gazer": "Stjärnskådare"
+            },
+            "gb_short": {
+                "Observatory": "Obs",
+                "Temple_of_Relics": "RT",
+                "Oracle_of_Delphi": "OD",
+                "Tower_of_Babel": "Bab",
+                "Statue_of_Zeus": "ZE",
+                "Colosseum": "Col",
+                "Lighthouse_of_Alexandria": "FT",
+                "Hagia_Sophia": "HS",
+                "Cathedral_of_Aachen": "AK",
+                "St_Mark_s_Basilica": "Mark",
+                "Notre_Dame": "ND",
+                "Saint_Basil_s_Cathedral": "VK",
+                "Castel_del_Monte": "CdM",
+                "Deal_Castle": "DC",
+                "Frauenkirche_of_Dresden": "FKD",
+                "Capitol": "Cap",
+                "Royal_Albert_Hall": "RAH",
+                "Chateau_Frontenac": "CF",
+                "Alcatraz": "AZ",
+                "Space_Needle": "SN",
+                "Atomium": "Atom",
+                "Cape_Canaveral": "CC",
+                "The_Habitat": "Hab",
+                "Lotus_Temple": "LT",
+                "Innovation_Tower": "IT",
+                "Dynamic_Tower": "DT",
+                "Voyager_V1": "Voy",
+                "The_Arc": "Ark",
+                "Rain_Forest_Project": "RSP",
+                "Gaea_Statue": "Gaea",
+                "Arctic_Orangery": "AO",
+                "Seed_Vault": "FV",
+                "Atlantis_Museum": "Atl",
+                "The_Kraken": "Kra",
+                "The_Blue_Galaxy": "BG",
+                "Terracotta_Army": "TA",
+                "Himeji_Castle": "HC",
+                "The_Virgo_Project": "JP",
+                "Star_Gazer": "SS"
+            },
+            "goods": {
+                "dye": "Färgämne",
+                "lumber": "Timmer",
+                "marble": "Marmor",
+                "stone": "Sten",
+                "wine": "Vin",
+                "cloth": "Tyg",
+                "ebony": "Ebenholts",
+                "iron": "Järn",
+                "jewelry": "Smycken",
+                "limestone": "Kalksten",
+                "alabaster": "Alabaster",
+                "copper": "Koppar",
+                "gold": "Guld",
+                "granite": "Granit",
+                "honey": "Honung",
+                "brick": "Tegelsten",
+                "dried_herbs": "Torkade örter",
+                "glass": "Glas",
+                "rope": "Rep",
+                "salt": "Salt",
+                "basalt": "Basalt",
+                "brass": "Mässing",
+                "gunpowder": "Krut",
+                "silk": "Silke",
+                "talc_powder": "Talk",
+                "coffee": "Kaffe",
+                "porcelain": "Porslin",
+                "paper": "Papper",
+                "tar": "Tjära",
+                "wire": "Tråd",
+                "coke": "Koks",
+                "fertilizer": "Gödsel",
+                "rubber": "Gummi",
+                "textiles": "Textilier",
+                "whale_oil": "Tran",
+                "asbestos": "Asbest",
+                "explosives": "Sprängämnen",
+                "gasoline": "Bensin",
+                "machine_parts": "Maskindelar",
+                "tinplate": "Bleck",
+                "convenience_food": "Snabbmat",
+                "ferroconcrete": "Armerad betong",
+                "flavorants": "Smakämnen",
+                "luxury_materials": "Lyxmaterial",
+                "packaging": "Förpackning",
+                "genome_data": "Genomdata",
+                "industrial_filters": "Industrifilter",
+                "renewable_resources": "Förnybara resurser",
+                "semiconductors": "Halvledare",
+                "steel": "Stål",
+                "bionics_data": "Bionikdata",
+                "electromagnets": "Elektromagneter",
+                "gas": "Naturgas",
+                "plastics": "Plast",
+                "robots": "Robotar",
+                "nutrition_research": "Näringsdata",
+                "papercrete": "Pappersbetong",
+                "preservatives": "Konserveringsmedel",
+                "smart_materials": "Smarta Material",
+                "translucent_concrete": "Semitransparent betong",
+                "algae": "Alger",
+                "biogeochemical_data": "Biogeokemisk data",
+                "nanoparticles": "Nanopartiklar",
+                "purified_water": "Renat vatten",
+                "superconductors": "Supraledare",
+                "ai_data": "A.I.-data",
+                "bioplastics": "Bioplast",
+                "nanowire": "Nanotråd",
+                "paper_batteries": "Pappersbatterier",
+                "transester_gas": "Transestergas",
+                "artificial_scales": "Artificiellt fjäll",
+                "biolight": "Bioljus",
+                "corals": "Koraller",
+                "pearls": "Pärlor",
+                "plankton": "Plankton",
+                "promethium": "Prometium",
+                "orichalcum": "Orikalkum",
+                "cryptocash": "Kryptovaluta",
+                "data_crystals": "Datakristall",
+                "golden_rice": "Gyllene ris",
+                "nanites": "Naniter",
+                "tea_silk": "Te-siden",
+                "lubricants": "Smörjmedel",
+                "biotech_crops": "BioTech-grödor",
+                "mars_microbes": "Mars-microb",
+                "fusion_reactors": "Fusionskraft",
+                "superalloys": "Superlegeringar"
+            },
+            "province": {
+                "Dunarsund": "Dunarsund",
+                "Fel_Dranghyr": "Fel Dranghyr",
+                "Tyr": "Tyr",
+                "Hymir": "Hymer",
+                "Badakus": "Badakus",
+                "Paruuch": "Paruuch",
+                "Ruug": "Ruug",
+                "Karchagu": "Karchagu",
+                "East_Nagach": "East-Nagach",
+                "West_Nagach": "West-Nagach",
+                "Maktaba": "Maktaba",
+                "Pfefferberg": "Pfefferberg",
+                "Dunkelwald": "Dunkelwald",
+                "Greifental": "Griefental",
+                "Sturmhohen": "Sturmhohen",
+                "Kaltenweiher": "Kaltenweiher",
+                "Teufelsfurt": "Teufelsfurt",
+                "Felssenke": "Felssenke",
+                "Galgenschlucht": "Galgenschlucht",
+                "Todepass": "Todepass",
+                "Steilsturz": "Steilsturz",
+                "Tarmelmann": "Tarmelmann",
+                "Breturia": "Breturia",
+                "Canturia": "Canturia",
+                "Veletrites": "Veletrites",
+                "Frathia": "Frathia",
+                "Mons_Suiry": "Mons Suiry",
+                "Jaims": "Jaims",
+                "Moravaria": "Moravaria",
+                "Cragshire": "Cragshire",
+                "Eldenborough": "Eldenborough",
+                "Cuttingham": "Cuttingham",
+                "Spearth": "Spearth",
+                "Wolvhampton": "Wolvhampton",
+                "FourGallows": "Four Gallows",
+                "Mount_Killmore": "Mount Killmore",
+                "RavensCreek": "Ravens Creek",
+                "Houndsmoor": "Houndsmoor",
+                "Zaldon_on_Sea": "Zaldon-on-Sea",
+                "Grand_Cap": "Grand Cap",
+                "Northcastle": "Northcastle",
+                "Queenshope": "Queenshope",
+                "Ashcrook": "Ashcrook",
+                "Narcien": "Narcien",
+                "Lavignon": "Lavignon",
+                "Troulope": "Troulope",
+                "Deuxerres": "Deuxerres",
+                "Lombardeaux": "Lombardeaux",
+                "Pisterrac": "Pisterrac",
+                "Varseille": "Varseille",
+                "Haulenois": "Haulenois",
+                "NewCragshire": "New Cragshire",
+                "Okahe": "Okahe",
+                "Rantford": "Rantford",
+                "Desperation": "Desperation",
+                "St_Marque": "St. Marque",
+                "Las_Penas": "Las Penas",
+                "DragonCity": "Dragon City",
+                "Garrincton": "Garrincton",
+                "ElFuego": "El Fuego",
+                "SantaCatalina": "Santa Catalina",
+                "Dorango": "Dorango",
+                "Nevarrone": "Nevarrone",
+                "Embruniez": "Embruniez",
+                "Gabordeaux": "Gabordeaux",
+                "Ydine": "Ydine",
+                "Wenoevre": "Wenoevre",
+                "Havre": "Havre",
+                "Omoien": "Omoien",
+                "Uxrow": "Uxrow",
+                "Gaelford": "Gaelford",
+                "Sud": "Sud",
+                "Kriegreich": "Kriegreich",
+                "Ostrand": "Ostrand",
+                "Langenreich": "Langenreich",
+                "Uceria": "Uceria",
+                "Gorski": "Gorski",
+                "Inashu": "Inashu",
+                "Natsuishu": "Natsuishu",
+                "Chigikawa": "Chigikawa",
+                "Igujima": "Igujima",
+                "Kyushima": "Kyushima",
+                "Igioka": "Igioka",
+                "Igamoto": "Igamoto",
+                "Higematsu": "Higematsu",
+                "Kibakuguchi": "Kibakuguchi",
+                "Hiromaguchi": "Hiromaguchi",
+                "Toimuro": "Toimuro",
+                "CaiChetNui": "Cai Chet Nui",
+                "SotDamLay": "Sot Dam Lay",
+                "DayDuAo": "Day Du Ao",
+                "TrungDoi": "Trung Doi",
+                "KhayHuyenBayGio": "Khay Huyen Bay Gio",
+                "RungTrai": "Rung Trai",
+                "RungChienDau": "Rung Chien Dau",
+                "GiaiCuuBinhMinh": "Giai Cuu Binh Minh",
+                "PhucKich": "Phuc Kich",
+                "MauMatDat": "Mau Mat Dat",
+                "DongBangSong": "Dong Bang Song",
+                "OngChuCuoiCung": "Ong Chu Cuoi Cung",
+                "Amaryah_City": "Amaryah City",
+                "Khail": "Khail",
+                "Batif": "Batif",
+                "Hafar_Al_Karak": "Hafar Al Karak",
+                "Al_Shadyra": "Al-Shadyra",
+                "Salfah": "Salfah",
+                "Ain_Al_Khansa": "Ain Al-Khansa",
+                "Suqqah": "Suqqah",
+                "Shayhour": "Shayhour",
+                "Kardad": "Kardad",
+                "Qumeira": "Qumeira",
+                "Jandahar": "Jandahar",
+                "Torrinhos": "Torrinhos",
+                "Villabaja": "Villabaja",
+                "Itabarai": "Itabarai",
+                "Bajatai": "Bajatai",
+                "Villariba": "Villariba",
+                "Rio_Roxo": "Rio Roxo",
+                "Sierra_Torrido": "Sierra Torrido",
+                "Santa_Nerea": "Santa Nerea",
+                "La_Huega": "La Huega",
+                "Jamenez": "Jamenez",
+                "Falsa_Cruz": "Falsa Cruz",
+                "Desierto_de_la_Muerte": "Desierto de la Muerte",
+                "Sao_Malvado": "Sao Malvado",
+                "Agadar": "Agadar",
+                "Esan_Ewu": "Esan-Ewu",
+                "Omogba": "Omogba",
+                "Owopele": "Owopele",
+                "Jak": "Jak",
+                "Pala": "Pala",
+                "Kolabourg": "Kolabourg",
+                "Bontaville": "Bontaville",
+                "Botuku": "Botuku",
+                "Kalabuye": "Kalabuye",
+                "Bisoraba": "Bisoraba",
+                "Fort_Buntu": "Fort Buntu",
+                "Nutarniq": "Nutarniq",
+                "Iluliaq": "Iluliaq",
+                "Aurora_s_Dale": "Auroras Dale",
+                "Cold_Bay": "Cold Bay",
+                "Arctic_Horizon": "Arctic Horizon",
+                "Tuklavik": "Tuklavik",
+                "Ananevut": "Ananevut",
+                "Qaniit": "Qaniit",
+                "White_Gate": "White Gate",
+                "Snowdrifts": "Snowdrifts",
+                "Median_Waters": "Median Waters",
+                "Frosty_Mountain": "Frosty Mountain",
+                "Southern_Valley": "Southern Valley",
+                "Ilug": "Ilug",
+                "Chugiak": "Chugiak",
+                "Kesukavut": "Kesukavut",
+                "Adlartok": "Adlartok",
+                "Northern_Passage": "Northern Passage",
+                "Avalanche": "Avalanche",
+                "Manirak": "Manirak",
+                "Tundra_Rock": "Tundra Rock",
+                "Patuktuq": "Patuktuq",
+                "Summit_Ice": "Summit Ice",
+                "Kilalurak": "Kilalurak",
+                "Nilak": "Nilak",
+                "Chulyin": "Chulyin",
+                "Tattilgat": "Tattilgat",
+                "Atka": "Atka",
+                "Pimniq": "Pimniq",
+                "Anyu": "Anyu",
+                "Glacial_Peak": "Glacial Peak",
+                "Nunataq": "Nunataq",
+                "Nanuq": "Nanuq",
+                "Precipice": "Precipice",
+                "Unalaq": "Unalaq",
+                "Neural_Rites": "Neural Rites",
+                "Frozen_Steppe": "Frozen Steppe",
+                "The_Grotto": "The Grotto",
+                "Temple_Floe": "Temple Floe",
+                "Spirit_Plane": "Spirit Plane",
+                "Murky_Waters": "Murky Waters",
+                "Cursed_Current": "Cursed Current",
+                "Coral_Depths": "Coral Depths",
+                "Rough_Expanse": "Rough Expanse",
+                "Strong_Tide": "Strong Tide",
+                "Dark_Abyss": "Dark Abyss",
+                "Fresh_Flow": "Fresh Flow",
+                "Tideless_Deep": "Tideless Deep",
+                "Glimmering_Surf": "Glimmering Surf",
+                "Serene_Waves": "Serene Waves",
+                "Red_Sea": "Red Sea",
+                "Wondering_Ocean": "Wondering Ocean",
+                "Foam_Ceiling": "Foam Ceiling",
+                "Walled_Gulf": "Walled Gulf",
+                "Lower_Grotto": "Lower Grotto",
+                "Silver_Swarms": "Silver Swarms",
+                "Upper_Grotto": "Upper Grotto",
+                "Rocky_Domain": "Rocky Domain",
+                "Nautical_Parlay": "Nautical Parlay",
+                "Restless_Buoy": "Restless Buoy",
+                "Ripped_Sails": "Ripped Sails",
+                "Nautilus_Mirage": "Nautilus Mirage",
+                "Ravenous_Tides": "Ravenous Tides",
+                "Deep_Dive": "Deep Dive",
+                "Furious_Storm": "Furious Storm",
+                "Silver_Crest": "Silver Crest",
+                "Grey_Clouds": "Grey Clouds",
+                "Translucent_Algae": "Translucent Algae",
+                "Treacherous_Surf": "Treacherous Surf",
+                "Single_Wave": "Single Wave",
+                "Cursed_Lip": "Cursed Lip",
+                "Coral_Kingdom": "Coral Kingdom",
+                "Telescopic_Barrel": "Telescopic Barrel",
+                "Sponge_Sands": "Sponge Sands",
+                "Seagull_Domain": "Seagull Domain",
+                "Tangled_Fins": "Tangled Fins",
+                "Scuba_Bay": "Scuba Bay",
+                "Tide_Ascent": "Tide Ascent",
+                "Breakwater_Wharf": "Breakwater Wharf",
+                "Adrift_Liner": "Adrift Liner",
+                "Bermuda_Quay": "Bermuda Quay",
+                "Sextant_Mast": "Sextant Mast",
+                "Grog_Wash": "Grog Wash",
+                "R_lyeh_Reef": "R'lyeh Reef",
+                "Capricorn_Waterway": "Capricorn Waterway",
+                "Barnacle_Deck": "Barnacle Deck",
+                "Ahab_s_Tomb": "Ahab's Tomb",
+                "Galley_Commodore": "Galley Commodore",
+                "Adamastor": "Adamastor",
+                "Deadeye_Admiral": "Deadeye Admiral",
+                "Monkey_s_Fist": "Monkey's Fist",
+                "Dagon_s_Dagger": "Dagon's Dagger",
+                "Sunken_Leviathan": "Sunken Leviathan",
+                "Raging_Tides": "Raging Tides",
+                "Buccaneer_Plateau": "Buccaneer Plateau",
+                "Craggy_Cay": "Craggy Cay",
+                "Behemoth": "Behemoth",
+                "Privateer_Helm": "Privateer Helm",
+                "Medusa_Cove": "Medusa Cove",
+                "Man_O_War": "Man-O-War",
+                "Nemo_s_Dock": "Nemo's Dock",
+                "Anchorage_Ruin": "Anchorage Ruin",
+                "Ahoy_Alee": "Ahoy Alee",
+                "Ursula_s_Valley": "Ursula's Valley",
+                "Dungbie_Trough": "Dungbie Trough",
+                "Idlers_Range": "Idlers Range",
+                "Wherry_Gap": "Wherry Gap",
+                "Nock_s_Turn": "Nock's Turn",
+                "Scuttle_Ridge": "Scuttle Ridge",
+                "Ghost_Trench": "Ghost Trench",
+                "Scurvy_Atoll": "Scurvy Atoll",
+                "Capsize_Lagoon": "Capsize Lagoon",
+                "Undertow_Bank": "Undertow Bank",
+                "Neptune_s_Galleon": "Neptune's Galleon",
+                "Seafarer_s_Current": "Seafarer's Current",
+                "Blackwater_Cape": "Blackwater Cape",
+                "Leviathan_Wreck": "Leviathan Wreck",
+                "Typhoon_Peninsula": "Typhoon Peninsula",
+                "Corsair_s_Skerry": "Corsair's Skerry",
+                "Mutiny_Canyon": "Mutiny Canyon",
+                "Bytedirt_Planes": "Bytedirt Planes",
+                "End_of_the_Void": "End of the Void",
+                "Banker_s_Heaven": "Banker's Heaven",
+                "Shift_Land": "Shift / Land",
+                "Black_Net_Market": "Black Net Market",
+                "Pulse_City": "Pulse City",
+                "Max_s_Shelter": "Max's Shelter",
+                "The_Open_Zone": "The Open Zone",
+                "The_Warring_Towers": "The Warring Towers",
+                "Forgotten_Fragments": "Forgotten Fragments",
+                "Backup_NET": "Backup:NET",
+                "Spoiled_Resort": "Spoiled Resort",
+                "Fort_Duplex": "Fort Duplex",
+                "LoneHub": "Lone Hub",
+                "Alpha_1_Omega_2": "Alpha 1 Omega 2",
+                "Ray_s_Ray_s": "Ray's Ray's",
+                "Purple_Palace": "Purple Palace",
+                "Three_Oc3ans": "Three Oc3ans",
+                "Vortex": "Vortex",
+                "Twisted_Alps": "Twisted Alps",
+                "Archives_of_Junkman": "Archives of Junkman",
+                "Frozen_RAM": "Frozen RAM",
+                "Cas_Cade": "Cas.Cade",
+                "The_Historical_Museum": "The Historical Museum",
+                "Aerial_Boulevard": "Aerial Boulevard",
+                "Slate_13": "Slate 13",
+                "New_final_final_exe": "New_final_final.exe",
+                "Bizarre_Plains": "Bizarre Plains",
+                "Argus__Watch": "Argus' Watch",
+                "Berta_s_Byte_Sauce": "Berta's Byte-Sauce",
+                "Veil_of_Bits": "Veil of Bits",
+                "Harvey_s_Low_Core": "Harvey's Low Core",
+                "The_Byte_Parade": "The Byte Parade",
+                "Reboot_Bay": "Reboot Bay",
+                "Streaming_Forest": "Streaming Forest",
+                "CMYK_Citadel": "CMYK Citadel",
+                "Forgify": "Forgify",
+                "Digital_Town_of_Hope": "Digital Town of Hope",
+                "Cloud_One": "Cloud One",
+                "Re_Birth": "Re: Birth",
+                "Castle_You_Es_Bee": "Castle You-Es-Bee",
+                "NET_MASKerade": "NET MASKerade",
+                "If_Then_Whatever": "If, Then, Whatever",
+                "The_Virtual_Cliffs_of_G0r3": "The Virtual Cliffs of G0r3",
+                "The_Church_of_Games": "The Church of Games",
+                "The_Sacred_Database": "The Sacred Database",
+                "Game_Over": "Game Over",
+                "Rustikauri": "Rustikauri",
+                "Mathaben": "Mathaben",
+                "Nobisia": "Nobisia",
+                "Ghirken": "Ghirken",
+                "Klaylach": "Klaylach",
+                "Wrandasten_3": "Wrandasten 3",
+                "Carva_Caska": "Carva Caska",
+                "Fortrin": "Fortrin",
+                "Oppeska": "Oppeska",
+                "Enervein": "Enervein",
+                "Akuppers": "Akuppers",
+                "Xalvades": "Xalvades",
+                "Ertannen_Belt": "Ertannen Belt",
+                "New_Frozenstone": "New Frozenstone",
+                "Zomantau": "Zomantau",
+                "Verda_Dophria": "Verda Dophria",
+                "Phovolken": "Phovolken",
+                "Low_Hacoon_Valley": "Low Hacoon Valley",
+                "High_Hacoon_Valley": "High Hacoon Valley",
+                "Plateau_Firnane_2": "Plateau Firnane-2",
+                "Jalcion_Crater": "Jalcion Crater",
+                "Loakmolden": "Loakmolden",
+                "Kardine_Haven": "Kardine Haven",
+                "Vradeen": "Vradeen",
+                "Vaanderbirch": "Vaanderbirch",
+                "Astra_Prime": "Astra Prime",
+                "Destallia": "Destallia",
+                "Vyvalgis": "Vyvalgis",
+                "Sharvice": "Sharvice",
+                "Delta_Hills": "Delta Hills",
+                "Everdoom": "Everdoom"
+            },
+            "bonus": {
+                "coin": {
+                    "name": "Mynt"
+                },
+                "supply": {
+                    "name": "Förnödenhet"
+                },
+                "good": {
+                    "name": "Vara"
+                },
+                "special_good": {
+                    "name": "Specialvaror"
+                },
+                "good_bonus": {
+                    "name": "Produktionsbonus"
+                },
+                "expansion": {
+                    "name": "Expansion"
+                },
+                "medal": {
+                    "name": "Medalj"
+                },
+                "diamond": {
+                    "name": "Diamant"
+                },
+                "pvp_tower": {
+                    "name": "PvP Torn"
+                },
+                "blueprint": {
+                    "name": "Ritning"
+                },
+                "military_boost": {
+                    "name": "Militärboost",
+                    "gb_description": "Höjer attack / försvars -bonus för enheter i attackerande armé. Läggs till med varje byggnad."
+                },
+                "fierce_resistance": {
+                    "name": "Hårt motstånd",
+                    "gb_description": "Höjer attack / försvars -bonus för enheter i försvarande armé samt ökar stödpools-bonus. Läggs till med varje byggnad."
+                },
+                "coin_boost": {
+                    "name": "Myntboost",
+                    "gb_description": "Ökar resultatet från dina hus med upp till 90 gånger med varje skörd. Läggs till utöver motivation och övrig bonus."
+                },
+                "supply_boost": {
+                    "name": "Förnödenhetsboost",
+                    "gb_description": "Ökar resultatet från dina förnödenhetsbyggnader. Läggs till utöver motivation och övrig bonus."
+                },
+                "good_production": {
+                    "name": "Varuproduktion",
+                    "gb_description": "Producerar en viss mängd varor från din nuvarande era var 24:e timme. Från och med modern tid producerar den dubbla mängden i oraffinerade varor istället (varor från 8 eror bakåt)."
+                },
+                "medal_production": {
+                    "name": "Medaljproduktion",
+                    "gb_description": "Producerar en viss mängd medaljer var 24:e timme."
+                },
+                "research": {
+                    "name": "Forskning",
+                    "gb_description": "Producerar en liten mängd FP var 24:e timme."
+                },
+                "coin_production": {
+                    "name": "Myntproduktion",
+                    "gb_description": "Producerar en viss mängd mynt var 24:e timme."
+                },
+                "supply_production": {
+                    "name": "Förnödenhetsproduktion",
+                    "gb_description": "Producerar en viss mängd förnödenhet var 24:e timme."
+                },
+                "population": {
+                    "name": "Befolkning",
+                    "gb_description": "Permanent befolkningsbonus."
+                },
+                "happiness": {
+                    "name": "Lycka",
+                    "gb_description": "Permanent lyckobonus."
+                },
+                "quest_reward_boost": {
+                    "name": "Uppdragsbelönings-boost",
+                    "gb_description": "Höjer dina mynt, förnödenheter, varor, medaljer eller diamanter från uppdragsbelöningar."
+                },
+                "penal_unit": {
+                    "name": "Militär enhet",
+                    "gb_description": "Rekryterar oanslutna enheter var 24:e timme, slumpmässigt valt från någon/några militärbyggnad(er) i din stad."
+                },
+                "guild_goods": {
+                    "name": "Gille-varor",
+                    "gb_description": "Producerar din nuvarande eras varor, som går direkt till imperiets skattkammare."
+                },
+                "support_pool_bonus": {
+                    "name": "Stödpool bonus",
+                    "gb_description": "Ökar ditt gilles stödpool-bonus. Läggs till med varje byggnad."
+                },
+                "aid_goods": {
+                    "name": "Stödvaror",
+                    "gb_description": "Producerar 1 slumpmässig vara vid \"polivering\". Eran för varan motsvarar eran på den \"poliverarade\" byggnaden."
+                },
+                "plunder_goods": {
+                    "name": "Plundra varor",
+                    "gb_description": "Ger efter varje skördning, slumpmässiga varor vid de 3 första plundringarna. Eran för varorna motsvarar eran på den plundrade byggnaden."
+                },
+                "contribution_boost": {
+                    "name": "Bidragsboost",
+                    "gb_description": "Boostar FP, medaljer och ritningar du får från belöningar vid FP-donationer i MB."
+                },
+                "aid_blueprints": {
+                    "name": "Stödritningar",
+                    "gb_description": "Ökar chansen att få en ritning vid \"polivering\". Ex. 100% bonus kommer att fördubbla din chans att få en ritning."
+                },
+                "relic_hunt": {
+                    "name": "Relikjakt",
+                    "gb_description": "Denna egenskap ger dig möjlighet att få en \"relik\" när du framgångsrikt löst ett möte i en Imperiumexpedition. Reliker är värdefulla och förekommer i 3 olika varianter. Varje nivå ökar chansen att hitta en relik, samtidigt ökar oddsen att det blir en sällsynt relik."
+                },
+                "critical_hit": {
+                    "name": "Kritisk skada",
+                    "gb_description": "Ger alla enheter chansen att hantera 1,5 gång den förväntade skadan när de angriper enheter av samma era. Kritisk träff verkar också mot \"Reaktiv Sköld\" (om förväntad skada normalt är 4-4, kommer en kritisk träff att öka till 6-6). Skurkar (och andra \"ingen ålder\" -enheter) påverkas inte / kan inte använda denna förmåga förrän de omvandlas till en annan enhet. En kritisk träff med minst 11 skador kommer att döda varje enhet, även med moralbonus. Denna bonus gäller alla attackerande arméer plus din försvarande armé i PvP. \"Kritisk skada\" sker inte när en enhet retalierar."
+                },
+                "helping_hands": {
+                    "name": "Hjälpande händer",
+                    "gb_description": "Ger dig en viss chans att få en slumpmässig resurs när du \"poliverar\". Du kan få varor (från din nuvarande era), förnödenheter, mynt, medaljer eller till och med diamanter."
+                },
+                "plunder_and_pillage": {
+                    "name": "Plundra varor",
+                    "gb_description": "Ger dig en viss chans att få dubbelt upp när du plundrar. Fördubblingen inbegriper allt plundrat, inklusive ForgePoints och Imperiemakt."
+                },
+                "first_strike": {
+                    "name": "Första slaget",
+                    "gb_description": "Ger en viss chans vid de första striderna, att en enhet från fienden dödas omedelbart vid början av strid. Detta gäller bara den första vågen. Uppdateras vid skördning."
+                },
+                "double_collection": {
+                    "name": "Dubbelinsamling",
+                    "gb_description": "Ger en chans att få dubbla resurser i de första byggnaderna som samlats in. Utesluter militära och stora byggnader. Uppdateras vid skördning."
+                },
+                "exploration_site": {
+                    "name": "Utforskningsställe",
+                    "gb_description": "---"
+                }
+            }
+        },
+        "utils": {
+            "content": {
+                "tools": "Verktyg",
+                "statistics": "Statistik"
+            },
+            "btn_calculate": "Beräkna",
+            "description": {
+                "p1": "Ange de olika värdena. Resultatet uppdateras automatiskt.",
+                "p2_html": "<strong>Obs! </strong>: Om uppdateringen inte blir klar automatiskt klickar du på [$t(utils.btn_calculate)]."
+            },
+            "choose_age": "Välj en era",
+            "permalink": "Permalänk",
+            "Add": "Lägg till",
+            "Remove": "Ta bort",
+            "Yes": "Ja",
+            "No": "Nej",
+            "Ok": "Ok",
+            "Copy": "Kopiera",
+            "Copyed": "Kopierad !",
+            "Information": "Information",
+            "From": "Från",
+            "To": "Till (max {{max}})",
+            "Prefix": "Prefix",
+            "Suffix": "Suffix",
+            "Path": "Sökväg",
+            "Name": "Namn",
+            "Description": "Beskrivning",
+            "Rewards": "Belöningar",
+            "Cost": "Kostnad",
+            "Conquered": "Erövrad",
+            "Total": "Totalt",
+            "Secured": "Säkrad",
+            "Reset": "Återställ",
+            "Confirm": "Bekräfta",
+            "Close": "Stäng",
+            "Result": "Resultat",
+            "between_range": "mellan {{min, nummer}} och {{max, nummer}}",
+            "Submit": "Skicka",
+            "Reset_values": "Återställ värden",
+            "Switch": "Växla",
+            "Save": "Spara",
+            "Show": "Visa",
+            "Hide": "Göm",
+            "errors": {
+                "field_cannot_be_empty": "Detta fält kan inte vara tomt"
+            },
+            "moment": {
+                "year": "{{count}} år",
+                "year_plural": "{{count, number}} år",
+                "month": "{{count}} månad",
+                "month_plural": "{{count}} månader",
+                "day": "{{count}} dag",
+                "day_plural": "{{count}} dagar"
+            },
+            "graph": {
+                "gb_level": "Nivå",
+                "gb_level_cost": "Nivåkostnad",
+                "gb_reward_1st_place": "Nivåbelöning (1:a plats)"
+            },
+            "Next": "→",
+            "Previous": "←",
+            "Exit": "Avsluta",
+            "Done": "Färdig",
+            "Tutorial": "Handledning",
+            "Donate": "Donera",
+            "FP": "{{count, number}} FP",
+            "FP_plural": "{{count, number}} FP"
+        },
+        "contributions": {
+            "blog": "Blogginlägg",
+            "bug": "Felrapporter",
+            "code": "Kod",
+            "design": "Design",
+            "doc": "Dokumentation",
+            "eventOrganizing": "Händelsearrangemang",
+            "example": "Exempel",
+            "financial": "Finansiell",
+            "fundingFinding": "Söka Finansiering",
+            "ideas": "Idéer, Planering & Återkoppling",
+            "infra": "Infrastruktur (Inhysning, Bygg-verktyg, etc)",
+            "platform": "Packetering / portning till ny plattform",
+            "plugin": "Plugin / verktygsbibliotek",
+            "question": "Besvara frågor",
+            "review": "Recenserade kod-förfrågningar",
+            "talk": "Talks",
+            "test": "Tester",
+            "tool": "Verktyg",
+            "translation": "Översättning",
+            "tutorial": "Handledning",
+            "video": "Videor",
+            "data": "Lägga till eller uppdatera data",
+            "inspired_tool": "Verktyg inspirerat av hans arbete",
+            "creator": "Skapare av detta projekt"
+        },
+        "seo": {
+            "keywords": {
+                "gb": "mb",
+                "great_building": "mäktig byggnad",
+                "fp": "fp",
+                "forge_point": "forge point",
+                "medals": "medaljer",
+                "military_units": "militära enheter"
+            }
+        }
+    }
+}

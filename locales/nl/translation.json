@@ -1,0 +1,1345 @@
+{
+    "translation": {
+        "main_menu": {
+            "home": "Startpagina",
+            "gb_investment": "$t(routes.gb_investment_gb_chooser.hero.title)",
+            "secure_position": "$t(routes.secure_position.hero.title)",
+            "cf_calculator": "$t(routes.cf_calculator.hero.title)",
+            "gb_statistics": "$t(routes.gb_statistics.hero.title)",
+            "gb_forecast_cost": "$t(routes.gb_forecast_cost.hero.title)",
+            "trade": "$t(routes.trade.hero.title)",
+            "help_to_translate_the_site": "$t(routes.help_to_translate_the_site.hero.title)",
+            "campaign_cost": "$t(routes.campaign_cost.hero.title)"
+        },
+        "footer_menu": {
+            "about": "Over",
+            "contributors": "Bijdragers",
+            "changelog": "Wijzigingen",
+            "contact": "Contact"
+        },
+        "components": {
+            "campaign_cost": {
+                "title": "$t(routes.campaign_cost.hero.title)",
+                "choose_province": "Kies een provincie",
+                "message": {
+                    "haveUnknownCosts": "Deze provincie bevat één of meer sectoren met ontbrekende gegevens"
+                }
+            },
+            "cf_calculator": {
+                "block_cfc": {
+                    "title": "$t(routes.cf_calculator.hero.title)",
+                    "your_age": "Jouw tijdperk",
+                    "your_cf_boost": "Jouw $t(foe_data.gb.Chateau_Frontenac) Boost",
+                    "coins_to_use": "Munten voor de NVF Quest",
+                    "coins_supplies_info": "Deze waarde moet groter of gelijk zijn aan {{min}}omdat hieronder geen winst kan worden gegarandeerd (statistisch)",
+                    "supplies_to_use": "Voorraden voor de  NVF Quest",
+                    "gb_plunder_goods": "GG & Plunder Goederen",
+                    "fp_by_24h": "24 Uurs FP Productie",
+                    "other_rq": "Andere dagelijks WQ's",
+                    "second_rq": "Tweede WQ donor?",
+                    "supplies_gathered": "Voorraden verzameld",
+                    "table_reward": {
+                        "title": "$t(utils.Rewards)",
+                        "thead": {
+                            "th1": "BD's",
+                            "th2": "Medailles",
+                            "th3": "Goederen",
+                            "th4": "FP's"
+                        }
+                    },
+                    "reward_message": {
+                        "daily_ubq": "Dagelijkse NVF Quests: {{count, number}}",
+                        "bonus_ubq": "Bonus NVF Quests: {{count, number}}",
+                        "second_rq_completed": "2de WQ's afgerond: {{count, number}}",
+                        "total_goods": "Totaal Goederen: {{count, number}}",
+                        "total_fp": "Totaal FP's: {{count, number}}",
+                        "total_rq_completed": "Totaal WQ's afgerond: {{count, number}}"
+                    },
+                    "table_return": {
+                        "thead": {
+                            "th_level": "Niveau",
+                            "th_coin": "Munten terug",
+                            "th_supply": "Voorraad terug"
+                        }
+                    },
+                    "infinity_generator": {
+                        "message": "Met de huidige bonus van $t(foe_data.gb.Chateau_Frontenac), zul je meer munten en voorraden verdienen, dan dat nodig is om de quest af te ronden. Kies a.u.b. een aantal \"$t(components.cf_calculator.block_cfc.infinity_generator.label)\" die je wilt uitvoeren.",
+                        "label": "Aaneengesloten Quests"
+                    }
+                },
+                "tutorial": {
+                    "welcome": "Dit programma Is enkel informatief. Het geeft je informatie wat je kan statistisch bereiken met je $t(foe_data.gb.Chateau_Frontenac).",
+                    "checkSecondQuest": "From $t(foe_data.age.LateMiddleAges), you can do a second recurring quest. Set \"$t(utils.Yes)\" if you want to do the second recurring quest.\n\n<i><b>Note</b>: It suppose that the second reccuring quest are: gather X supplies.</i>.",
+                    "fpBy24h": "Vul aantal FP's in die je per 24 uur verzamelt.",
+                    "goods": "Aantal goederen welke je uit plunderen en GG's verzamelt",
+                    "supplies": "Vul het aantal voorraden in dat je voor alle missies wenst te gebruiken.",
+                    "coins": "Vul het aantal munten in dat je voor alle missies wenst te gebruiken.",
+                    "yourCfBoost": "Voer je $t(foe_data.gb.Chateau_Frontenac) boost in.\n\nBijv: bij 450%, voer in: 450.",
+                    "yourAge": "Kies uw Tijdperk."
+                }
+            },
+            "gb_investment": {
+                "gb_list_select": {
+                    "label": "Kies Groot Gebouw",
+                    "info": "U kunt de stijl van de selector (oude selector of automatisch aanvullen) in de algemene instellingen wijzigen"
+                },
+                "gb_investment": {
+                    "title": "$t(routes.gb_investment_gb_chooser.hero.title)",
+                    "description": {
+                        "p1": "Voer het level ( naar lvl) en  Arc bonus % in. De tabelwaarden worden automatisch bijgewerkt.",
+                        "p2_html": "<strong>Let Op</strong>: Als het bijwerken niet automatsch plaats vind, stel dan eerst het GG niveau en de te investeren hoeveelheid in en klik op \"$t(components.gb_investment.gb_investment.form.submit_global)\". Om inviduele waasrden voor elke plaats aan te passen, wijzig de gewenste warde en klik op \"$t(components.gb_investment.gb_investment.form.submit_custom)\"."
+                    },
+                    "form": {
+                        "level": "GG Niveau (tussen {{min}} en {{max}})",
+                        "investor_percentage": "% Arc bonus",
+                        "submit_global": "Globale Berekening",
+                        "submit_custom": "Aangepaste Berekening",
+                        "owner_investment": "Aantal FP's dat door de GG eigenaar tot nu is gestort (max. {{max}})",
+                        "add_investors": "Voeg investeerder toe (aantal FP's, $t(utils.between_range, {'min': '{{min}}', 'max': '{{max}}'}))",
+                        "tooltip_add_investors": "Klik op de knop \"$t(utils.Add)\" of druk op de \"Enter\" -toets om een investeerder toe te voegen",
+                        "investors_list": "Lijst van toegevoegde investeerders",
+                        "show_snipe": "Toon P veilig/Snipe winst",
+                        "show_only_secured_places": "Toon alleen beveiligde plaatsen",
+                        "display_card": "Toon tabel in kaart overzicht (klein scherm)"
+                    },
+                    "table": {
+                        "title": "$t({{gb_key}}) niveau {{fromLevel, number}} → {{level, number}}",
+                        "thead": {
+                            "th1": "Posities",
+                            "th2": "Standaard beloningen",
+                            "th3": "FP's van de eigenaar om positie veilig te stellen",
+                            "th4": "Beloning incl. Arc bonus",
+                            "th5": "% Arc bonus",
+                            "th6": "Positie vrij ",
+                            "fp_already_putin": "Aantal FP's reeds gestort",
+                            "spot_snipe": "Safe/profit",
+                            "expected_participation": "FP verkregen met verwachte eigenaar Arc Bonus %",
+                            "real_participation": "FP verkregen met jouw Arc bonus %",
+                            "is_sniper": "Potentiele Sniper?"
+                        },
+                        "tbody": {
+                            "button_show_extra_investor": "Extra investeerder tonen",
+                            "button_show_extra_investor_plural": "Extra investeerders tonen",
+                            "button_hide_extra_investor": "Extra investeerder verbergen",
+                            "button_hide_extra_investor_plural": "Extra investeerders verbergen",
+                            "loss": "Deze speler verliest FP",
+                            "loss_plural": "Deze speler verliest FP's",
+                            "tooltip_owner_investment": "De door de eigenaar nog te storten FPs om de plaats veilig te stellen",
+                            "tooltip_expected_investment": "Verwachte investering",
+                            "profit": "Deze speler maakt (FP) winst",
+                            "neutral": "Deze speler maakt geen winst of verlies"
+                        },
+                        "tfoot": {
+                            "total_preparation": "Totale investering door eigenaar",
+                            "tooltip_owner_investment": "Aantal FP's over om het niveau af te ronden: {{count, number}}",
+                            "level_cost": "Kosten niveau"
+                        }
+                    },
+                    "display_gb_name": "GG Naam weergeven?",
+                    "use_short_name": "GG Afkorting gebruiken?",
+                    "show_level": "Level tonen?"
+                },
+                "promotion": {
+                    "title": "Promotie bericht",
+                    "prefix_placeholder": "tekst voor het promotion promotie",
+                    "suffix_placeholder": "tekst na het promotion promotie",
+                    "promo": [
+                        "P1({{investment}})",
+                        "P2({{investment}})",
+                        "P3 ({{investment}})",
+                        "P4 ({{investment}})",
+                        "P5 ({{investment}})"
+                    ]
+                }
+            },
+            "gb_investment_investors": {
+                "description": {
+                    "p1": "Deze weergave maakt het mogelijk de winst te zien die kan worden verkregen door een plaats in te nemen met of zonder rekening te houden met investeringen op andere plaatsen. Er zijn {{count}} soorten overwegingen van andere plaatsen:"
+                },
+                "takingPlaceInConsideration": {
+                    "label": "Neem andere plaatsen in overweging?",
+                    "form": {
+                        "show_place": "Plaats weergeven",
+                        "no": "$t(utils.No)",
+                        "normal": "Normaal",
+                        "optimal": "Optimaal"
+                    },
+                    "description": {
+                        "no": "hou geen rekening met andere plaatsen",
+                        "normal": "Rekening houden met de andere plaatsen met een minimale investering van investeerders en zonder te beveiligen door de eigenaar",
+                        "optimal": "Rekening houden met de andere plaatsen met een investering zonder winst van de investeerders en met het veiligstellen door de eigenaar"
+                    }
+                },
+                "table": {
+                    "thead": {
+                        "th_place": "Plaats {{count}}",
+                        "th_profit_loss": "Winst / Verlies"
+                    }
+                }
+            },
+            "gb_forecast_cost": {
+                "title": "Prognose",
+                "p1": "Bepaal het aantal FP's om van het ene naar het andere niveau te gaan, met of zonder de Arc bonus.",
+                "custom_percentage": "Aangepaste Arc bonus (voor elke positie)",
+                "estimated_time": "Schat tijd om het volgende niveau te halen",
+                "message": {
+                    "diff": "Inclusief bonus investeringen, bespaar je {{count}} FP",
+                    "diff_plural": "Inclusief bonus investeringen, bespaar je {{count, number}} FP's",
+                    "single": "Om Van - Tot level(s) {{level}} van \"$t({{gb}})\" af te ronden, moet de eigenaar {{preparation, number}} FP's investeren. Totale kosten van niveau: {{cost, number}} FP's.",
+                    "multi": "Om van level {{from}} naar {{to}} te gaan van \"$t({{gb}})\", moet de eigenaar {{preparation, number}} FP's investeren. Totale kosten van niveau: {{cost, number}} FP's.",
+                    "estimated_time": "Geschatte tijd om het niveau te halen: {{time}}"
+                },
+                "prop_already_invested": "Reeds door de eigenaar geïnvesteerde FP's voor het huidige niveau",
+                "graph": {
+                    "title": "Prognose van de te investeren hoeveelheden voor \"$t({{gb}})\"",
+                    "x_axes_label": "$t(utils.graph.gb_level)",
+                    "y_axes_label": "$t(utils.graph.gb_level_cost)",
+                    "label": {
+                        "default": "Bruto kosten van het niveau",
+                        "default_preparation": "Investering zonder bonus",
+                        "custom_preparation": "Investering met bonus"
+                    }
+                }
+            },
+            "gb_statistics": {
+                "title": "$t(routes.gb_statistics.hero.title)",
+                "p1": "De grafieken zijn op basis van het tijdperk, omdat de kosten / opbrengsten van de GG's voor ieder tijdperk het zelfde zijn, op een enkel uitzonderlijk geval na ($t(foe_data.gb.Oracle_of_Delphi)).",
+                "represent": "Represent:",
+                "graph": {
+                    "title_1": "Evolutie van de kosten van de niveaus t.o.v. de niveaus",
+                    "title_2": "Evolutie van de opbrengst van de eerste positie t.o.v. de niveaus",
+                    "title_3": "Evolutie van de kosten van de niveaus t.o.v. de opbrengst van de eerste positie",
+                    "title_4": "Evolutie van de opbrengst van de eerste positie t.o.v. de kosten van de niveaus"
+                }
+            },
+            "secure_position": {
+                "block_place": {
+                    "fp_to_complete_level": "FP over om het niveau af te ronden: {{count}}",
+                    "fp_to_complete_level_plural": "Hoeveelheid FP's over om het niveau af te ronden: {{count, number}}",
+                    "place": "{{place}}({{count, number}} FP)",
+                    "place_plural": "{{place}}({{count, number}} FP's)",
+                    "title": "Positie veilig stellen",
+                    "level_cost": "Kosten niveau",
+                    "current_deposits": "Som van de actuele stortingen",
+                    "your_participation": "Jouw actuele bijdrage",
+                    "other_participation": "Bijdrage van de in te halen speler",
+                    "your_arc_bonus": "Jouw Arc bonus",
+                    "fp_target_reward": "FP's van de beoogde positie",
+                    "target_reward": "Beoogde positie",
+                    "various_rate": "Verschillende tarieven",
+                    "rate": "Bonus",
+                    "fp_according_rate": "FP te storten afhankelijk van % Arc Bonus",
+                    "fp_to_lock": "FP te storten om P (Plek) veilig te stellen",
+                    "result": {
+                        "default": "Stort totaal {{count}} FP om positie veilig te stellen.",
+                        "default_plural": "Je moet totaal {{count, number}} FP's hebben gestort om de positie veilig te stellen.",
+                        "fp_need_to_lock": "FP te storten om je plaats veilig te stellen:",
+                        "fp_need_to_lock_plural": "FPs te storten om je plaats veilig te stellen:",
+                        "fp_to_secure_html": "Je moet nog {{count}} FP storten.",
+                        "fp_to_secure_html_plural": "Je moet nog {{count, number}} FP's storten.",
+                        "error": "Één of meer waarden zijn niet geldig.",
+                        "roi": {
+                            "profit": "Je zult {{count}} FP winnen",
+                            "profit_plural": "Je zult {{count, number}} FP's winnen",
+                            "loss": "Je verliest {{count}} FP",
+                            "loss_plural": "Je verliest {{count, number}} FP's",
+                            "neutral": "Je zult geen winst op je investering ontvangen"
+                        },
+                        "already_blocked": "Je positie is veilig.",
+                        "still_to_put": "Aantal FP's nog te storten",
+                        "cant_block": "Je kunt de positie niet veilig stellen."
+                    },
+                    "unknown": "onbekend"
+                }
+            },
+            "simple_trade": {
+                "title": "Tabellen versie",
+                "table": {
+                    "thead": {
+                        "th1": "Tijdperk",
+                        "th2": "Goederen",
+                        "th3": "$t(components.trade.label.i_want)",
+                        "th4": "Resultaat",
+                        "split": "Verdelen",
+                        "ratio": "Verhouding"
+                    }
+                },
+                "slpit": "De aanbiedingen verdelen?",
+                "show_ratio": "verhouding weergeven"
+            },
+            "site_layout": {
+                "update_plural": "{{count}}updates sinds uw laatste bezoek.",
+                "hero": {
+                    "title": "$t(common:site_title)",
+                    "slogan_html": "Een set tools om het leven op $t(common:links.foe) te versimpelen."
+                },
+                "cookie": {
+                    "message": "Als je doorgaat met het gebruik van $t(common:site_title), stem je in met het gebruik van cookies.",
+                    "link": "Meer informatie"
+                },
+                "new_year": {
+                    "message": "$t(common:site_title) viert het {{count, number}} jaar",
+                    "message_plural": "$t(common:site_title) viert zijn {{count, number}} jaar"
+                },
+                "survey": {
+                    "message": "Help ons om $t(common:site_title) te verbeteren door deze enquête in te vullen"
+                },
+                "whats_new": "Wat is er nieuw ?",
+                "permalink_info": "Je bezoekt een permalink. Daardoor zullen de wijzigingen niet worden opgeslagen in een cookie.",
+                "footer": {
+                    "license_html": "Broncode onder $t(common:links.mit) licentie",
+                    "version": "Versie {{version}}"
+                },
+                "day_night": {
+                    "Day": "Dag",
+                    "start_day": "Begin van de dag",
+                    "Night": "Nacht",
+                    "start_night": "Begin van de nacht",
+                    "Auto": "Automatisch $t(components.site_layout.day_night.Day)/$t(components.site_layout.day_night.Night)"
+                },
+                "global_config": "Algemene instellingen",
+                "global_config_dialog": {
+                    "fixed_main_menu": "Hoofdmenu altijd zichtbaar",
+                    "select_gb_style": "GG Selectie methode",
+                    "select_gb_style_mode": {
+                        "datalist": "Automatisch aanvullen",
+                        "select": "Selecteer (oude stijl)"
+                    },
+                    "day_night": "Thema",
+                    "day_night_mode": {
+                        "Day": "Dag",
+                        "Night": "Nacht",
+                        "Auto": "automatisch"
+                    }
+                },
+                "switch_locale": "$t(common:site_title) is beschikbaar in uw taal"
+            },
+            "trade": {
+                "title": "Formulier versie",
+                "label": {
+                    "i_have": "ik heb",
+                    "i_want": "ik wil",
+                    "amount": "Bedrag"
+                },
+                "split_value": "Maximumgrootte van een aanbieding (max {{count}})",
+                "split_message": {
+                    "msg": "{{valueFrom}} {{ageFrom}} voor {{valueTo}} {{ageTo}}",
+                    "common": "{{count}} × ($t(components.trade.split_message.msg, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' }))",
+                    "multi": "$t(components.trade.split_message.common, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' }) and $t(components.trade.split_message.common, { 'count': 1, 'valueFrom': '{{valueFromSingle}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueToSingle}}', 'ageTo': '{{ageTo}}' })"
+                },
+                "message": {
+                    "result": "Voor {{to}} goederen van {{ageTo}} heeft u {{from}}goederen van  {{ageFrom}} nodig met aanbiedingen tot {{count}}:",
+                    "total": "(totaal: {{amount}} {{key}})"
+                }
+            },
+            "promotion_message_builder": {
+                "title": "Promotie bericht builder",
+                "info": "Dit kan worden gekopieerd om te worden gedeeld, bijvoorbeeld met uw gildeleden",
+                "note": "Merk op dat de messagebuilder niveau 9 → 10 gebruikt van $t(foe_data.gb.Observatory) met een ratio van 1,9 voor preview.",
+                "action": "Actie",
+                "actions": {
+                    "create": "Maak een nieuwe sjabloon",
+                    "update": "Update een bestaande sjabloon",
+                    "delete": "Een bestaande sjabloon verwijderen"
+                },
+                "start_from_template": "Begin met een sjabloon?",
+                "edit_template": "Kies de sjabloon om te bewerken",
+                "delete_template": "Kies de sjabloon die u wilt verwijderen",
+                "templates": {
+                    "default": "Standaard sjablonen",
+                    "custom": "Aangepaste sjablonen"
+                },
+                "config": "Configuratie",
+                "add_field_title": "Voeg aangepaste velden toe",
+                "add_field": {
+                    "name": "Veldnaam",
+                    "value": "Veldwaarde"
+                },
+                "custom_field_title": "Uw aangepaste velden",
+                "use_short_name": "$t(components.gb_investment.gb_investment.use_short_name)",
+                "reverse_place_order": "Plaatsen omkeren?",
+                "place_separator": "Plaats scheidingsteken",
+                "place_builder": "Plaatsen bouwer",
+                "place_preview": "Plaats preview (1e plaats)",
+                "message_builder": "Berichtmaker",
+                "message_preview": "Bericht voorbeeld",
+                "place_builder_title": "Plaats builder",
+                "message_builder_title": "Berichtmaker",
+                "available_variables": "Beschikbare variabelen:",
+                "variables": {
+                    "place": {
+                        "PI": "Plaats de index",
+                        "PV": "Waarde plaats (in FPs)",
+                        "PP": "$t(components.gb_investment.gb_investment.table.thead.th3)"
+                    },
+                    "message": {
+                        "FLVL": "Van niveau",
+                        "TLVL": "Naar niveau",
+                        "GBN": "GG naam",
+                        "P": "Posities",
+                        "OP": "$t(components.gb_investment.gb_investment.table.tfoot.total_preparation)",
+                        "PPx": "Aantal PF's te storten door de eigenaar voor plaats \"x\" (met \"x\" van 1 tot 5)",
+                        "LF": "Enter, Voeg nieuwe regel toe"
+                    }
+                },
+                "template_name": "Sjabloonnaam",
+                "errors": {
+                    "template_cannot_have_this_name": "Sjabloon kan deze naam niet hebben. Gebruik alstublieft een andere naam.",
+                    "custom_name_empty": "De naam van het veld mag niet leeg zijn.",
+                    "custom_name_already_exists": "Deze veldnaam bestaat al."
+                },
+                "template_saved": "Sjabloon opgeslagen",
+                "template_updated": "Sjabloon bijgewerkt",
+                "template_deleted": "Sjabloon verwijderd"
+            },
+            "import_promotion_message": {
+                "title": "Promotiebericht importeren",
+                "config_placeholder": "Plak je configuratie hier",
+                "errors": {
+                    "invalid_data": "Gegevens zijn ongeldig"
+                },
+                "template_imported": "Sjabloon geïmporteerd"
+            }
+        },
+        "routes": {
+            "home": {
+                "title": "$t(common:site_title)"
+            },
+            "about": {
+                "title": "Over $t(common:site_title)",
+                "general_info": {
+                    "title": "Algemene informatie",
+                    "p1_html": "Forge of Empires, FOE, en alle andere gerelateerde handelsmerken en content zijn eigendom van InnoGames GmbH. <br/> $t(common:site_title) is een onofficiele site van een derde partij en heeft geen binding met InnoGames.",
+                    "p2_html": "$t(common:site_title) was gecreeerd door de Franse speler <strong class=\"has-text-weight-semibold\">Yoratheon</strong>.",
+                    "p3_html": "De site is OpenSource en de broncode is vrij verkrijgbaar op $t(common:links.github). <br/> Dus, iedereen met de benodigde kennis kan meehelpen deze site te verbeteren."
+                },
+                "cookie": {
+                    "title": "Cookies",
+                    "p1": "Om het gebruiksgemak te verhogen, gebruikt deze site cookies.",
+                    "table_message": "De onderstaande tabel toont alle cookies die op deze site worden gebruikt.",
+                    "info": {
+                        "cookieDisclaimerDisplayed": "Geeft aan of u het informatiebericht over het gebruik van cookies hebt gelezen",
+                        "gbi_tab": "Globale parameter voor \"$t(routes.gb_investment_gb_chooser.hero.title)\" die aangeeft welk tabblad standaard moet worden geladen ($t(routes.gb_investment.tab.owner_view.title), etc.).",
+                        "gbPrefix": "Globale parameter voor \"$t(routes.gb_investment_gb_chooser.hero.title)\" die het voorvoegsel voor het promotiebericht bevat",
+                        "gbSuffix": "Globale parameter voor \"$t(routes.gb_investment_gb_chooser.hero.title)\" die het achtervoegsel voor het promotiebericht bevat",
+                        "locale": "Taal",
+                        "shortName": "Globale parameter voor \"$t(routes.gb_investment_gb_chooser.hero.title)\" die aangeeft of de GG-korte naam voor het promotiebericht moet worden weergegeven",
+                        "showLevel": "Globale parameter voor \"$t(routes.gb_investment_gb_chooser.hero.title)\" die aangeeft of het GG-niveau voor het promotiebericht moet worden weergegeven",
+                        "yourArcBonus": "Algemene instelling die jouw Arc bonus instelt",
+                        "yourCfBoost": "Algemene instelling voor uw Château Frontenac bonus",
+                        "haveReadTipAboutAddInvestor": "Geeft aan of u het informatiebericht hebt gelezen over de tip om bijdragers toe te voegen",
+                        "dayNightMode": "Geeft aan welke dag / nachtmodus u gebruikt",
+                        "dayStart": "Tijd gebruikt voor het begin van de dag (gebruikt in \"$t(components.site_layout.day_night.Auto)\")",
+                        "nightStart": "Tijd gebruikt voor het begin van de nacht (gebruikt in \"$t(components.site_layout.day_night.Auto)\")",
+                        "showSnipe": "Toon / verberg Spot / Snipe (gebruikt in \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "coins": "$t(components.cf_calculator.block_cfc.coins_to_use)",
+                        "fpBy24h": "$t(components.cf_calculator.block_cfc.fp_by_24h)",
+                        "goods": "$t(components.cf_calculator.block_cfc.gb_plunder_goods)",
+                        "otherRq": "$t(components.cf_calculator.block_cfc.other_rq)",
+                        "cumulativeQuest": "Cumulatief aantal missies",
+                        "secondRq": "$t(components.cf_calculator.block_cfc.second_rq)",
+                        "supplies": "$t(components.cf_calculator.block_cfc.supplies_to_use)",
+                        "suppliesGathered": "$t(components.cf_calculator.block_cfc.supplies_gathered)",
+                        "yourAge": "$t(components.cf_calculator.block_cfc.your_age)",
+                        "investorPercentageCustom_x": "$t(components.gb_investment.gb_investment.table.thead.th5)",
+                        "investorPercentageGlobal": "$t(components.gb_investment.gb_investment.form.investor_percentage)",
+                        "investorParticipation_x": "Verwachte bijdrage van investeerders wanneer de plaats geen FP's oplevert",
+                        "level": "GG level",
+                        "ownerInvestment": "$t(components.gb_investment.gb_investment.table.thead.th3)",
+                        "showPx": "Geef aan of de plaats in het promotiebericht moet worden weergegeven",
+                        "takingPlaceInConsideration": "In tab \"$t(routes.gb_investment.tab.investors_view.title)\" van \"$t(routes.gb_investment_gb_chooser.hero.title)\", geeft aan of de andere plaatsen in aanmerking moeten worden genomen bij de berekening",
+                        "targetLevel": "In het tabblad \"$t(routes.gb_investment.tab.investors_view.title)\" van \"$t(routes.gb_investment_gb_chooser.hero.title)\", geeft aan vanaf welk niveau de informatie in de tabel moet worden weergegeven",
+                        "displayGbName": "Geef aan of de GG naam in het promotiebericht moet worden weergegeven",
+                        "investorParticipation": "Bevat een lijst met alle toegevoegde investeerders",
+                        "displayTableCard": "Geef aan of de tabel in \"$t(routes.gb_investment_gb_chooser.hero.title)\" wordt weergegeven in de eenvoudige modus (tabel) of in de kaartweergave op een klein scherm",
+                        "from": "Niveau waar de lijst moet beginnen (gebruikt in het tabblad \"$t(routes.gb_investment.tab.investors_view.title)\" of \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "to": "Niveau waar de lijst moet eindigen (gebruikt in het tabblad \"$t(routes.gb_investment.tab.investors_view.title)\" of \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "showPlace": "Een array die aangeeft of een plaats moet worden weergegeven of niet (gebruikt in het tabblad \"$t(routes.gb_investment.tab.investors_view.title)\" of \"$t(routes.gb_investment_gb_chooser.hero.title)\")",
+                        "survey": "Een overzicht met alle door u voltooide enquêtes",
+                        "fixedMainMenu": "Geeft aan of het hoofdmenu altijd zichtbaar is of niet",
+                        "gbSelectMode": "Geeft aan welke GG Select-modus u gebruikt",
+                        "haveReadLocaleInfoAvailable": "Geeft aan of u de informatie hebt gelezen over het feit dat de site beschikbaar is in uw taal",
+                        "promotionMessageList": "Bevat de lijst met promotiebericht die u wilt weergeven",
+                        "customPromotionMessagesTemplates": "Bevat al uw aangepaste promotiebericht",
+                        "gbShowPrefix": "Geeft aan of u het voorvoegsel in promotieberichten wilt weergeven",
+                        "gbShowSuffix": "Geeft aan of u het achtervoegsel in promotieberichten wilt weergeven",
+                        "lastVisitVersion": "Bevat de versie van de site van uw laatste bezoek"
+                    }
+                },
+                "dev_info": {
+                    "title": "Ontwikkel informatie",
+                    "p1": "De site is een simpele statische website welke op GitHub wordt gehost.",
+                    "p2_html": "De ontwikkeling vind plaats m.b.v. Node.js en maakt gebruik van $t(common:links.framework). De stijl is m.b.v. $t(common:links.style) gemaakt.",
+                    "p3_html": "Een idee voor een functionaliteit? Een probleem ? Wees zo vrij om een issue op $t(common:links.github) aan te maken of mij een email (in het Engels of Frans) te sturen op $t(common:links.contact_foe_tools).",
+                    "message_info_github_issue": "<b>NB:</b> Aangaande issues op GitHub, schrijf deze in de Engelse taal om er zeker van te zijn dat nagenoeg iedereen het kan begrijpen."
+                }
+            },
+            "campaign_cost": {
+                "title": "$t(routes.campaign_cost.hero.title)| $t(common:site_title)",
+                "hero": {
+                    "title": "Campagnekosten",
+                    "subtitle": "Deze tool berekend de kosten van een sector of provincie. "
+                }
+            },
+            "cf_calculator": {
+                "title": "$t(routes.cf_calculator.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Château Frontenac Calculator",
+                    "subtitle": "En tool welke help om de goederen en FP productie te voorspellen, welke voortvloeien uit wederkerende quests en de nietverjaardagsfeest quests (Rinbin)."
+                }
+            },
+            "changelog": {
+                "title": "Changelog | $t(common:site_title)"
+            },
+            "contributors": {
+                "title": "$t(routes.contributors.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Bijdragers",
+                    "subtitle": "Deze pagina doet een poging om alle bijdragers te vermelden"
+                }
+            },
+            "gb_investment": {
+                "title": "$t(routes.gb_investment.hero.title, { 'gb_key': '{{gb_key}}' }) | $t(common:site_title)",
+                "hero": {
+                    "title": "$t(routes.gb_investment_gb_chooser.hero.title) - $t({{gb_key}})"
+                },
+                "tab": {
+                    "owner_view": {
+                        "title": "Weergave Eigenaar"
+                    },
+                    "investors_view": {
+                        "title": "Weergave Investeerders"
+                    }
+                }
+            },
+            "gb_investment_gb_chooser": {
+                "title": "$t(routes.gb_investment_gb_chooser.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "GG Investering",
+                    "subtitle": "Deze tool helpt een speler te berekenen wanneer en hoeveel FP's in een GG moeten worden geïnvesteerd om de eerste 5 posities veilig te stellen afhankelijk van de Arc bonus percentage. (Arc bonus)."
+                },
+                "choose_gb": {
+                    "title": "Kies een Groot Gebouw"
+                }
+            },
+            "gb_forecast_cost": {
+                "title": "$t(routes.gb_forecast_cost.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "GG kosten prognose",
+                    "subtitle": "Met behulp van deze tool wordt het inzichtelijk hoeveel FP's er nodig zijn om van het ene naar het andere level te gaan, met of zonder de Arc bonus."
+                }
+            },
+            "gb_statistics": {
+                "title": "$t(routes.gb_statistics.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "GG Statistieken",
+                    "subtitle": "Met deze tool wordt de evolutie van de kosten van een GG t.o.v. een tijdperk gevisualiseerd."
+                }
+            },
+            "secure_position": {
+                "title": "$t(routes.secure_position.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Positie veiligstellen",
+                    "subtitle": "Met deze tool is te berekenen hoeveel FP's een speler moet investeren om zijn/haar positie veilig te stellen."
+                }
+            },
+            "trade": {
+                "title": "$t(routes.trade.hero.title)| $t(common:site_title)",
+                "hero": {
+                    "title": "Handel",
+                    "subtitle": "Deze tool vergemakkelijkt uw handel door u de beste tarieven aan te bieden volgens uw manier van handelen."
+                },
+                "tab": {
+                    "trade_2_1": {
+                        "title": "2:1",
+                        "message": "Eenvoudige handel, ratio 1 voor 1 met goederen van hetzelfde tijdperk en 1 voor 2 om goederen te krijgen met één tijdperkverschil."
+                    },
+                    "fair_trade": {
+                        "title": "Eerlijke handel",
+                        "message": "Dit type transactie houdt rekening met de productiekosten van een goed (munten en voorraden) om de waardeverhouding tussen de goederen te bepalen."
+                    }
+                }
+            },
+            "help_to_translate_the_site": {
+                "title": "$t(routes.help_to_translate_the_site.hero.title)| $t(common:site_title)",
+                "hero": {
+                    "title": "Helpen bij het vertalen van de site",
+                    "subtitle": "Word lid van het vertaalteam"
+                },
+                "p1": "Uw taal is niet beschikbaar, de vertaling is onvolledig of bevat fouten? Voel je vrij om deel te nemen aan het vertaalteam van de site.",
+                "how_to_join_the_team": "Hoe wordt je lid van het team?",
+                "p2_html": "$t(common:site_title) wordt vertaald door gebruikers. We gebruiken het $t(common:links.translation_platform)-platform om het vertaalproces te vergemakkelijken. Om lid te worden van het team, stuur een e-mail (in het Engels) naar $t(common:links.contact_foe_tools) met de taal (talen) waarin u kunt vertalen, zodat we u een uitnodiging kunnen sturen."
+            },
+            "survey": {
+                "title": "$t(routes.survey.hero.title)| $t(common:site_title)",
+                "hero": {
+                    "title": "Enquête",
+                    "subtitle": "Help om $t(common:site_title) te verbeteren door deze enquête in te vullen"
+                },
+                "required_field": "Dit veld is verplicht",
+                "survey_complete": "Bedankt voor je feedback!",
+                "error": "Er is een fout opgetreden, controleer het formulier en probeer het opnieuw",
+                "unknown_error": "Er is een onbekende fout opgetreden, neem contact op met de sitebeheerder"
+            },
+            "contact": {
+                "title": "$t(routes.contact.hero.title) | $t(common:site_title)",
+                "hero": {
+                    "title": "Contact",
+                    "subtitle": "Neem contact op met de beheerder van $t(common:site_title)"
+                },
+                "message_contact_html": "Een idee voor betere functionaliteit? Een probleem ? Stuur mij een email (in het Engels of Frans) op $t(common:links.contact_foe_tools).",
+                "message_translate": "Wist u dat u ook kunt helpen de site te vertalen? Volg de volgende link voor meer informatie:",
+                "message_other_info_html": "Als u ontwikkelaars bent, kunt u ook een probleem (en een bijdrage aan de ontwikkeling van de site) maken op $t(common:links.github)."
+            },
+            "error": {
+                "404": {
+                    "title": "Pagina niet gevonden | $t(common:site_title)",
+                    "message": "Sorry, de gezochte pagina bestaat niet of niet meer"
+                }
+            }
+        },
+        "foe_data": {
+            "age": {
+                "Oracle": "$t(foe_data.age.NoAge) ($t(foe_data.gb.Oracle_of_Delphi))",
+                "NoAge": "Geen Tijdperk",
+                "BronzeAge": "Bronstijd",
+                "IronAge": "IJzertijd",
+                "EarlyMiddleAges": "Vroege Middeleeuwen",
+                "HighMiddleAges": "Hoge Middeleeuwen",
+                "LateMiddleAges": "Late Middeleeuwen",
+                "ColonialAge": "Koloniale Tijdperk",
+                "IndustrialAge": "Industriële Tijdperk",
+                "ProgressiveEra": "Progressieve Tijdperk",
+                "ModernEra": "Moderne Tijdperk",
+                "PostmodernEra": "Postmoderne Tijdperk",
+                "ContemporaryEra": "Hedendaagse Tijdperk",
+                "Tomorrow": "Morgen",
+                "TheFuture": "Toekomst",
+                "ArcticFuture": "Arctische Toekomst",
+                "OceanicFuture": "Oceanische Toekomst",
+                "VirtualFuture": "Virtuele toekomst",
+                "SpaceAgeMars": "Ruimtetijdperk: Mars"
+            },
+            "age_short": {
+                "NoAge": "Geen TP",
+                "BronzeAge": "Brons",
+                "IronAge": "IJzer",
+                "EarlyMiddleAges": "VME",
+                "HighMiddleAges": "HME",
+                "LateMiddleAges": "LME",
+                "ColonialAge": "Kolo",
+                "IndustrialAge": "Indu",
+                "ProgressiveEra": "Prog",
+                "ModernEra": "Modern",
+                "PostmodernEra": "PMT",
+                "ContemporaryEra": "HDT",
+                "Tomorrow": "Morgen",
+                "TheFuture": "TK",
+                "ArcticFuture": "AT",
+                "OceanicFuture": "OT",
+                "VirtualFuture": "VT",
+                "SpaceAgeMars": "Mars"
+            },
+            "gb": {
+                "Observatory": "Sterrenwacht",
+                "Temple_of_Relics": "Reliekentempel",
+                "Oracle_of_Delphi": "Orakel van Delphi",
+                "Tower_of_Babel": "Toren van Babel",
+                "Statue_of_Zeus": "Standbeeld van Zeus",
+                "Colosseum": "Colosseum",
+                "Lighthouse_of_Alexandria": "Pharos van Alexandrië",
+                "Hagia_Sophia": "Hagia Sophia",
+                "Cathedral_of_Aachen": "Dom van Aken",
+                "St_Mark_s_Basilica": "Basiliek van San Marco",
+                "Notre_Dame": "Notre Dame",
+                "Saint_Basil_s_Cathedral": "Basiliuskathedraal",
+                "Castel_del_Monte": "Castel del Monte",
+                "Deal_Castle": "Deal Castle",
+                "Frauenkirche_of_Dresden": "Frauenkirche van Dresden",
+                "Capitol": "Capitool",
+                "Royal_Albert_Hall": "Royal Albert Hall",
+                "Chateau_Frontenac": "Château Frontenac",
+                "Alcatraz": "Alcatraz",
+                "Space_Needle": "Space Needle",
+                "Atomium": "Atomium",
+                "Cape_Canaveral": "Cape Canaveral",
+                "The_Habitat": "Habitat",
+                "Lotus_Temple": "Lotus Tempel",
+                "Innovation_Tower": "Innovation Tower",
+                "Dynamic_Tower": "Dynamic Tower",
+                "Voyager_V1": "Voyager V1",
+                "The_Arc": "Arc",
+                "Rain_Forest_Project": "Regenwoudproject",
+                "Gaea_Statue": "Gaia-standbeeld",
+                "Arctic_Orangery": "Arctische Oranjerie",
+                "Seed_Vault": "Zadenkluis",
+                "Atlantis_Museum": "Atlantis-Museum",
+                "The_Kraken": "De Kraken",
+                "The_Blue_Galaxy": "De Blauwe Melkweg",
+                "Terracotta_Army": "Terracotta Leger",
+                "Himeji_Castle": "Himeji Kasteel ",
+                "The_Virgo_Project": "Het Virgo Project",
+                "Star_Gazer": "Sterrenkijker"
+            },
+            "gb_short": {
+                "Observatory": "SW",
+                "Temple_of_Relics": "RT",
+                "Oracle_of_Delphi": "Delphi",
+                "Tower_of_Babel": "TvB",
+                "Statue_of_Zeus": "Zeus",
+                "Colosseum": "Colosseum",
+                "Lighthouse_of_Alexandria": "PvA",
+                "Hagia_Sophia": "HS",
+                "Cathedral_of_Aachen": "DvA",
+                "St_Mark_s_Basilica": "BSM",
+                "Notre_Dame": "ND",
+                "Saint_Basil_s_Cathedral": "BK",
+                "Castel_del_Monte": "CDM",
+                "Deal_Castle": "DC",
+                "Frauenkirche_of_Dresden": "FoD",
+                "Capitol": "CAP",
+                "Royal_Albert_Hall": "RAH",
+                "Chateau_Frontenac": "CF",
+                "Alcatraz": "Alca",
+                "Space_Needle": "SN",
+                "Atomium": "Atom",
+                "Cape_Canaveral": "Cape",
+                "The_Habitat": "Hab",
+                "Lotus_Temple": "LT",
+                "Innovation_Tower": "Inno",
+                "Dynamic_Tower": "DT",
+                "Voyager_V1": "Voyager",
+                "The_Arc": "Arc",
+                "Rain_Forest_Project": "RWP",
+                "Gaea_Statue": "Gaia",
+                "Arctic_Orangery": "AO",
+                "Seed_Vault": "ZK",
+                "Atlantis_Museum": "AM",
+                "The_Kraken": "Kraken",
+                "The_Blue_Galaxy": "BMW",
+                "Terracotta_Army": "TL",
+                "Himeji_Castle": "Himeji",
+                "The_Virgo_Project": "Virgo",
+                "Star_Gazer": "Gazer"
+            },
+            "goods": {
+                "dye": "verf",
+                "lumber": "Hout",
+                "marble": "Marmer",
+                "stone": "Steen",
+                "wine": "Wijn",
+                "cloth": "Doek",
+                "ebony": "Ebbehout",
+                "iron": "IJzer",
+                "jewelry": "Juwelen",
+                "limestone": "Kalksteen",
+                "alabaster": "Albast",
+                "copper": "Koper",
+                "gold": "Goud",
+                "granite": "Graniet",
+                "honey": "Honing",
+                "brick": "Steen",
+                "dried_herbs": "Gedroogde kruiden",
+                "glass": "Glas",
+                "rope": "Touw",
+                "salt": "Zout",
+                "basalt": "basalt",
+                "brass": "Geelkoper",
+                "gunpowder": "Buskruit",
+                "silk": "Zijde",
+                "talc_powder": "Talkpoeder",
+                "coffee": "Koffie",
+                "porcelain": "Porselein",
+                "paper": "Papier",
+                "tar": "Teer",
+                "wire": "IJzerdraad",
+                "coke": "Cokes",
+                "fertilizer": "Kunstmest",
+                "rubber": "Rubber",
+                "textiles": "Textiel",
+                "whale_oil": "Walvistraan",
+                "asbestos": "Asbest",
+                "explosives": "Explosieven",
+                "gasoline": "Benzine",
+                "machine_parts": "Machine onderdelen",
+                "tinplate": "Tinplaat",
+                "convenience_food": "Kant-en-klaargerechten",
+                "ferroconcrete": "gewapend beton",
+                "flavorants": "smaakstoffen",
+                "luxury_materials": "Luxe materialen",
+                "packaging": "Verpakkingen",
+                "genome_data": "Genoomgegevens",
+                "industrial_filters": "Industriële filters",
+                "renewable_resources": "Hernieuwbare bronnen",
+                "semiconductors": "Semiconductors",
+                "steel": "Staal",
+                "bionics_data": "Bionische gegevens",
+                "electromagnets": "elektromagneten",
+                "gas": "Gas",
+                "plastics": "Kunststoffen",
+                "robots": "Robots",
+                "nutrition_research": "Voedingsgegevens",
+                "papercrete": "Papierbeton",
+                "preservatives": "conserveringsmiddelen",
+                "smart_materials": "Slimme materialen",
+                "translucent_concrete": "Doorzichtig beton",
+                "algae": "algen",
+                "biogeochemical_data": "Biogeochemische data",
+                "nanoparticles": "nanodeeltjes",
+                "purified_water": "Gezuiverd water",
+                "superconductors": "Supergeleider",
+                "ai_data": "A.I. Gegevens",
+                "bioplastics": "bioplastics",
+                "nanowire": "Nanodraad",
+                "paper_batteries": "Papieren accu's",
+                "transester_gas": "Transestergas",
+                "artificial_scales": "Kunstmatige schubben",
+                "biolight": "Biolichten",
+                "corals": "koraal",
+                "pearls": "Parels",
+                "plankton": "Plankton",
+                "promethium": "Promethium",
+                "orichalcum": "Orichalcum",
+                "cryptocash": "Cryptomunten",
+                "data_crystals": "Datakristallen",
+                "golden_rice": "Gouden rijst",
+                "nanites": "nanieten",
+                "tea_silk": "Theezijde"
+            },
+            "province": {
+                "Dunarsund": "Dunarsund",
+                "Fel_Dranghyr": "Fel Dranghyr",
+                "Tyr": "Tyr",
+                "Hymir": "Hymir",
+                "Badakus": "Badakus",
+                "Paruuch": "Paruuch",
+                "Ruug": "Ruug",
+                "Karchagu": "Karchagu",
+                "East_Nagach": "East-Nagach",
+                "West_Nagach": "West-Nagach",
+                "Maktaba": "Maktaba",
+                "Pfefferberg": "Pfefferberg",
+                "Dunkelwald": "Dunkelwald",
+                "Greifental": "Griefental",
+                "Sturmhohen": "Sturmhohen",
+                "Kaltenweiher": "Kaltenweiher",
+                "Teufelsfurt": "Teufelsfurt",
+                "Felssenke": "Felssenke",
+                "Galgenschlucht": "Galgenschlucht",
+                "Todepass": "Todepass",
+                "Steilsturz": "Steilsturz",
+                "Tarmelmann": "Tarmelmann",
+                "Breturia": "Breturia",
+                "Canturia": "Canturia",
+                "Veletrites": "Veletrites",
+                "Frathia": "Frathia",
+                "Mons_Suiry": "Mons Suiry",
+                "Jaims": "Jaims",
+                "Moravaria": "Moravaria",
+                "Cragshire": "Cragshire",
+                "Eldenborough": "Eldenborough",
+                "Cuttingham": "Cuttingham",
+                "Spearth": "Spearth",
+                "Wolvhampton": "Wolvhampton",
+                "FourGallows": "FourGallows",
+                "Mount_Killmore": "Mount Killmore",
+                "RavensCreek": "RavensCreek",
+                "Houndsmoor": "Houndsmoor",
+                "Zaldon_on_Sea": "Zaldon-on-Sea",
+                "Grand_Cap": "Grand Cap",
+                "Northcastle": "Northcastle",
+                "Queenshope": "Queenshope",
+                "Ashcrook": "Ashcrook",
+                "Narcien": "Narcien",
+                "Lavignon": "Lavignon",
+                "Troulope": "Troulope",
+                "Deuxerres": "Deuxerres",
+                "Lombardeaux": "Lombardeaux",
+                "Pisterrac": "Pisterrac",
+                "Varseille": "Varseille",
+                "Haulenois": "Haulenois",
+                "NewCragshire": "NewCragshire",
+                "Okahe": "Okahe",
+                "Rantford": "Rantford",
+                "Desperation": "Desperation",
+                "St_Marque": "St.Marque",
+                "Las_Penas": "Las Penas",
+                "DragonCity": "DragonCity",
+                "Garrincton": "Garrincton",
+                "ElFuego": "ElFuego",
+                "SantaCatalina": "SantaCatalina",
+                "Dorango": "Dorango",
+                "Nevarrone": "Nevarrone",
+                "Embruniez": "Embruniez",
+                "Gabordeaux": "Gabordeaux",
+                "Ydine": "Ydine",
+                "Wenoevre": "Wenoevre",
+                "Havre": "Havre",
+                "Omoien": "Omoien",
+                "Uxrow": "Uxrow",
+                "Gaelford": "Gaelford",
+                "Sud": "Sud",
+                "Kriegreich": "Kriegreich",
+                "Ostrand": "Ostrand",
+                "Langenreich": "Langenreich",
+                "Uceria": "Uceria",
+                "Gorski": "Gorski",
+                "Inashu": "Inashu",
+                "Natsuishu": "Natsuishu",
+                "Chigikawa": "Chigikawa",
+                "Igujima": "Igujima",
+                "Kyushima": "Kyushima",
+                "Igioka": "Igioka",
+                "Igamoto": "Igamoto",
+                "Higematsu": "Higematsu",
+                "Kibakuguchi": "Kibakuguchi",
+                "Hiromaguchi": "Hiromaguchi",
+                "Toimuro": "Toimuro",
+                "CaiChetNui": "CaiChetNui",
+                "SotDamLay": "SotDamLay",
+                "DayDuAo": "DayDuAo",
+                "TrungDoi": "TrungDoi",
+                "KhayHuyenBayGio": "KhayHuyenBayGio",
+                "RungTrai": "RungTrai",
+                "RungChienDau": "RungChienDau",
+                "GiaiCuuBinhMinh": "GiaiCuuBinhMinh",
+                "PhucKich": "PhucKich",
+                "MauMatDat": "MauMatDat",
+                "DongBangSong": "DongBangSong",
+                "OngChuCuoiCung": "OngChuCuoiCung",
+                "Amaryah_City": "Amaryah City",
+                "Khail": "Khail",
+                "Batif": "Batif",
+                "Hafar_Al_Karak": "Hafar Al Karak",
+                "Al_Shadyra": "Al-Shadyra",
+                "Salfah": "Salfah",
+                "Ain_Al_Khansa": "Ain Al-Khansa",
+                "Suqqah": "Suqqah",
+                "Shayhour": "Shayhour",
+                "Kardad": "Kardad",
+                "Qumeira": "Qumeira",
+                "Jandahar": "Jandahar",
+                "Torrinhos": "Torrinhos",
+                "Villabaja": "Villabaja",
+                "Itabarai": "Itabarai",
+                "Bajatai": "Bajatai",
+                "Villariba": "Villariba",
+                "Rio_Roxo": "Rio Roxo",
+                "Sierra_Torrido": "Sierra Torrido",
+                "Santa_Nerea": "Santa Nerea",
+                "La_Huega": "La Huega",
+                "Jamenez": "Jamenez",
+                "Falsa_Cruz": "Falsa Cruz",
+                "Desierto_de_la_Muerte": "Desierto de la Muerte",
+                "Sao_Malvado": "Sao Malvado",
+                "Agadar": "Agadar",
+                "Esan_Ewu": "Esan-Ewu",
+                "Omogba": "Omogba",
+                "Owopele": "Owopele",
+                "Jak": "Jak",
+                "Pala": "Pala",
+                "Kolabourg": "Kolabourg",
+                "Bontaville": "Bontaville",
+                "Botuku": "Botuku",
+                "Kalabuye": "Kalabuye",
+                "Bisoraba": "Bisoraba",
+                "Fort_Buntu": "Fort Buntu",
+                "Nutarniq": "Nutarniq",
+                "Iluliaq": "Iluliaq",
+                "Aurora_s_Dale": "Aurora's Dale",
+                "Cold_Bay": "Cold Bay",
+                "Arctic_Horizon": "Arctic Horizon",
+                "Tuklavik": "Tuklavik",
+                "Ananevut": "Ananevut",
+                "Qaniit": "Qaniit",
+                "White_Gate": "White Gate",
+                "Snowdrifts": "Snowdrifts",
+                "Median_Waters": "Median Waters",
+                "Frosty_Mountain": "Frosty Mountain",
+                "Southern_Valley": "Southern Valley",
+                "Ilug": "Ilug",
+                "Chugiak": "Chugiak",
+                "Kesukavut": "Kesukavut",
+                "Adlartok": "Adlartok",
+                "Northern_Passage": "Northern Passage",
+                "Avalanche": "Avalanche",
+                "Manirak": "Manirak",
+                "Tundra_Rock": "Tundra Rock",
+                "Patuktuq": "Patuktuq",
+                "Summit_Ice": "Summit Ice",
+                "Kilalurak": "Kilalurak",
+                "Nilak": "Nilak",
+                "Chulyin": "Chulyin",
+                "Tattilgat": "Tattilgat",
+                "Atka": "Atka",
+                "Pimniq": "Pimniq",
+                "Anyu": "Anyu",
+                "Glacial_Peak": "Glaciale piek",
+                "Nunataq": "Nunataq",
+                "Nanuq": "Nanuq",
+                "Precipice": "Afgrond",
+                "Unalaq": "Unalaq",
+                "Neural_Rites": "Neural Rites",
+                "Frozen_Steppe": "Frozen Steppe",
+                "The_Grotto": "The Grotto",
+                "Temple_Floe": "Temple Floe",
+                "Spirit_Plane": "Spirit Plane",
+                "Murky_Waters": "Murky Waters",
+                "Cursed_Current": "Cursed Current",
+                "Coral_Depths": "Coral Depths",
+                "Rough_Expanse": "Rough Expanse",
+                "Strong_Tide": "Strong Tide",
+                "Dark_Abyss": "Dark Abyss",
+                "Fresh_Flow": "Fresh Flow",
+                "Tideless_Deep": "Tideless Deep",
+                "Glimmering_Surf": "Glimmering Surf",
+                "Serene_Waves": "Serene Waves",
+                "Red_Sea": "Red Sea",
+                "Wondering_Ocean": "Wondering Ocean",
+                "Foam_Ceiling": "Foam Ceiling",
+                "Walled_Gulf": "Walled Gulf",
+                "Lower_Grotto": "Lower Grotto",
+                "Silver_Swarms": "Silver Swarms",
+                "Upper_Grotto": "Upper Grotto",
+                "Rocky_Domain": "Rocky Domain",
+                "Nautical_Parlay": "Nautical Parlay",
+                "Restless_Buoy": "Restless Buoy",
+                "Ripped_Sails": "Ripped Sails",
+                "Nautilus_Mirage": "Nautilus Mirage",
+                "Ravenous_Tides": "Ravenous Tides",
+                "Deep_Dive": "Deep Dive",
+                "Furious_Storm": "Furious Storm",
+                "Silver_Crest": "Silver Crest",
+                "Grey_Clouds": "Grey Clouds",
+                "Translucent_Algae": "Translucent Algae",
+                "Treacherous_Surf": "Treacherous Surf",
+                "Single_Wave": "Single Wave",
+                "Cursed_Lip": "Cursed Lip",
+                "Coral_Kingdom": "Coral Kingdom",
+                "Telescopic_Barrel": "Telescopic Barrel",
+                "Sponge_Sands": "Sponge Sands",
+                "Seagull_Domain": "Seagull Domain",
+                "Tangled_Fins": "Tangled Fins",
+                "Scuba_Bay": "Scuba Bay",
+                "Tide_Ascent": "Tide Ascent",
+                "Breakwater_Wharf": "Breakwater Wharf",
+                "Adrift_Liner": "Adrift Liner",
+                "Bermuda_Quay": "Bermuda Quay",
+                "Sextant_Mast": "Sextant Mast",
+                "Grog_Wash": "Grog Wash",
+                "R_lyeh_Reef": "R'lyeh Reef",
+                "Capricorn_Waterway": "Capricorn Waterway",
+                "Barnacle_Deck": "Barnacle Deck",
+                "Ahab_s_Tomb": "Ahab's Tomb",
+                "Galley_Commodore": "Galley Commodore",
+                "Adamastor": "Adamastor",
+                "Deadeye_Admiral": "Deadeye Admiral",
+                "Monkey_s_Fist": "Monkey's Fist",
+                "Dagon_s_Dagger": "Dagon's Dagger",
+                "Sunken_Leviathan": "Sunken Leviathan",
+                "Raging_Tides": "Raging Tides",
+                "Buccaneer_Plateau": "Buccaneer plateau",
+                "Craggy_Cay": "Craggy Cay",
+                "Behemoth": "Behemoth",
+                "Privateer_Helm": "Privateer Helm",
+                "Medusa_Cove": "Medusa Cove",
+                "Man_O_War": "Man-O-War",
+                "Nemo_s_Dock": "Nemo's Dock",
+                "Anchorage_Ruin": "Anchorage Ruin",
+                "Ahoy_Alee": "Ahoy Alee",
+                "Ursula_s_Valley": "Ursula's Valley",
+                "Dungbie_Trough": "Dungbie Trough",
+                "Idlers_Range": "Idlers Range",
+                "Wherry_Gap": "Wherry Gap",
+                "Nock_s_Turn": "Nock's Turn",
+                "Scuttle_Ridge": "Scuttle Ridge",
+                "Ghost_Trench": "Ghost Trench",
+                "Scurvy_Atoll": "Scurvy Atoll",
+                "Capsize_Lagoon": "Capsize Lagoon",
+                "Undertow_Bank": "Undertow Bank",
+                "Neptune_s_Galleon": "Neptune's Galleon",
+                "Seafarer_s_Current": "Seafarer's Current",
+                "Blackwater_Cape": "Blackwater Cape",
+                "Leviathan_Wreck": "Leviathan Wreck",
+                "Typhoon_Peninsula": "Typhoon Peninsula",
+                "Corsair_s_Skerry": "Corsair's Skerry",
+                "Mutiny_Canyon": "Mutiny Canyon",
+                "Bytedirt_Planes": "Bytedirt Planes",
+                "End_of_the_Void": "End of the Void",
+                "Banker_s_Heaven": "Banker's Heaven",
+                "Shift_Land": "Shift/Land",
+                "Black_Net_Market": "Black Net Market",
+                "Pulse_City": "Pulse City",
+                "Max_s_Shelter": "Max's Shelter",
+                "The_Open_Zone": "The Open Zone",
+                "The_Warring_Towers": "The Warring Towers",
+                "Forgotten_Fragments": "Forgotten Fragments",
+                "Backup_NET": "Backup:NET",
+                "Spoiled_Resort": "Spoiled Resort",
+                "Fort_Duplex": "Fort Duplex",
+                "LoneHub": "LoneHub",
+                "Alpha_1_Omega_2": "Alpha 1 Omega 2",
+                "Ray_s_Ray_s": "Ray's Ray's",
+                "Purple_Palace": "Purple Palace",
+                "Three_Oc3ans": "Three Oc3ans",
+                "Vortex": "Vortex",
+                "Twisted_Alps": "Twisted Alps",
+                "Archives_of_Junkman": "Archives of Junkman",
+                "Frozen_RAM": "Frozen RAM",
+                "Cas_Cade": "Cas.Cade",
+                "The_Historical_Museum": "The Historical Museum",
+                "Aerial_Boulevard": "Aerial Boulevard",
+                "Slate_13": "Slate 13",
+                "New_final_final_exe": "New_final_final.exe",
+                "Bizarre_Plains": "Bizarre Plains",
+                "Argus__Watch": "Argus' Watch",
+                "Berta_s_Byte_Sauce": "Berta's Byte-Sauce",
+                "Veil_of_Bits": "Veil of Bits",
+                "Harvey_s_Low_Core": "Harvey's Low Core",
+                "The_Byte_Parade": "The Byte Parade",
+                "Reboot_Bay": "Reboot Bay",
+                "Streaming_Forest": "Streaming Forest",
+                "CMYK_Citadel": "CMYK Citadel",
+                "Forgify": "Forgify",
+                "Digital_Town_of_Hope": "Digital Town of Hope",
+                "Cloud_One": "Cloud One",
+                "Re_Birth": "Re:Birth",
+                "Castle_You_Es_Bee": "Castle You-Es-Bee",
+                "NET_MASKerade": "NET MASKerade",
+                "If_Then_Whatever": "If, Then, Whatever",
+                "The_Virtual_Cliffs_of_G0r3": "The Virtual Cliffs of G0r3",
+                "The_Church_of_Games": "The Church of Games",
+                "The_Sacred_Database": "The Sacred Database",
+                "Game_Over": "Game Over"
+            },
+            "bonus": {
+                "coin": {
+                    "name": "Munt"
+                },
+                "supply": {
+                    "name": "Voorraad"
+                },
+                "good": {
+                    "name": "Goed"
+                },
+                "special_good": {
+                    "name": "Speciale goederen"
+                },
+                "good_bonus": {
+                    "name": "Productiebonus"
+                },
+                "expansion": {
+                    "name": "Uitbreiding"
+                },
+                "medal": {
+                    "name": "Medaille"
+                },
+                "diamond": {
+                    "name": "Diamant"
+                },
+                "pvp_tower": {
+                    "name": "PvP-toren"
+                },
+                "blueprint": {
+                    "name": "Blauwdruk"
+                },
+                "military_boost": {
+                    "name": "Militaire bonus",
+                    "gb_description": "Verhoogt de aanvals- en verdedigingsbonus voor eenheden in aanvallend leger. Wordt verhoogd met ieder level"
+                },
+                "fierce_resistance": {
+                    "name": "Felle tegenstand",
+                    "gb_description": "Verhoogt de aanvals- en verdedigingsbonus voor eenheden in het verdedigende leger en verhoogt de gilde ondersteuningspoolbonus. "
+                },
+                "coin_boost": {
+                    "name": "Muntenbonus",
+                    "gb_description": "Verhoogt de eerste 90 inzamelingen van munten met een bepaald percentage, "
+                },
+                "supply_boost": {
+                    "name": "Voorraadbonus",
+                    "gb_description": "Verhoogt de eerste x inzamelingen van voorraden met een bepaald percentage"
+                },
+                "good_production": {
+                    "name": "Goederen productie",
+                    "gb_description": "Produceert elke 24 uur een bepaald aantal goederen vanaf uw huidige Tijdperk. Vanaf Modern Tijdperk produceert het dubbele aantal in ongeraffineerde goederen."
+                },
+                "medal_production": {
+                    "name": "Medaille productie",
+                    "gb_description": "Produceert elke 24 uur een bepaald aantal medailles."
+                },
+                "research": {
+                    "name": "Onderzoek",
+                    "gb_description": "Produceert elke 24 uur een klein aantal Forge points."
+                },
+                "coin_production": {
+                    "name": "Muntenproductie",
+                    "gb_description": "Produceert elke 24 uur een bepaald aantal munten."
+                },
+                "supply_production": {
+                    "name": "Voorradenproductie",
+                    "gb_description": "Produceert elke 24 uur een bepaalde hoeveelheid voorraden."
+                },
+                "population": {
+                    "name": "Bevolking",
+                    "gb_description": "Permanente bevolkingsbonus."
+                },
+                "happiness": {
+                    "name": "Tevredenheid",
+                    "gb_description": "Permanente tevredenheidsbonus."
+                },
+                "quest_reward_boost": {
+                    "name": "Extra missiebeloning",
+                    "gb_description": "Verhoogt alleen je munten, voorraden, goederen, medailles of diamanten uit missiebeloningen."
+                },
+                "penal_unit": {
+                    "name": "Militaire eenheid",
+                    "gb_description": "Rekruteert elke 24 uur onafhankelijke eenheden, willekeurig gekozen uit een militair gebouw in jouw stad."
+                },
+                "guild_goods": {
+                    "name": "Gilde goederen",
+                    "gb_description": "Produceert goederen uit het huidige tijdperk die rechtstreeks naar de gildekas gaan."
+                },
+                "support_pool_bonus": {
+                    "name": "ondersteuningspoolbonus",
+                    "gb_description": "Verhoogt de ondersteuningspoolbonus van je gilde, Gaat omhoog met ieder level"
+                },
+                "aid_goods": {
+                    "name": "Hulpgoederen",
+                    "gb_description": "Produceert 1 willekeurig goed bij het helpen van een andere speler (handmatig motiveren / opknappen geldt ook als hulp). Het tijdperk van het willekeurige goed komt overeen met het tijdperk van het gebouw dat u helpt."
+                },
+                "plunder_goods": {
+                    "name": "Goederen plunderen",
+                    "gb_description": "Voor de eerste drie plunderingen bij buren, geeft dit gebouw een bepaald aantal willekeurige bonus goederen. Het tijdperk van het geplunderde gebouw bepaalt het tijdperk van de bonus goederen."
+                },
+                "contribution_boost": {
+                    "name": "Bijdragebeloning",
+                    "gb_description": "Verhoogt de Forge points, medailles en blauwdrukken die u ontvangt van bijdrage beloningen."
+                },
+                "aid_blueprints": {
+                    "name": "Hulpblauwdrukken",
+                    "gb_description": "Verhoogt de kans op het verkrijgen van een blauwdruk bij het helpen van een andere speler (handmatig motiveren / opknappen geldt ook als hulp). D.W.Z. Als u een bonus van 100% heeft, verdubbelt u uw kans om een blauwdruk te vinden."
+                },
+                "relic_hunt": {
+                    "name": "Reliekenjacht",
+                    "gb_description": "Geeft je de mogelijkheid om relieken te winnen op de Gilde-Expeditie kaart, wanneer je een ontmoeting met succes hebt opgelost. Relieken zijn erg waardevol en kunnen in 3 verschillende zeldzaamheden voorkomen. Elk niveau vergroot de kans om een reliek te vinden, maar ook de kansen om een ongewone of zeldzame relikwie te vinden, in tegenstelling tot een gewone."
+                },
+                "critical_hit": {
+                    "name": "Critical Hit",
+                    "gb_description": "Geeft alle eenheden de kans om 1,5 keer de verwachte schade te verwerken bij het aanvallen van eenheden van hetzelfde tijdperk. Kritieke slag werkt ook tegen Reactief pantser (als verwachte schade 4-4 is, zal een kritieke slag 6-6 schade aanrichten). Schurken (en andere no-age-eenheden) worden niet beïnvloed / kunnen dit vermogen niet gebruiken tot ze in een andere eenheid veranderen. Een kritieke treffer van ten minste 11 schade zal een eenheid doden, zelfs met de moraalbonus. Deze bonus is van toepassing op alle aanvallende legers plus je verdedigende leger in PvP. De kritieke treffer zal niet gebeuren wanneer een eenheid wraak neemt."
+                },
+                "helping_hands": {
+                    "name": "Helpende hand",
+                    "gb_description": "Geeft je een bepaalde kans om een willekeurige bonus te krijgen wanneer je de stad van een andere speler helpt (handmatig motiveren / polijsten geldt ook als hulp). Je kunt goederen ontvangen van je huidige leeftijd, benodigdheden, munten, medailles of zelfs diamanten."
+                },
+                "plunder_and_pillage": {
+                    "name": "Plunderen",
+                    "gb_description": "Geeft je een bepaalde kans om het dubbele van de middelen te krijgen wanneer je de stad van een buurman plundert nadat je met succes zijn verdediging hebt verslagen. Het verdubbelt alle middelen die je kunt plunderen, inclusief Forge Points en Gilde Power."
+                },
+                "first_strike": {
+                    "name": "Eerste slag",
+                    "gb_description": "Geeft je de kans dat aan het begin van de volgende gevechten, een eenheid van de vijand's verdedigend leger direct wordt gedood. Dit geldt alleen voor de eerste golf van een gevecht."
+                },
+                "double_collection": {
+                    "name": "Dubbele inzameling",
+                    "gb_description": "Geeft u een kans om het dubbele van de middelen te krijgen in de eerste verzamelde gebouwen. Exclusief militaire en grote gebouwen. Verfrist met elke verzameling van dit gebouw."
+                }
+            }
+        },
+        "utils": {
+            "content": {
+                "tools": "Tools",
+                "statistics": "Statistieken"
+            },
+            "btn_calculate": "Berekenen",
+            "description": {
+                "p1": "Voer andere waarden in. Het resultaat wordt automatisch bijgewerkt.",
+                "p2_html": "<strong>NB</strong>: Als het resultaat niet automatisch wordt bijgewerkt, klik op \"$t(utils.btn_calculate)\"."
+            },
+            "choose_age": "Kies een Tijdperk",
+            "permalink": "Permalink",
+            "Add": "Toevoegen",
+            "Remove": "Verwijderen",
+            "Yes": "Ja",
+            "No": "Nee",
+            "Ok": "Oké",
+            "Copy": "Kopiëren",
+            "Copyed": "Gekopieerd !",
+            "Information": "Informatie",
+            "From": "Van",
+            "To": "Tot (max {{max}})",
+            "Prefix": "Voorvoegsel",
+            "Suffix": "Achtervoegsel",
+            "Path": "Pad",
+            "Name": "Naam",
+            "Description": "Beschrijving",
+            "Rewards": "beloningen",
+            "Cost": "Kosten",
+            "Conquered": "veroverde",
+            "Total": "Totaal",
+            "Secured": "Beveiligd",
+            "Reset": "Reset",
+            "Confirm": "Bevestigen",
+            "Close": "Sluiten",
+            "Result": "Resultaat",
+            "between_range": "tussen {{min, number}} en {{max, number}}",
+            "Submit": "versturen",
+            "Reset_values": "Reset waarden",
+            "Switch": "omzetten",
+            "Save": "bewaar",
+            "Show": "Tonen",
+            "Hide": "Verbergen",
+            "errors": {
+                "field_cannot_be_empty": "Dit veld kan niet leeg zijn"
+            },
+            "moment": {
+                "year": "{{count}} jaar",
+                "year_plural": "{{count, number}} jaren",
+                "month": "{{count}} maand",
+                "month_plural": "{{count}} maanden",
+                "day": "{{count}} dag",
+                "day_plural": "{{count}} dagen"
+            },
+            "graph": {
+                "gb_level": "Niveau",
+                "gb_level_cost": "Kosten niveau",
+                "gb_reward_1st_place": "Opbrengst niveau (1e positie)"
+            }
+        },
+        "contributions": {
+            "blog": "Blog berichten",
+            "bug": "Foutmeldingen",
+            "code": "Code",
+            "design": "Ontwerp",
+            "doc": "Documentatie",
+            "eventOrganizing": "Evenement organiseren",
+            "example": "Voorbeelden",
+            "financial": "financieel",
+            "fundingFinding": "Financiering vinden",
+            "ideas": "Ideeën, planning en feedback",
+            "infra": "Infrastructuur (Hosting, Build-Tools, enz.)",
+            "platform": "Migratie / porteren naar nieuw platform",
+            "plugin": "Plugin / utility libraries",
+            "question": "Vragen beantwoorden",
+            "review": "Reviewed Pull Requests",
+            "talk": "Talks",
+            "test": "Tests",
+            "tool": "Tools",
+            "translation": "Translation",
+            "tutorial": "Tutorials",
+            "video": "Videos",
+            "data": "Gegevens toevoegen of bijwerken",
+            "inspired_tool": "Tool inspired by his work",
+            "creator": "Creator of this project"
+        },
+        "seo": {
+            "keywords": {
+                "gb": "GG",
+                "great_building": "groots gebouw",
+                "fp": "fp",
+                "forge_point": "forge punt",
+                "medals": "medailles",
+                "military_units": "militaire eenheden"
+            }
+        }
+    }
+}

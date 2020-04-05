@@ -1,0 +1,1109 @@
+{
+  "translation": {
+    "main_menu": {
+      "home": "Kezdőlap",
+      "gb_investment": "$t(routes.gb_investment_gb_chooser.hero.title)",
+      "secure_position": "$t(routes.secure_position.hero.title)",
+      "cf_calculator": "$t(routes.cf_calculator.hero.title)",
+      "gb_statistics": "$t(routes.gb_statistics.hero.title)",
+      "gb_forecast_cost": "$t(routes.gb_forecast_cost.hero.title)",
+      "trade": "$t(routes.trade.hero.title)",
+      "help_to_translate_the_site": "$t(routes.help_to_translate_the_site.hero.title)",
+      "campaign_cost": "$t(routes.campaign_cost.hero.title)"
+    },
+    "footer_menu": {
+      "about": "Rólunk",
+      "contributors": "Közreműködők",
+      "changelog": "Változás napló",
+      "contact": "Kapcsolat"
+    },
+    "components": {
+      "campaign_cost": {
+        "title": "$t(routes.campaign_cost.hero.title)",
+        "choose_province": "Válassz egy tartományt"
+      },
+      "cf_calculator": {
+        "block_cfc": {
+          "title": "$t(routes.cf_calculator.hero.title)",
+          "your_age": "Melyik korban vagy",
+          "your_cf_boost": "A $t(foe_data.gb.Chateau_Frontenac) bónuszod",
+          "coins_to_use": "A \"Nem születésnapi buli\" küldetésben befizetendő pénz mennyiésge",
+          "coins_supplies_info": "Ennek az értéknek nagyobbnak vagy egyenlőnek kell lennie, mint {{min}}, mivel az alatt nem garantálható profit (statisztikailag)",
+          "supplies_to_use": "A \"Nem születésnapi buli\" küldetésben befizetendő alapanyag mennyiésge",
+          "fp_by_24h": "Napi FP termelésed",
+          "supplies_gathered": "Begyűjtött alapanyag",
+          "table_reward": {
+            "title": "$t(utils.Rewards)",
+            "thead": {
+              "th1": "Tervrajzok",
+              "th2": "Medál",
+              "th3": "Áru",
+              "th4": "FP"
+            }
+          },
+          "reward_message": {
+            "daily_ubq": "Napi \"Nem születésnapi buli\" küldetések száma: {{count, number}}",
+            "second_rq_completed": "Második visszatérő küldetések száma: {{count, number}}",
+            "total_goods": "Összes áru: {{count, number}}",
+            "total_fp": "Összes FP: {{count, number}}",
+            "total_rq_completed": "Az összes visszatérő küldetés száma: {{count, number}}"
+          },
+          "table_return": {
+            "thead": {
+              "th_level": "Szint",
+              "th_coin": "Visszakapott pénz",
+              "th_supply": "Visszakapott alapanyag"
+            }
+          }
+        }
+      },
+      "gb_investment": {
+        "gb_list_select": {
+          "label": "Válassz nevezetes épületet"
+        },
+        "gb_investment": {
+          "title": "$t(routes.gb_investment_gb_chooser.hero.title)",
+          "description": {
+            "p1": "Add meg a szintet és a bónusz százalék értékeit. A táblázatban szereplő értékek automatikusan frissülnek."
+          },
+          "form": {
+            "level": "Szint {{fromLevel, number}} → {{level, number}} ($t(utils.between_range, { 'min': '{{min}}', 'max': '{{max}}' }))",
+            "investor_percentage": "A befektetők bónuszának százléka (Bárka bónusz)",
+            "submit_custom": "Egyéni számítás",
+            "owner_investment": "Forge pontok száma, amit a tulajdonos már betett (max {{max}})",
+            "add_investors": "Befektető hozzáadása (FP  száma, {{min}} és {{max}} között)",
+            "tooltip_add_investors": "Kattints az \"$t(utils.Add)\" gombra vagy nyomd meg az \"Enter\" billentyűt befektető hozzáadásához",
+            "investors_list": "Hozzáadott befektetők listája",
+            "show_snipe": "Helyezés/rablás (pont nyereség/veszteség) megjelenítése",
+            "show_only_secured_places": "Csak biztosított helyek megjelenítése",
+            "display_card": "Táblázat megjelenítése kártyaként (kis képernyőhöz)"
+          },
+          "table": {
+            "title": "$t({{gb_key}}) szint {{fromLevel, number}} → {{level, number}}",
+            "thead": {
+              "th1": "Hely",
+              "th2": "Alap jutalom",
+              "th3": "A tulajdonos által beteendő FP a hely biztosításához",
+              "th4": "Összes jutalom",
+              "th5": "befektetők bónuszának százléka (Bárka bónusz)",
+              "th6": "Szabad a hely",
+              "fp_already_putin": "A már betett FP mennyisége",
+              "spot_snipe": "Helyezés/rablás",
+              "real_participation": "Bárka bónuszoddal megszerezhető FP",
+              "is_sniper": "Várható, hogy előzni fog?"
+            },
+            "tbody": {
+              "button_show_extra_investor": "Mutasd a többi befektetőt",
+              "button_show_extra_investor_plural": "Mutasd a többi befektetőt",
+              "button_hide_extra_investor": "Rejtsd el a többi befektetőt",
+              "button_hide_extra_investor_plural": "Rejtsd el a többi befektetőt",
+              "loss": "Ez a játékos FP-t fog veszíteni",
+              "loss_plural": "Ez a játékos FP-ket fog veszíteni",
+              "tooltip_owner_investment": "A tulajdonos által még beteendő FP-k a hely biztosításához",
+              "tooltip_expected_investment": "Várható beruházás",
+              "profit": "Ez a játékos nyereségre tesz szert",
+              "neutral": "Ez a játékos nem fog sem nyerni, sem veszíteni FP-t"
+            },
+            "tfoot": {
+              "total_preparation": "Tulajdonos költsége",
+              "level_cost": "Szint költsége"
+            }
+          },
+          "display_gb_name": "Nevi neve megjelenjen?",
+          "use_short_name": "Rövid nevek használata?",
+          "show_level": "Szint megjelenítése?"
+        },
+        "promotion": {
+          "title": "Promóciós üzenet",
+          "prefix_placeholder": "szöveg a promóciós üzenet előtt",
+          "suffix_placeholder": "szöveg a promóciós üzenet után",
+          "promo": ["P1{{investment}}", "P2{{investment}}", "P3{{investment}}", "P4{{investment}}", "P5{{investment}}"]
+        }
+      },
+      "gb_investment_investors": {
+        "takingPlaceInConsideration": {
+          "form": {
+            "show_place": "Helyezés megjelenítése",
+            "no": "$t(utils.No)",
+            "normal": "Normál",
+            "optimal": "Optimális"
+          },
+          "description": {
+            "no": "ne vegye figyelembe a többi helyezést",
+            "normal": "vegye figyelembe a többi helyezést a befektetők minimális befektetésével de a tulajdonos biztosítása nélkül",
+            "optimal": "vegye figyelembe a többi helyezést a befektetők minimális befektetésével és a tulajdonos biztosításával"
+          }
+        },
+        "table": {
+          "thead": {
+            "th_place": "Helyezés: {{count}}",
+            "th_profit_loss": "Profit / veszteség"
+          }
+        }
+      },
+      "gb_forecast_cost": {
+        "title": "Tervezés",
+        "p1": "Megmutatja, hogy mennyi FP-re van szükséged az egyik szintről a másikra jutni, Bárka bónusszal vagy nélküle.",
+        "custom_percentage": "Egyéni Bárka bónusz (minden helyhez)",
+        "estimated_time": "A szint eléréséhez szükséges becsült idő: {{time}}",
+        "message": {
+          "diff": "Bónuszbefektetésekkel megtakarítasz:  {{count}} FP-t",
+          "diff_plural": "Bónuszbefektetésekkel megtakarítasz: {{count, number}} FP-t",
+          "single": "A $t({{gb}}) nevezetes {{level}} szintjének elérése a tulajdonosnak {{preparation, number}} FP-be kerül. A teljes költség: {{cost, number}} FP.",
+          "multi": "A $t({{gb}}) nevezetes épület {{from}} szintől {{to}} szintre való fejlesztésének költsége a tulajdonos számára {{preparation, number}}\nA szintlépések teljes összköltésge: {{cost, number}}",
+          "estimated_time": "A kívánt szint eléréséhez szükséges idő: {{time}}"
+        },
+        "prop_already_invested": "A tulajdonos által a jelenlegi szinten befektetett FP mennyisége",
+        "graph": {
+          "x_axes_label": "$t(utils.graph.gb_level)",
+          "y_axes_label": "$t(utils.graph.gb_level_cost)",
+          "label": {
+            "default": "A szint bruttó költsége",
+            "default_preparation": "Az előkészítés költésge bónusz nélkül",
+            "custom_preparation": "Az előkészítés költésge bónusszal"
+          }
+        }
+      },
+      "gb_statistics": {
+        "title": "$t(routes.gb_statistics.hero.title)",
+        "p1": "A grafikonok a korszak szerint készülnek, mert egy adott korszakon belüli nevezetes épületek költsége / jutalma azonos, kivéve egy különleges esetben ($t(foe_data.gb.Oracle_of_Delphi)).",
+        "graph": {
+          "title_1": "Költségek alakulása szintek szerint",
+          "title_2": "Első hely nyereségének alakulása szintek szerint",
+          "title_3": "A szintek költségének alakulása az első helyezés jutalmának arányában",
+          "title_4": "Az első helyezés jutalmának alakulása a szintek költségének arányában"
+        }
+      },
+      "secure_position": {
+        "block_place": {
+          "fp_to_complete_level": "A szint befejezéséhez szükséges FP-k száma",
+          "fp_to_complete_level_plural": "A szint befejezéséhez szükséges FP-k száma",
+          "place": "{{place}}({{count, number}} FP)",
+          "title": "Helyezés biztosítása",
+          "level_cost": "Szint költsége",
+          "current_deposits": "Jelenleg betett összes FP-k száma",
+          "your_participation": "Általad betett FP-k száma",
+          "other_participation": "A megelőzni kívánt játékos által betett FP-k száma",
+          "your_arc_bonus": "Bárka bónuszod",
+          "fp_target_reward": "Megszerezni kívánt helyezés költsége",
+          "target_reward": "Megszerezni kívánt helyezés",
+          "result": {
+            "fp_need_to_lock": "Saját helyezés biztosításához szükséges FP mennyiség",
+            "fp_need_to_lock_plural": "Saját helyezés biztosításához szükséges FP mennyiség",
+            "fp_to_secure_html": "Még {{count}} FP-t kell betenned",
+            "error": "Egy vagy több érték érvénytelen.",
+            "roi": {
+              "profit": "A nyereséged {{count}} FP lesz",
+              "loss": "A vesztesége {{count}} FP lesz",
+              "loss_plural": "A veszteséged {{count, number}} FP lesz"
+            },
+            "already_blocked": "A helyed védett.",
+            "still_to_put": "Még ennyi FP-t kell betenned",
+            "cant_block": "Nem védheted a helyet."
+          },
+          "unknown": "ismeretlen"
+        }
+      },
+      "simple_trade": {
+        "title": "Táblázatos verzió",
+        "table": {
+          "thead": {
+            "th1": "Kor",
+            "th2": "Áru",
+            "th3": "$t(components.trade.label.i_want)",
+            "th4": "Eredmény",
+            "split": "Felosztás",
+            "ratio": "Hányados"
+          }
+        },
+        "slpit": "Ajánlat felosztása kisebb egységekre?",
+        "show_ratio": "Arány megjelenítése"
+      },
+      "site_layout": {
+        "hero": {
+          "title": "$t(common:site_title)",
+          "slogan_html": "Néhány eszköz, mely egyszerűbbé teszi az életed a $t(common:links.foe)-ban"
+        },
+        "cookie": {
+          "message": "A $t(common:site_title) használatának folytatásával elfogadod, hogy a felhasználói kényelem javítása érdekében a webhely cookie-kat használ.",
+          "link": "Több információ"
+        },
+        "survey": {
+          "message": "Segíts nekünk azzal, hogy kitöltöd a kérdőívünket: $t(common:site_title)"
+        },
+        "footer": {
+          "version": "Verzió {{version}}"
+        },
+        "day_night": {
+          "Day": "Nappali",
+          "start_day": "Nappal kezdete",
+          "Night": "Éjszakai",
+          "start_night": "Éjszaka kezdete",
+          "Auto": "Autómatikus$t(components.site_layout.day_night.Day)/$t(components.site_layout.day_night.Night)"
+        },
+        "global_config": "Általános beállítások",
+        "global_config_dialog": {
+          "fixed_main_menu": "A főmenü legyen mindig látható",
+          "select_gb_style_mode": {
+            "datalist": "Automatikus kitöltés"
+          },
+          "day_night": "Téma",
+          "day_night_mode": {
+            "Day": "Nappali",
+            "Night": "Éjszakai",
+            "Auto": "Autómatikus"
+          }
+        },
+        "switch_locale": "A $t(common:site_title) elérhető a nyelveden"
+      },
+      "trade": {
+        "label": {
+          "i_have": "Van",
+          "i_want": "Szeretnék",
+          "amount": "Mennyiség"
+        },
+        "split_value": "Egy ajánlat maximális mérete (max {{count}})",
+        "split_message": {
+          "common": "{{count}} × ($t(components.trade.split_message.msg, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' }))",
+          "multi": "$t(components.trade.split_message.common, { 'valueFrom': '{{valueFrom}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueTo}}', 'ageTo': '{{ageTo}}' }) és $t(components.trade.split_message.common, { 'count': 1, 'valueFrom': '{{valueFromSingle}}', 'ageFrom': '{{ageFrom}}', 'valueTo': '{{valueToSingle}}', 'ageTo': '{{ageTo}}' })"
+        },
+        "message": {
+          "total": "(összesen: {{amount}} {{key}})"
+        }
+      },
+      "promotion_message_builder": {
+        "title": "Promóciós üzenet készítő",
+        "info": "Ez az üzenet másolható, hogy másokkal meg tudd osztani, például a céhtársaiddal.",
+        "actions": {
+          "create": "Új sablon létrehozása",
+          "update": "Létező sablon frissítése",
+          "delete": "Létező sablon törlése"
+        },
+        "start_from_template": "Kezdjük sablonból?",
+        "edit_template": "Válaszd ki a szerkeszteni kívánt sablont",
+        "delete_template": "Válaszd ki a törölni kívánt sablont",
+        "templates": {
+          "default": "Alapértelmezett sablonok",
+          "custom": "Egyéni sablonok"
+        },
+        "variables": {
+          "message": {
+            "FLVL": "Ettől a szinttől",
+            "TLVL": "Eddig a szintig",
+            "GBN": "Nevi neve",
+            "P": "Helyezések"
+          }
+        },
+        "template_name": "Sablon neve",
+        "errors": {
+          "template_cannot_have_this_name": "Ez a név nem használható. Kérjük, válassz másik nevet."
+        }
+      }
+    },
+    "routes": {
+      "home": {
+        "title": "$t(common:site_title)"
+      },
+      "about": {
+        "general_info": {
+          "title": "Általános információ",
+          "p1_html": "A Forge of Empires, FOE, és az összes kapcsolódó védjegy és tartalom az InnoGames GmbH tulajdona. <br/> A $t(common:site_title) oldal egy nem hivatalos, harmadik személy által készített oldal, ami nem hozható összefüggésbe az InnoGames-zel.",
+          "p2_html": "A $t(common:site_title) oldalt készítette a francia játékos <strong class=\"has-text-weight-semibold\">Yoratheon</strong>."
+        },
+        "cookie": {
+          "title": "Süti",
+          "p1": "A használat kényelmének javítása érdekében a webhely cookie-kat használ.",
+          "table_message": "Az alábbi táblázat az ezen az oldalon használt összes cookie-t mutatja.",
+          "info": {
+            "cookieDisclaimerDisplayed": "Jelzi, hogy elolvastad-e a cookie-k használatával kapcsolatos tájékoztató üzenetet",
+            "locale": "Megjelenítési nyelv",
+            "yourCfBoost": "Globális beállítás, amely tartalmazza a Château Frontenac bónuszod",
+            "coins": "$t(components.cf_calculator.block_cfc.coins_to_use)",
+            "fpBy24h": "$t(components.cf_calculator.block_cfc.fp_by_24h)",
+            "goods": "$t(components.cf_calculator.block_cfc.gb_plunder_goods)",
+            "otherRq": "$t(components.cf_calculator.block_cfc.other_rq)",
+            "secondRq": "$t(components.cf_calculator.block_cfc.second_rq)",
+            "supplies": "$t(components.cf_calculator.block_cfc.supplies_to_use)",
+            "suppliesGathered": "$t(components.cf_calculator.block_cfc.supplies_gathered)",
+            "yourAge": "$t(components.cf_calculator.block_cfc.your_age)",
+            "investorPercentageCustom_x": "$t(components.gb_investment.gb_investment.table.thead.th5)",
+            "investorPercentageGlobal": "$t(components.gb_investment.gb_investment.form.investor_percentage)",
+            "level": "Nevi szint",
+            "ownerInvestment": "$t(components.gb_investment.gb_investment.table.thead.th3)"
+          }
+        },
+        "dev_info": {
+          "title": "Fejlesztési információk",
+          "message_info_github_issue": "<b>Megjegyzés:</b> A GitHub-bal kapcsolatos problémákat, kérjük angol nyelven közölni, annak érdekében, hogy a bejelentés a többségünk számára érthető legyen."
+        }
+      },
+      "campaign_cost": {
+        "title": "$t(routes.campaign_cost.hero.title) | $t(common:site_title)",
+        "hero": {
+          "title": "Hadjárat költsége",
+          "subtitle": "Fair"
+        }
+      },
+      "cf_calculator": {
+        "title": "$t(routes.cf_calculator.hero.title) | $t(common:site_title)",
+        "hero": {
+          "title": "Château Frontenac tervező"
+        }
+      },
+      "changelog": {
+        "title": "Változás napló | $t(common:site_title)"
+      },
+      "contributors": {
+        "title": "$t(routes.contributors.hero.title) | $t(common:site_title)",
+        "hero": {
+          "title": "Közreműködők"
+        }
+      },
+      "gb_investment": {
+        "title": "$t(routes.gb_investment.hero.title, { 'gb_key': '{{gb_key}}' }) | $t(common:site_title)",
+        "hero": {
+          "title": "$t(routes.gb_investment_gb_chooser.hero.title) - $t({{gb_key}})"
+        },
+        "tab": {
+          "owner_view": {
+            "title": "Tulajdonos nézete"
+          },
+          "investors_view": {
+            "title": "Befektetők nézete"
+          }
+        }
+      },
+      "gb_investment_gb_chooser": {
+        "title": "$t(routes.gb_investment_gb_chooser.hero.title) | $t(common:site_title)",
+        "hero": {
+          "title": "Nevezetes épület befektetés",
+          "subtitle": "Ez az eszköz lehetővé teszi, hogy kiszámítsuk azt a pontszámot, amelyet egy játékosnak be kell helyeznie a nevezetes épületbe, hogy az első 5 helyet (Bárka bónusz) biztosítsa."
+        },
+        "choose_gb": {
+          "title": "Válassz egy nevezetes épületet!"
+        }
+      },
+      "gb_forecast_cost": {
+        "title": "$t(routes.gb_forecast_cost.hero.title) | $t(common:site_title)",
+        "hero": {
+          "title": "Nevezetes építés tervezése",
+          "subtitle": "Ez az eszköz megmutatja, hogy mennyi FP-re van szükséged az egyik szintről a másikra jutni, Bárka bónusszal vagy nélküle."
+        }
+      },
+      "gb_statistics": {
+        "title": "$t(routes.gb_statistics.hero.title) | $t(common:site_title)",
+        "hero": {
+          "title": "Nevi statisztika"
+        }
+      },
+      "secure_position": {
+        "title": "$t(routes.secure_position.hero.title) | $t(common:site_title)",
+        "hero": {
+          "title": "Védett pozíció",
+          "subtitle": "Ez az eszköz kiszámítja az FP-k számát, amivel egy játékos blokkolni tudja a helyét egy neviben."
+        }
+      },
+      "trade": {
+        "title": "$t(routes.trade.hero.title) | $t(common:site_title)",
+        "hero": {
+          "title": "Kereskedés"
+        },
+        "tab": {
+          "trade_2_1": {
+            "title": "2:1",
+            "message": "Egyszerű kereskedelem, 1:1 arány azonos korú árucikkek esetében és 1:2 arány egyel alacsonyabb vagy magasabb korú árucikkek esetében"
+          },
+          "fair_trade": {
+            "title": "Tisztességes kereskedelem",
+            "message": "Ez a fajta kereskedelem figyelembe veszi az áru gyártásának költségeit (pénz és alapanyagok) az áruk közötti árfolyam meghatározásához."
+          }
+        }
+      },
+      "help_to_translate_the_site": {
+        "title": "$t(routes.help_to_translate_the_site.hero.title) | $t(common:site_title)",
+        "hero": {
+          "title": "Segíts az oldal fordításában",
+          "subtitle": "Belépés a fordító csapatba"
+        },
+        "p1": "A nyelveden még nem elérhető, a fordítás még hiányos vagy hibákat tartalmaz? Csatlakozz a fordító csapathoz!",
+        "how_to_join_the_team": "Hogy lehetek a csapat tagja?"
+      },
+      "survey": {
+        "hero": {
+          "title": "Felmérés",
+          "subtitle": "Segíts azzal, hogy kitöltöd a kérdőívünket: $t(common:site_title)"
+        },
+        "required_field": "Ez a mező kötelező",
+        "survey_complete": "Köszönjük a visszajelzést !",
+        "error": "Hiba történt, ellenőrizd az űrlapot és próbáld újra",
+        "unknown_error": "Ismeretlen hiba történt, kérjük fordulj a webhely adminisztrátorához"
+      },
+      "contact": {
+        "hero": {
+          "title": "Kapcsolat"
+        }
+      },
+      "error": {
+        "404": {
+          "title": "Oldal nem található | $t(common:site_title)",
+          "message": "Sajnáljuk, de a keresett oldal nem található"
+        }
+      }
+    },
+    "foe_data": {
+      "age": {
+        "Oracle": "$t(foe_data.age.NoAge) ($t(foe_data.gb.Oracle_of_Delphi))",
+        "NoAge": "Nincs kor",
+        "BronzeAge": "Bronzkorszak",
+        "IronAge": "Vaskorszak",
+        "EarlyMiddleAges": "Kora középkor",
+        "HighMiddleAges": "Virágzó középkor",
+        "LateMiddleAges": "Késő középkor",
+        "ColonialAge": "A gyarmatosítás kora",
+        "IndustrialAge": "Ipari kor",
+        "ProgressiveEra": "Progresszív kor",
+        "ModernEra": "Modern kor",
+        "PostmodernEra": "Posztmodern kor",
+        "ContemporaryEra": "Jelenkor",
+        "Tomorrow": "Holnap",
+        "TheFuture": "A jövő",
+        "ArcticFuture": "Távoli jégkorszak",
+        "OceanicFuture": "Mélytengeri jövő",
+        "VirtualFuture": "Virtuális jövő",
+        "SpaceAgeMars": "Űrkorszak: Mars"
+      },
+      "age_short": {
+        "NoAge": "NA",
+        "BronzeAge": "BA",
+        "IronAge": "IA",
+        "EarlyMiddleAges": "EMA",
+        "HighMiddleAges": "HMA",
+        "LateMiddleAges": "LMA",
+        "ColonialAge": "CA",
+        "IndustrialAge": "InA",
+        "ProgressiveEra": "PE",
+        "ModernEra": "ME",
+        "PostmodernEra": "PME",
+        "ContemporaryEra": "CE",
+        "Tomorrow": "TE",
+        "TheFuture": "TF",
+        "ArcticFuture": "AF",
+        "OceanicFuture": "OF",
+        "VirtualFuture": "VF"
+      },
+      "gb": {
+        "Observatory": "Obszervatórium",
+        "Temple_of_Relics": "Ereklyék temploma",
+        "Oracle_of_Delphi": "Delphoi józsda",
+        "Tower_of_Babel": "Bábel tornya",
+        "Statue_of_Zeus": "Zeusz szobra",
+        "Colosseum": "Kolosszeum",
+        "Lighthouse_of_Alexandria": "Alexandriai világitótorony",
+        "Hagia_Sophia": "Hagia Sophia",
+        "Cathedral_of_Aachen": "Aacheni katedrális",
+        "St_Mark_s_Basilica": "Szt. Márk bazilika",
+        "Notre_Dame": "Notre Dame",
+        "Saint_Basil_s_Cathedral": "Boldog Vazul-székesegyház",
+        "Castel_del_Monte": "Castel del Monte",
+        "Deal_Castle": "Deal kastély",
+        "Frauenkirche_of_Dresden": "Drezdai Miasszonyunk templom",
+        "Capitol": "Kapitólium",
+        "Royal_Albert_Hall": "Royal Albert Hall",
+        "Chateau_Frontenac": "Château Frontenac",
+        "Alcatraz": "Alcatraz",
+        "Space_Needle": "Space Needle",
+        "Atomium": "Atomium",
+        "Cape_Canaveral": "Cape Canaveral",
+        "The_Habitat": "A Habitat",
+        "Lotus_Temple": "Lótusz templom",
+        "Innovation_Tower": "Innovácios torony",
+        "Dynamic_Tower": "Dinamikus torony",
+        "Voyager_V1": "Voyager V1",
+        "The_Arc": "A Bárka",
+        "Rain_Forest_Project": "Esőerdő Projekt",
+        "Gaea_Statue": "Gaia-szobor",
+        "Arctic_Orangery": "Sarkköri üvegház",
+        "Seed_Vault": "Magbank",
+        "Atlantis_Museum": "Atlantiszi múzeum",
+        "The_Kraken": "A Kraken",
+        "The_Blue_Galaxy": "A Kék galaxis",
+        "Terracotta_Army": "Agyaghadsereg",
+        "Himeji_Castle": "Himedzsi várkastély",
+        "The_Virgo_Project": "A Szűz-csillagkép projekt",
+        "Star_Gazer": "Csillagvizsgáló"
+      },
+      "gb_short": {
+        "Observatory": "Obs",
+        "Temple_of_Relics": "ToR",
+        "Oracle_of_Delphi": "OoD",
+        "Tower_of_Babel": "Babel",
+        "Statue_of_Zeus": "Zeus",
+        "Colosseum": "Colosseum",
+        "Lighthouse_of_Alexandria": "Lighthouse",
+        "Hagia_Sophia": "Hagia",
+        "Cathedral_of_Aachen": "Aachen",
+        "St_Mark_s_Basilica": "St. Mark's",
+        "Notre_Dame": "Notre Dame",
+        "Saint_Basil_s_Cathedral": "St. Basil's",
+        "Castel_del_Monte": "Castel",
+        "Deal_Castle": "Deal",
+        "Frauenkirche_of_Dresden": "Dresden",
+        "Capitol": "Capitol",
+        "Royal_Albert_Hall": "RAH",
+        "Chateau_Frontenac": "Frontenac",
+        "Alcatraz": "Alca",
+        "Space_Needle": "SN",
+        "Atomium": "Atomium",
+        "Cape_Canaveral": "Cape",
+        "The_Habitat": "Habitat",
+        "Lotus_Temple": "Lotus",
+        "Innovation_Tower": "Inno",
+        "Dynamic_Tower": "Dynamic",
+        "Voyager_V1": "Voyager",
+        "The_Arc": "Arc",
+        "Rain_Forest_Project": "RFP",
+        "The_Kraken": "Kraken"
+      },
+      "goods": {
+        "dye": "Festőanyag",
+        "lumber": "Faanyag",
+        "marble": "Márvány",
+        "stone": "Kő",
+        "wine": "Bor",
+        "cloth": "Posztó",
+        "ebony": "Ében",
+        "iron": "Vas",
+        "jewelry": "Ékszerek",
+        "limestone": "Mészkő",
+        "alabaster": "Alabástrom",
+        "copper": "Réz",
+        "gold": "Arany",
+        "granite": "Gránit",
+        "honey": "Méz",
+        "brick": "Tégla",
+        "dried_herbs": "Szárított gyógynövény",
+        "glass": "Üveg",
+        "rope": "Kötél",
+        "salt": "Só",
+        "basalt": "Bazalt",
+        "brass": "Sárgaréz",
+        "gunpowder": "Puskapor",
+        "silk": "Selyem",
+        "talc_powder": "Csillámpor",
+        "coffee": "Kávé",
+        "porcelain": "Porcelán",
+        "paper": "Papír",
+        "tar": "Kátrány",
+        "wire": "Huzal",
+        "coke": "Szén",
+        "fertilizer": "Műtrágya",
+        "rubber": "Gumi",
+        "textiles": "Textil",
+        "whale_oil": "Bálnaolaj",
+        "asbestos": "Azbeszt",
+        "explosives": "Robbanóanyagok",
+        "gasoline": "Benzin",
+        "machine_parts": "Gépalkatrészek",
+        "tinplate": "Ónlemez",
+        "convenience_food": "Készétel",
+        "ferroconcrete": "Vasbeton",
+        "flavorants": "Ízesítőszer",
+        "luxury_materials": "Luxusanyag",
+        "packaging": "Csomagolás",
+        "genome_data": "Genetikai adat",
+        "industrial_filters": "Ipari szűrő",
+        "renewable_resources": "Megújuló erőforrás",
+        "semiconductors": "Félvezetők",
+        "steel": "Acél",
+        "bionics_data": "Biokémiai adatok",
+        "electromagnets": "Elektromágnes",
+        "gas": "Gáz",
+        "plastics": "Műanyag",
+        "robots": "Robot",
+        "nutrition_research": "Élelmezés kutatás",
+        "papercrete": "Papírbeton",
+        "preservatives": "Tartósítószer",
+        "smart_materials": "Okosanyag",
+        "translucent_concrete": "Üvegbeton",
+        "algae": "Alga",
+        "biogeochemical_data": "Biokémiai adatok",
+        "nanoparticles": "Nanorészecske",
+        "purified_water": "Tisztított víz",
+        "superconductors": "Szupravezető",
+        "ai_data": "MI adatok",
+        "bioplastics": "Bioműanyag",
+        "nanowire": "Nanovezeték",
+        "paper_batteries": "Papír akkumulátor",
+        "transester_gas": "Transzészter gáz",
+        "artificial_scales": "Mesterséges pikkely",
+        "biolight": "Biolámpa",
+        "corals": "Korall",
+        "pearls": "Igazgyöngy",
+        "plankton": "Plankton",
+        "promethium": "Prométium",
+        "orichalcum": "Orichalcum",
+        "cryptocash": "Kriptovaluta",
+        "data_crystals": "Adatkristály",
+        "golden_rice": "Aranyrizs",
+        "nanites": "Nanit",
+        "tea_silk": "Teaselyem"
+      },
+      "province": {
+        "Dunarsund": "Dunarsund",
+        "Fel_Dranghyr": "Fel Dranghyr",
+        "Tyr": "Tyr",
+        "Hymir": "Hymir",
+        "Badakus": "Badakus",
+        "Paruuch": "Paruuch",
+        "Ruug": "Ruug",
+        "Karchagu": "Karchagu",
+        "East_Nagach": "Kelet-Nagach",
+        "West_Nagach": "Nyugat-Nagach",
+        "Maktaba": "Maktaba",
+        "Pfefferberg": "Pfefferberg",
+        "Dunkelwald": "Dunkelwald",
+        "Greifental": "Griefental",
+        "Sturmhohen": "Sturmhohen",
+        "Kaltenweiher": "Kaltenweiher",
+        "Teufelsfurt": "Teufelsfurt",
+        "Felssenke": "Felssenke",
+        "Galgenschlucht": "Galgenschlucht",
+        "Todepass": "Todepass",
+        "Steilsturz": "Steilsturz",
+        "Tarmelmann": "Tarmelmann",
+        "Breturia": "Breturia",
+        "Canturia": "Canturia",
+        "Veletrites": "Veletrites",
+        "Frathia": "Frathia",
+        "Mons_Suiry": "Mons Suiry",
+        "Jaims": "Jaims",
+        "Moravaria": "Moravaria",
+        "Cragshire": "Cragshire",
+        "Eldenborough": "Eldenborough",
+        "Cuttingham": "Cuttingham",
+        "Spearth": "Spearth",
+        "Wolvhampton": "Wolvhampton",
+        "FourGallows": "FourGallows",
+        "Mount_Killmore": "Mount Killmore",
+        "RavensCreek": "RavensCreek",
+        "Houndsmoor": "Kutya-mocsár",
+        "Zaldon_on_Sea": "Zaldon-on-Sea",
+        "Grand_Cap": "Óriási hézag",
+        "Northcastle": "Északi kastély",
+        "Queenshope": "Queenshope",
+        "Ashcrook": "Ashcrook",
+        "Narcien": "Narcien",
+        "Lavignon": "Lavignon",
+        "Troulope": "Troulope",
+        "Deuxerres": "Deuxerres",
+        "Lombardeaux": "Lombardeaux",
+        "Pisterrac": "Pisterrac",
+        "Varseille": "Varseille",
+        "Haulenois": "Haulenois",
+        "NewCragshire": "New Cragshire",
+        "Okahe": "Okahe",
+        "Rantford": "Rantford",
+        "Desperation": "Desperation",
+        "St_Marque": "St. Marque",
+        "Las_Penas": "Las Penas",
+        "DragonCity": "Dragon City",
+        "Garrincton": "Garrincton",
+        "ElFuego": "El Fuego",
+        "SantaCatalina": "Santa Catalina",
+        "Dorango": "Dorango",
+        "Nevarrone": "Nevarrone",
+        "Embruniez": "Embruniez",
+        "Gabordeaux": "Gabordeaux",
+        "Ydine": "Ydine",
+        "Wenoevre": "Wenoevre",
+        "Havre": "Havre",
+        "Omoien": "Omoien",
+        "Uxrow": "Uxrow",
+        "Gaelford": "Gaelford",
+        "Sud": "Sud",
+        "Kriegreich": "Kriegreich",
+        "Ostrand": "Ostrand",
+        "Langenreich": "Langenreich",
+        "Uceria": "Uceria",
+        "Gorski": "Gorski",
+        "Inashu": "Inashu",
+        "Natsuishu": "Natsuishu",
+        "Chigikawa": "Chigikawa",
+        "Igujima": "Igujima",
+        "Kyushima": "Kyushima",
+        "Igioka": "Igioka",
+        "Igamoto": "Igamoto",
+        "Higematsu": "Higematsu",
+        "Kibakuguchi": "Kibakuguchi",
+        "Hiromaguchi": "Hiromaguchi",
+        "Toimuro": "Toimuro",
+        "CaiChetNui": "Cai Chet Nui",
+        "SotDamLay": "Sot Dam Lay",
+        "DayDuAo": "Day Du Ao",
+        "TrungDoi": "Trung Doi",
+        "KhayHuyenBayGio": "Khay Huyen Bay Gio",
+        "RungTrai": "Rung Trai",
+        "RungChienDau": "Rung Chien Dau",
+        "GiaiCuuBinhMinh": "Giai Cuu Binh Minh",
+        "PhucKich": "Phuc Kich",
+        "MauMatDat": "Mau Mat Dat",
+        "DongBangSong": "Dong Bang Song",
+        "OngChuCuoiCung": "Ong Chu Cuoi Cung",
+        "Amaryah_City": "Amaryah City",
+        "Khail": "Khail",
+        "Batif": "Batif",
+        "Hafar_Al_Karak": "Hafar Al Karak",
+        "Al_Shadyra": "Al-Shadyra",
+        "Salfah": "Salfah",
+        "Ain_Al_Khansa": "Ain Al-Khansa",
+        "Suqqah": "Suqqah",
+        "Shayhour": "Shayhour",
+        "Kardad": "Kardad",
+        "Qumeira": "Qumeira",
+        "Jandahar": "Jandahar",
+        "Torrinhos": "Torrinhos",
+        "Villabaja": "Villabaja",
+        "Itabarai": "Itabarai",
+        "Bajatai": "Bajatai",
+        "Villariba": "Villariba",
+        "Rio_Roxo": "Rio Roxo",
+        "Sierra_Torrido": "Sierra Torrido",
+        "Santa_Nerea": "Santa Nerea",
+        "La_Huega": "La Huega",
+        "Jamenez": "Jamenez",
+        "Falsa_Cruz": "Falsa Cruz",
+        "Desierto_de_la_Muerte": "Desierto de la Muerte",
+        "Sao_Malvado": "Sao Malvado",
+        "Agadar": "Agadar",
+        "Esan_Ewu": "Esan-Ewu",
+        "Omogba": "Omogba",
+        "Owopele": "Owopele",
+        "Jak": "Jak",
+        "Pala": "Pala",
+        "Kolabourg": "Kolabourg",
+        "Bontaville": "Bonta Town",
+        "Botuku": "Botuku",
+        "Kalabuye": "Kalabuye",
+        "Bisoraba": "Bisoraba",
+        "Fort_Buntu": "Fort Buntu",
+        "Nutarniq": "Nutarniq",
+        "Iluliaq": "Iluliaq",
+        "Aurora_s_Dale": "Aurora's Dale",
+        "Cold_Bay": "Cold Bay",
+        "Arctic_Horizon": "Sarkköri horizont",
+        "Tuklavik": "Tuklavik",
+        "Ananevut": "Ananevut",
+        "Qaniit": "Qaniit",
+        "White_Gate": "Téli kapu",
+        "Snowdrifts": "Snowdrifts",
+        "Median_Waters": "Median Waters",
+        "Frosty_Mountain": "Fagyos hegy",
+        "Southern_Valley": "Déli völgy",
+        "Ilug": "Ilug",
+        "Chugiak": "Chugiak",
+        "Kesukavut": "Kesukavut",
+        "Adlartok": "Adlartok",
+        "Northern_Passage": "Északi átjáró",
+        "Avalanche": "Avalanche",
+        "Manirak": "Manirak",
+        "Tundra_Rock": "Tundra Rock",
+        "Patuktuq": "Patuktuq",
+        "Summit_Ice": "Summit Ice",
+        "Kilalurak": "Kilalurak",
+        "Nilak": "Nilak",
+        "Chulyin": "Chulyin",
+        "Tattilgat": "Tattilgat",
+        "Atka": "Atka",
+        "Pimniq": "Pimniq",
+        "Anyu": "Anyu",
+        "Glacial_Peak": "Glacial Peak",
+        "Nunataq": "Nanutaq",
+        "Nanuq": "Nanuq",
+        "Precipice": "Precipice",
+        "Unalaq": "Unalaq",
+        "Neural_Rites": "Neural Rites",
+        "Frozen_Steppe": "Frozen Steppe",
+        "The_Grotto": "The Grotto",
+        "Temple_Floe": "Temple Floe",
+        "Spirit_Plane": "Spirit Plane",
+        "Murky_Waters": "Coral Depths",
+        "Cursed_Current": "Murky Waters",
+        "Coral_Depths": "Cursed Current",
+        "Rough_Expanse": "Dark Abyss",
+        "Strong_Tide": "Fresh Flow",
+        "Dark_Abyss": "Strong Tide",
+        "Fresh_Flow": "Rough Expanse",
+        "Tideless_Deep": "Tideless Deep",
+        "Glimmering_Surf": "Serene Waves",
+        "Serene_Waves": "Glimmering Surf",
+        "Red_Sea": "Red Sea",
+        "Wondering_Ocean": "Wondering Ocean",
+        "Foam_Ceiling": "Foam Ceiling",
+        "Walled_Gulf": "Lower Grotto",
+        "Lower_Grotto": "Lower Grotto",
+        "Silver_Swarms": "Walled Gulf",
+        "Upper_Grotto": "Silver Swarms",
+        "Rocky_Domain": "Rocky Domain",
+        "Nautical_Parlay": "Upper Grotto",
+        "Restless_Buoy": "Nautical Parlay",
+        "Ripped_Sails": "Restless Buoy",
+        "Nautilus_Mirage": "Ripped Sails",
+        "Ravenous_Tides": "Nautilus Mirage",
+        "Deep_Dive": "Ravenous Tides",
+        "Furious_Storm": "Deep Dive",
+        "Silver_Crest": "Furious Storm",
+        "Grey_Clouds": "Silver Crest",
+        "Translucent_Algae": "Grey Clouds",
+        "Treacherous_Surf": "Translucent Algae",
+        "Single_Wave": "Treacherous Surf",
+        "Cursed_Lip": "Single Wave",
+        "Coral_Kingdom": "Cursed Lip",
+        "Telescopic_Barrel": "Coral Kingdom",
+        "Sponge_Sands": "Telescopic Barrel",
+        "Seagull_Domain": "Sponge Sands",
+        "Tangled_Fins": "Seagull Domain",
+        "Scuba_Bay": "Scuba Bay",
+        "Tide_Ascent": "Tide Ascent",
+        "Breakwater_Wharf": "Breakwater Wharf",
+        "Adrift_Liner": "Adrift Liner",
+        "Bermuda_Quay": "Bermuda Quay",
+        "Sextant_Mast": "Sextant Mast",
+        "Grog_Wash": "Grog Wash",
+        "R_lyeh_Reef": "R'lyeh Reef",
+        "Capricorn_Waterway": "Capricorn Waterway",
+        "Barnacle_Deck": "Barnacle Deck",
+        "Ahab_s_Tomb": "Ahab's Tomb",
+        "Galley_Commodore": "Galley Commodore",
+        "Adamastor": "Adamastor",
+        "Deadeye_Admiral": "Deadeye Admiral",
+        "Monkey_s_Fist": "Monkey's Fist",
+        "Dagon_s_Dagger": "Dagon's Dagger",
+        "Sunken_Leviathan": "Sunken Leviathan",
+        "Raging_Tides": "Dühös árapály",
+        "Buccaneer_Plateau": "Kalózfennsík",
+        "Craggy_Cay": "Sziklás zátony",
+        "Behemoth": "Behemót",
+        "Privateer_Helm": "Partizánhajó-kormány",
+        "Medusa_Cove": "Medúzaszoros",
+        "Man_O_War": "Gálya",
+        "Nemo_s_Dock": "Nemó dokkja",
+        "Anchorage_Ruin": "Horgonyroncs",
+        "Ahoy_Alee": "Szélmentes terület",
+        "Ursula_s_Valley": "Ursula völgye",
+        "Dungbie_Trough": "Tat-árok",
+        "Idlers_Range": "Szakemberek területe",
+        "Wherry_Gap": "Ladiklyuk",
+        "Nock_s_Turn": "Csonka csúcsvitorla",
+        "Scuttle_Ridge": "Szenes hegygerinc",
+        "Ghost_Trench": "Szellemárok",
+        "Scurvy_Atoll": "Aljas-zátony",
+        "Capsize_Lagoon": "Felfordult lagúna",
+        "Undertow_Bank": "Hullámpart",
+        "Neptune_s_Galleon": "Naptunusz gályája",
+        "Seafarer_s_Current": "Tengerészvaluta",
+        "Blackwater_Cape": "Feketevíz-fok",
+        "Leviathan_Wreck": "Leviatánroncs",
+        "Typhoon_Peninsula": "Peninsula hurrikán",
+        "Corsair_s_Skerry": "Corsair-szirt",
+        "Mutiny_Canyon": "Mutiny-szurdok",
+        "Bytedirt_Planes": "Bytedirt Planes",
+        "End_of_the_Void": "End of the Void",
+        "Banker_s_Heaven": "Banker's Heaven",
+        "Shift_Land": "Shift/Land",
+        "Black_Net_Market": "Black Net Market",
+        "Pulse_City": "Pulse City",
+        "Max_s_Shelter": "Max's Shelter",
+        "The_Open_Zone": "The Open Zone",
+        "The_Warring_Towers": "The Warring Towers",
+        "Forgotten_Fragments": "Forgotten fragments",
+        "Backup_NET": "Backup:NET",
+        "Spoiled_Resort": "Spoiled Resort",
+        "Fort_Duplex": "Fort Duplex",
+        "LoneHub": "LoneHub",
+        "Alpha_1_Omega_2": "Alpha 1 Omega 2",
+        "Ray_s_Ray_s": "Ray's Rays",
+        "Purple_Palace": "Purple Palace",
+        "Three_Oc3ans": "Three Oc3ans",
+        "Vortex": "Vortex",
+        "Twisted_Alps": "Twisted Alps",
+        "Archives_of_Junkman": "Archives of Junkman",
+        "Frozen_RAM": "Frozen RAM",
+        "Cas_Cade": "Cas.Cade",
+        "The_Historical_Museum": "The Historical Museum",
+        "Aerial_Boulevard": "Aerial Boulevard",
+        "Slate_13": "Slate 13",
+        "New_final_final_exe": "new_final_final.exe",
+        "Bizarre_Plains": "Bizarre Plains",
+        "Argus__Watch": "Argus' Watch",
+        "Berta_s_Byte_Sauce": "Berta's Byte-Sauce",
+        "Veil_of_Bits": "Veil of Bits",
+        "Harvey_s_Low_Core": "Harvey's Low Core",
+        "The_Byte_Parade": "The Byte Parade",
+        "Reboot_Bay": "Reboot Bay",
+        "Streaming_Forest": "Streaming Forest",
+        "CMYK_Citadel": "CMYK Citadel",
+        "Forgify": "Forgify",
+        "Digital_Town_of_Hope": "Digital Town of Hope",
+        "Cloud_One": "Cloud One",
+        "Re_Birth": "Digital Town of Hope",
+        "Castle_You_Es_Bee": "Castle You-Es-Bee",
+        "NET_MASKerade": "NET MASKerade",
+        "If_Then_Whatever": "If, Then, Whatever",
+        "The_Virtual_Cliffs_of_G0r3": "The Virtual Cliffs of G0r3",
+        "Game_Over": "Játék vége"
+      },
+      "bonus": {
+        "coin": {
+          "name": "Pénz"
+        },
+        "supply": {
+          "name": "Alapanyag"
+        },
+        "good": {
+          "name": "Termék"
+        },
+        "special_good": {
+          "name": "Különleges termék"
+        },
+        "good_bonus": {
+          "name": "Gazdasági épületek"
+        },
+        "expansion": {
+          "name": "Terjeszkedés"
+        },
+        "medal": {
+          "name": "Medál"
+        },
+        "diamond": {
+          "name": "Gyémánt"
+        },
+        "pvp_tower": {
+          "name": "PvP torony"
+        },
+        "blueprint": {
+          "name": "Tervrajz"
+        },
+        "military_boost": {
+          "name": "Támadási bónusz"
+        },
+        "coin_boost": {
+          "name": "Pénz termelés bónusz"
+        },
+        "supply_boost": {
+          "name": "Alapanyag termelés bónusz"
+        },
+        "good_production": {
+          "name": "Termék termelés",
+          "gb_description": "Bizonyos mennyiségű árut termel az aktuális korból 24 óránként. A Modern kortól finomítatlan árukból kétszer annyit termel."
+        },
+        "medal_production": {
+          "name": "Medál termelés",
+          "gb_description": "Bizonyos mennyiségű medált termel 24 óránként"
+        },
+        "research": {
+          "name": "Kutatás",
+          "gb_description": "Bizonyos mennyiségű FP-t termel 24 óránként"
+        },
+        "coin_production": {
+          "name": "Pénz termelés",
+          "gb_description": "Bizonyos mennyiségű pénzt termel 24 óránként"
+        },
+        "supply_production": {
+          "name": "Alapanyag termelés",
+          "gb_description": "Bizonyos mennyiségű alapanyagot termel 24 óránként"
+        },
+        "population": {
+          "name": "Népesség",
+          "gb_description": "Állandó lakosság bónusz."
+        },
+        "happiness": {
+          "name": "Boldogság",
+          "gb_description": "Állandó boldogság bónusz."
+        },
+        "guild_goods": {
+          "gb_description": "A játékos korával megegyező termékeket gyárt, amelyek egyenesen a Céh kincstárába kerülnek."
+        },
+        "helping_hands": {
+          "gb_description": "Bizonyos esélyt ad arra, hogy véletlenszerű erőforrást kapj egy másik játékos városának támogatásakor (motiválás és takarítás is segítségnek számít). Aktuális korú árut, alapanyagot, pénzt, medált vagy akár gyémántot is adhat."
+        },
+        "first_strike": {
+          "name": "Első csapás"
+        }
+      }
+    },
+    "utils": {
+      "content": {
+        "tools": "Eszközök",
+        "statistics": "Statisztikák"
+      },
+      "btn_calculate": "Számol",
+      "description": {
+        "p1": "Ha módosítód az értékeket, akkor az eredmény automatikusan frissül."
+      },
+      "choose_age": "Válassz egy kort",
+      "permalink": "Link",
+      "Add": "Hozzáadás",
+      "Remove": "Távolítsuk",
+      "Yes": "Igen",
+      "No": "Nem",
+      "Ok": "Ok",
+      "Copy": "Másolás",
+      "Copyed": "Másolva !",
+      "Information": "Információ",
+      "From": "tól",
+      "To": "ig (max {{max}})",
+      "Prefix": "Előtag",
+      "Suffix": "Utótag",
+      "Name": "Név",
+      "Description": "Leírás",
+      "Rewards": "Jutalmak",
+      "Cost": "Költség",
+      "Conquered": "Meghódított",
+      "Total": "Összesen",
+      "Secured": "Védett",
+      "Reset": "Visszaállítás",
+      "Confirm": "Jóváhagy",
+      "Close": "Bezár",
+      "Result": "Eredmény",
+      "between_range": "{{min, number}} és {{max, number}} között",
+      "Reset_values": "Értékek visszaállítása",
+      "Save": "Mentés",
+      "Show": "Mutat",
+      "Hide": "Elrejt",
+      "moment": {
+        "year": "{{count}} év",
+        "year_plural": "{{count, number}} év",
+        "month": "{{count}} hónap",
+        "month_plural": "{{count}} hónap",
+        "day": "{{count}} nap",
+        "day_plural": "{{count}} nap"
+      },
+      "graph": {
+        "gb_level": "Szint",
+        "gb_level_cost": "Szint költsége"
+      }
+    },
+    "contributions": {
+      "bug": "Hibajelentés",
+      "design": "Tervezés",
+      "doc": "Dokumentáció",
+      "example": "Példák",
+      "tool": "Eszközök",
+      "translation": "Fordítás",
+      "tutorial": "Oktatóanyagok",
+      "video": "Videó",
+      "data": "Adatok hozzáadása vagy frissítése",
+      "creator": "A projekt létrehozója"
+    },
+    "seo": {
+      "keywords": {
+        "gb": "nevi",
+        "great_building": "nevezetes épület",
+        "fp": "fp",
+        "forge_point": "forge pont",
+        "medals": "medál",
+        "military_units": "katonai egység"
+      }
+    }
+  }
+}
